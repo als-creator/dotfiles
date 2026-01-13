@@ -1,0 +1,29 @@
+[Animation]
+Frames=0
+UseWMAssist=false
+
+[Appearance]
+BackgroundColorOpacity=10
+Blur=false
+HideSkinBorders=true
+Skin=arc-dark
+TerminalHighlightOnManualActivation=true
+Translucency=true
+
+[Behavior]
+FocusFollowsMouse=true
+
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=
+
+[Window]
+DynamicTabTitles=true
+Height=90
+KeepOpen=false
+Width=100

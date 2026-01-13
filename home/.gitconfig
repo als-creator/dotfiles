@@ -1,0 +1,11 @@
+[user]
+name = user
+email = mail@gmail.com
+[init]
+defaultBranch = main
+[core]
+editor = vim --wait
+[color]
+ui = auto
+[credential]
+helper = cache

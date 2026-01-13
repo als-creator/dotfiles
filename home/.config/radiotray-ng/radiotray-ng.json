@@ -1,0 +1,10 @@
+{
+	"bookmarks" : "/home/als/.config/radiotray-ng/bookmarks.json",
+	"last-station" : "Cassiopeia Station",
+	"last-station-group" : "root",
+	"last-station-notifications" : true,
+	"notification-verbose" : true,
+	"notifications" : true,
+	"split-title" : true,
+	"volume-level" : 96
+}

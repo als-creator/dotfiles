@@ -1,0 +1,90 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"type": "none",
+		"source": "arch"
+	},
+	"modules": [
+		"title",
+		"separator",
+		//"datetime",
+		{
+			"type": "os",
+			"format": "Arch Linux ({12})"
+		},
+		//"host",
+		//"os",
+		"kernel",
+		//{
+		//		"type": "packages",
+		//		"format": "{} (pacman)"
+		//},
+		"de",
+		"shell",
+		"terminal",
+		//"terminalsize",
+		//"terminaltheme",
+		//"terminalfont",
+		//"monitor",
+		//"wm",
+		//"wmtheme",
+		//"theme",
+		//"icons",
+		//"font",
+		//"cursor",
+		"display",
+		//"brightness",
+		//"cpu",
+	        {
+            "type": "cpu",
+            "showPeCoreCount": true,
+            "temp": true
+        },
+        //"cpuusage",
+		//"gpu",
+ {
+            "type": "gpu",
+            "driverSpecific": true,
+            "temp": true
+ },
+        "vulkan",
+		"opengl",
+		"opencl",
+		"board",
+		"disk",
+		"memory",
+		//"swap",
+		//"bios",
+		//"chassis",
+		//"processes",
+		//"packages",
+		//"diskio",
+        //{
+        //    "type": "physicaldisk",
+       //     "temp": true
+       // },
+		//"bluetooth",
+		//"sound",
+		//"camera",
+		//"gamepad",
+		//"battery",
+		//"poweradapter",
+		//{
+		//	"type": "weather",
+		//	"timeout": 1000
+		//},
+
+		//"locale",
+		//"break",
+		//"colors"
+		//"wallpaper",
+		//"player",
+		//"media",
+		//"wifi",
+		//"netio",
+		//"publicip",
+		//"localip",
+		//"users",
+		//"version",
+	]
+}

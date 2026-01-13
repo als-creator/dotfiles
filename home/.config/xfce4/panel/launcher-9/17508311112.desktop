@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name[ru]=Foliate
+Name=Foliate
+GenericName[ru]=Читалка электронных книг
+GenericName=E-Book Viewer
+Comment[ru]=Читайте электронные книги стильно
+Comment=Read e-books in style
+Categories=Office;Viewer;
+MimeType=application/epub+zip;application/x-mobipocket-ebook;application/vnd.amazon.mobi8-ebook;application/x-fictionbook+xml;application/x-zip-compressed-fb2;application/vnd.comicbook+zip;x-scheme-handler/opds;
+Exec=foliate %U
+Icon=com.github.johnfactotum.Foliate
+Terminal=false
+Type=Application
+Keywords[ru]=Книга;Книги;EPUB;Просмотрщик;Читалка;
+Keywords=Ebook;Book;EPUB;Viewer;Reader;
+X-Purism-FormFactor=Workstation;Mobile;
+StartupNotify=true
+X-XFCE-Source=file:///usr/share/applications/com.github.johnfactotum.Foliate.desktop

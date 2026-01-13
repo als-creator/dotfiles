@@ -1,0 +1,195 @@
+{
+	"config_version": "2.3.0",
+	"max_lines": 7,
+	"country": "RU",
+	"data": [
+		{
+			"station": "Cassiopeia Station",
+			"url": "https://stream.cassiopeia-station.ru:1075/stream"
+		},
+		{
+			"station": "Голоса Вселенной",
+			"url": "https://stream.cassiopeia-station.ru:1205/stream"
+		},
+		{
+			"station": "n5MD Radio (Ambient and Experimental)",
+			"url": "https://somafm.com/n5md.pls"
+		},
+		{
+			"station": "Vaporwaves (SomaFM)",
+			"url": "https://somafm.com/vaporwaves.pls"
+		},
+		{
+			"station": "Synphaera Radio (Space Music)",
+			"url": "https://somafm.com/synphaera.pls"
+		},
+		{
+			"station": "Space Station Soma",
+			"url": "http://somafm.com/spacestation.pls"
+		},
+		{
+			"station": "Коммерсантъ FM 93.6",
+			"url": "https://kommersant77.hostingradio.ru:8085/kommersant128.mp3"
+		},
+		{
+			"station": "VestiFM",
+			"url": "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps"
+		},
+		{
+			"station": "SMOOTH JAZZ",
+			"url": "http://jking.cdnstream1.com/b22139_128mp3"
+		},
+		{
+			"station": "Radio Paradise (320k)",
+			"url": "http://stream-uk1.radioparadise.com/aac-320"
+		},
+		{
+			"station": "Арифулин FM",
+			"url": "https://stream.cassiopeia-station.ru:1295/stream"
+		},
+		{
+			"station": "Relax-FM",
+			"url": "http://ic4.101.ru:8000/stream/air/aac/64/200"
+		},
+		{
+			"station": "1.FM - Adore Jazz Radio",
+			"url": "http://strm112.1.fm/ajazz_mobile_mp3"
+		},
+		{
+			"station": "1.FM - Ambient Psychill",
+			"url": "http://strm112.1.fm/ambientpsy_mobile_mp3"
+		},
+		{
+			"station": "1.FM - Bay Smooth Jazz Radio",
+			"url": "http://strm112.1.fm/smoothjazz_mobile_mp3"
+		},
+		{
+			"station": "1.FM - BOM Psytrance Radio",
+			"url": "http://strm112.1.fm/psytrance_mobile_mp3"
+		},
+		{
+			"station": "1.FM - Chillout Lounge Radio",
+			"url": "http://strm112.1.fm/chilloutlounge_mobile_mp3"
+		},
+		{
+			"station": "1.FM Reggae",
+			"url": "http://strm112.1.fm/reggae_mobile_mp3"
+		},
+		{
+			"station": "100 Chill radio",
+			"url": "https://radio1.streamserver.link/radio/8110/100chill-aac"
+		},
+		{
+			"station": "101 Smooth Jazz",
+			"url": "http://jking.cdnstream1.com/b22139_128mp3"
+		},
+		{
+			"station": "101 SMOOTH JAZZ MELLOW MIX",
+			"url": "http://ais-edge89-dal02.cdnstream.com/b48071_128mp3"
+		},
+		{
+			"station": "Серебряный дождь",
+			"url": "http://silverrain.hostingradio.ru/silver128.mp3"
+		},
+		{
+			"station": "Наше радио",
+			"url": "http://nashe.streamr.ru/nashe-128.mp3"
+		},
+		{
+			"station": "LoFi",
+			"url": "https://pub0202.101.ru:8443/stream/pro/aac/64/358"
+		},
+		{
+			"station": "Модель для сборки",
+			"url": "http://mds-station.com:8000/mds"
+		},
+		{
+			"station": "Rock Space Station",
+			"url": "https://stream.cassiopeia-station.ru:1255/stream"
+		},
+		{
+			"station": "Enigmatic 3 - Magnetic Chillout",
+			"url": "http://radio.enigmatic.su:8050/radio"
+		},
+		{
+			"station": "Enigmatic Station 1",
+			"url": "http://listen2.myradio24.com:9000/8226"
+		},
+		{
+			"station": "Enigma",
+			"url": "https://pub0302.101.ru:8443/stream/pro/aac/64/175"
+		},
+		{
+			"station": "Назад в СССР",
+			"url": "https://stream.cassiopeia-station.ru:1115/stream"
+		},
+		{
+			"station": "Instrumental Jazz",
+			"url": "https://jfm1.hostingradio.ru:14536/ijstream.mp3"
+		},
+		{
+			"station": "Classic Vinyl HD",
+			"url": "https://icecast.walmradio.com:8443/classic"
+		},
+		{
+			"station": "Adroit Jazz Underground",
+			"url": "https://icecast.walmradio.com:8443/jazz"
+		},
+		{
+			"station": "SomaFM Groove Salad",
+			"url": "http://ice3.somafm.com/groovesalad-128-mp3"
+		},
+		{
+			"station": "Jazz Radio Blues",
+			"url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
+		},
+		{
+			"station": "Splash Jazz",
+			"url": "https://ais-sa2.cdnstream1.com/2346_128.mp3"
+		},
+		{
+			"station": "Splash Lounge",
+			"url": "https://ais-sa2.cdnstream1.com/2209_128.mp3"
+		},
+		{
+			"station": "Lounge Radio",
+			"url": "http://www.lounge-radio.com/listen128.m3u"
+		},
+		{
+			"station": "Groove Salad",
+			"url": "http://somafm.com/groovesalad.pls"
+		},
+		{
+			"station": "Groove Salad Classic (Early 2000s Ambient)",
+			"url": "https://somafm.com/gsclassic.pls"
+		},
+		{
+			"station": "Illinois Street Lounge",
+			"url": "http://somafm.com/illstreet.pls"
+		},
+		{
+			"station": "Спокойное радио",
+			"url": "https://listen1.myradio24.com/6262"
+		},
+		{
+			"station": "Sonic Universe",
+			"url": "http://somafm.com/sonicuniverse.pls"
+		},
+		{
+			"station": "Drone Zone",
+			"url": "http://somafm.com/dronezone.pls"
+		},
+		{
+			"station": "cliqhop idm",
+			"url": "http://somafm.com/cliqhop.pls"
+		},
+		{
+			"station": "Black Rock FM",
+			"url": "http://somafm.com/brfm.pls"
+		},
+		{
+			"station": "DubStep Beyond",
+			"url": "http://somafm.com/play/dubstep32"
+		}
+	]
+}

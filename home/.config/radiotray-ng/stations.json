@@ -1,0 +1,247 @@
+[
+    {
+
+        "hostname": "http://jking.cdnstream1.com/b22139_128mp3",
+        "name": "101 SMOOTH JAZZ"
+    },
+    {
+
+        "hostname": "http://stream-uk1.radioparadise.com/aac-320",
+        "name": "Radio Paradise (320k)"
+    },
+    {
+
+        "hostname": "http://silverrain.hostingradio.ru/silver128.mp3",
+        "name": "Серебряный дождь"
+    },
+    {
+
+        "hostname": "http://nashe.streamr.ru/nashe-128.mp3",
+        "name": "Наше Радио"
+    },
+    {
+
+        "hostname": "http://ic4.101.ru:8000/stream/air/aac/64/200",
+        "name": "-=- Relax-FM -=-"
+    },
+    {
+
+        "hostname": "https://kommersant77.hostingradio.ru:8085/kommersant128.mp3",
+        "name": "Коммерсантъ FM 93.6"
+    },
+    {
+
+        "hostname": "https://icecast.walmradio.com:8443/classic",
+        "name": "Classic Vinyl HD"
+    },
+    {
+
+        "hostname": "https://icecast.walmradio.com:8443/jazz",
+        "name": "Adroit Jazz Underground"
+    },
+    {
+
+        "hostname": "http://ice3.somafm.com/groovesalad-128-mp3",
+        "name": "SomaFM Groove Salad"
+    },
+    {
+
+        "hostname": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3",
+        "name": "Jazz Radio Blues"
+    },
+    {
+
+        "hostname": "http://lin3.ash.fast-serv.com:6026/stream_96",
+        "name": "Rockabilly-radio.net"
+    },
+    {
+
+        "hostname": "http://18103.live.streamtheworld.com:3690/977_COUNTRY_SC",
+        "name": ".977 Country"
+    },
+    {
+
+        "hostname": "https://0n-relax.radionetz.de/0n-relax.mp3",
+        "name": "- 0 N - Relax on Radio"
+    },
+    {
+
+        "hostname": "https://0n-smoothjazz.radionetz.de/0n-smoothjazz.mp3",
+        "name": "- 0 N - Smooth Jazz on Radio"
+    },
+    {
+
+        "hostname": "https://1a-chillout.radionetz.de/1a-chillout.mp3",
+        "name": "- 1 A - Chillout von 1A Radio"
+    },
+    {
+
+        "hostname": "https://1a-relax.radionetz.de/1a-relax.mp3",
+        "name": "- 1 A - Relax von 1A Radio"
+    },
+    {
+
+        "hostname": "http://19353.live.streamtheworld.com:3690/977_SMOOJAZZ_SC",
+        "name": ".977 Smooth Jazz"
+    },
+    {
+
+        "hostname": "http://mp3.magic-radio.net/320",
+        "name": "@Magic Radio"
+    },
+    {
+
+        "hostname": "https://stream.0nlineradio.com/chillout?ref=radiobrowser",
+        "name": "0nlineradio CHILLOUT"
+    },
+    {
+
+        "hostname": "https://0n-jazz.radionetz.de/0n-jazz.mp3",
+        "name": "- 0 N - Jazz on Radio"
+    },
+    {
+
+        "hostname": "https://0n-jukebox.radionetz.de/0n-jukebox.mp3",
+        "name": "- 0 N - Jukebox on Radio"
+    },
+    {
+
+        "hostname": "https://0n-lounge.radionetz.de/0n-lounge.mp3",
+        "name": "- 0 N - Lounge on Radio"
+    },
+    {
+
+        "hostname": "https://0n-relax.radionetz.de/0n-relax.mp3",
+        "name": "- 0 N - Relax on Radio"
+    },
+    {
+
+        "hostname": "https://ais-sa2.cdnstream1.com/2346_128.mp3",
+        "name": "#1 Splash Jazz"
+    },
+    {
+
+        "hostname": "https://ais-sa2.cdnstream1.com/2209_128.mp3",
+        "name": "#1 Splash Lounge"
+    },
+    {
+
+        "hostname": "https://0n-chillout.radionetz.de/0n-chillout.mp3",
+        "name": "- 0 N - Chillout on Radio"
+    },
+    {
+
+        "hostname": "https://0n-classicrock.radionetz.de/0n-classicrock.mp3",
+        "name": "- 0 N - Classic Rock on Radio"
+    },
+    {
+
+        "hostname": "https://0n-gothic.radionetz.de/0n-gothic.mp3",
+        "name": "- 0 N - Gothic on Radio"
+    },
+    {
+
+        "hostname": "https://0n-jazz.radionetz.de/0n-jazz.mp3",
+        "name": "- 0 N - Jazz on Radio"
+    },
+    {
+
+        "hostname": "https://0n-lounge.radionetz.de/0n-lounge.mp3",
+        "name": "- 0 N - Lounge on Radio"
+    },
+    {
+
+        "hostname": "https://0n-movies.radionetz.de/0n-movies.mp3",
+        "name": "- 0 N - Movies on Radio"
+    },
+    {
+
+        "hostname": "https://0n-relax.radionetz.de/0n-relax.mp3",
+        "name": "- 0 N - Relax on Radio"
+    },
+    {
+
+        "hostname": "https://0n-smoothjazz.radionetz.de/0n-smoothjazz.mp3",
+        "name": "- 0 N - Smooth Jazz on Radio"
+    },
+    {
+
+        "hostname": "https://1a-chillout.radionetz.de/1a-chillout.mp3",
+        "name": "- 1 A - Chillout von 1A Radio"
+    },
+    {
+
+        "hostname": "https://1a-jazz.radionetz.de/1a-jazz.mp3",
+        "name": "- 1 A - Jazz von 1A Radio"
+    },
+    {
+
+        "hostname": "https://1a-relax.radionetz.de/1a-relax.mp3",
+        "name": "- 1 A - Relax von 1A Radio"
+    },
+    {
+
+        "hostname": "http://ic4.101.ru:8000/stream/air/aac/64/200",
+        "name": "-=- Relax-FM -=-"
+    },
+    {
+
+        "hostname": "http://strm112.1.fm/ajazz_mobile_mp3",
+        "name": "1.FM - Adore Jazz Radio"
+    },
+    {
+
+        "hostname": "http://strm112.1.fm/ambientpsy_mobile_mp3",
+        "name": "1.FM - Ambient Psychill"
+    },
+    {
+
+        "hostname": "http://strm112.1.fm/smoothjazz_mobile_mp3",
+        "name": "1.FM - Bay Smooth Jazz Radio"
+    },
+    {
+
+        "hostname": "http://strm112.1.fm/psytrance_mobile_mp3",
+        "name": "1.FM - BOM Psytrance Radio"
+    },
+    {
+
+        "hostname": "http://strm112.1.fm/chilloutlounge_mobile_mp3",
+        "name": "1.FM - Chillout Lounge Radio"
+    },
+    {
+
+        "hostname": "http://strm112.1.fm/reggae_mobile_mp3",
+        "name": "1.FM Reggae"
+    },
+    {
+
+        "hostname": "https://radio1.streamserver.link/radio/8110/100chill-aac",
+        "name": "100 Chill radio"
+    },
+    {
+
+        "hostname": "https://cast1.torontocast.com:4640/stream",
+        "name": "100 GREATEST JAZZ LOUNGE BAR"
+    },
+    {
+
+        "hostname": "https://101.ru:8143/?date=201405&hash=1979c180fe0ba452a76f00d8a0f0c452&start=209",
+        "name": "101 ru enigmatic"
+    },
+    {
+
+        "hostname": "http://streamingp.shoutcast.com/JamendoLounge",
+        "name": "101 Smooth Jazz"
+    },
+    {
+
+        "hostname": "http://jking.cdnstream1.com/b22139_128mp3",
+        "name": "101 SMOOTH JAZZ"
+    },
+    {
+
+        "hostname": "http://ais-edge89-dal02.cdnstream.com/b48071_128mp3",
+        "name": "101 SMOOTH JAZZ MELLOW MIX"
+    }
+]
