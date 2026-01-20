@@ -4,6 +4,13 @@
 configs:
 - level: 0
   monitors:
+  - id: "f60a61ec6f6cc993097c06851ad1aca71d624a9c"
+    display_name: "PNP(XXX) MT-E27AF1M (HDMI-A-0)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1920
+      height: 1080
   - id: "a9830d6b7a223e9847e469c7a8a5a762700bcacc"
     display_name: "ViewSonic Corporation VX2363 Series U0E142801494 (DVI-D-0)"
     geometry:
@@ -204,8 +211,8 @@ configs:
       col: 0
       last_seen: 1752605196721827
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/steam.desktop":
-      row: 1
-      col: 2
+      row: 4
+      col: 0
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/zapret":
       row: 2
       col: 2
@@ -264,6 +271,9 @@ configs:
       row: 2
       col: 0
       last_seen: 1751000285438150
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/python-error.png":
+      row: 5
+      col: 0
     "7A6DC87C75DAC0CB":
       row: 2
       col: 0
@@ -338,8 +348,8 @@ configs:
       col: 1
       last_seen: 1754903098403978
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/arch_update_setup.log":
-      row: 8
-      col: 1
+      row: 5
+      col: 0
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/d1efdf10-9563-46a3-9539-5fb9b295decf.jpeg":
       row: 3
       col: 2
@@ -354,22 +364,22 @@ configs:
       row: 1
       col: 4
     "F1C0-7621":
-      row: 2
-      col: 2
-      last_seen: 1756036033477745
+      row: 5
+      col: 0
+      last_seen: 1768851644158701
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/vscode settings":
       row: 4
       col: 2
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/IMG_20250212_085304.jpg":
       row: 1
       col: 2
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/autoconf_asf.sh":
+      row: 1
+      col: 5
     "35458eae-ed99-409c-aae0-f2ffc6fe5db8":
       row: 2
       col: 0
       last_seen: 1751433928012038
-    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/autoconf_asf.sh":
-      row: 1
-      col: 5
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/.\u0434\u043E\u043C\u0435\u043D\u044B .kate-swp":
       row: 8
       col: 1

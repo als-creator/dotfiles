@@ -5,49 +5,41 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="gigaide.desktop"/>
-        <value type="string" value="org.wesnoth.Wesnoth.desktop"/>
+        <value type="string" value="yandex-browser.desktop"/>
+        <value type="string" value="vivaldi-stable.desktop"/>
+        <value type="string" value="radiotray-ng.desktop"/>
         <value type="string" value="vcmiclient.desktop"/>
         <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="vcmieditor.desktop"/>
+        <value type="string" value="brave-browser.desktop"/>
+        <value type="string" value="remote-assistant.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="rudesktop.desktop"/>
         <value type="string" value="guake.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="vcmieditor.desktop"/>
         <value type="string" value="org.kde.kdenlive.desktop"/>
-        <value type="string" value="figma-linux.desktop"/>
         <value type="string" value="virtualbox.desktop"/>
-        <value type="string" value="samrewritten.desktop"/>
         <value type="string" value="org.pulseaudio.pavucontrol.desktop"/>
-        <value type="string" value="localsend.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
         <value type="string" value="org.kde.konsole.desktop"/>
         <value type="string" value="xterm.desktop"/>
         <value type="string" value="uxterm.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="claws-mail.desktop"/>
-        <value type="string" value="heroic.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
         <value type="string" value="QDiskInfo.desktop"/>
-        <value type="string" value="megasync.desktop"/>
         <value type="string" value="conky.desktop"/>
-        <value type="string" value="simplescreenrecorder.desktop"/>
         <value type="string" value="thunar.desktop"/>
         <value type="string" value="ranger.desktop"/>
         <value type="string" value="designer.desktop"/>
-        <value type="string" value="qpdfview.desktop"/>
-        <value type="string" value="qimgv.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-accessibility-settings.desktop"/>
         <value type="string" value="xfce4-clipman.desktop"/>
         <value type="string" value="xfce4-clipman-settings.desktop"/>
-        <value type="string" value="org.zealdocs.zeal.desktop"/>
         <value type="string" value="engrampa.desktop"/>
         <value type="string" value="putty.desktop"/>
-        <value type="string" value="radiotray-ng.desktop"/>
         <value type="string" value="rtng-bookmark-editor.desktop"/>
-        <value type="string" value="yandex-browser.desktop"/>
-        <value type="string" value="io.element.Element.desktop"/>
         <value type="string" value="lstopo.desktop"/>
         <value type="string" value="thunar-volman-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
@@ -63,30 +55,25 @@
         <value type="string" value="org.gnome.baobab.desktop"/>
         <value type="string" value="galculator.desktop"/>
         <value type="string" value="filezilla.desktop"/>
-        <value type="string" value="figma-linux.desktop"/>
-        <value type="string" value="cn.bosyun.pixso.desktop"/>
         <value type="string" value="pyradio.desktop"/>
         <value type="string" value="putty.desktop"/>
         <value type="string" value="org.wireshark.Wireshark.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="org.kde.kdenlive.desktop"/>
         <value type="string" value="fr.handbrake.ghb.desktop"/>
-        <value type="string" value="simplescreenrecorder.desktop"/>
         <value type="string" value="virtualbox.desktop"/>
         <value type="string" value="ranger.desktop"/>
-        <value type="string" value="localsend.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
-        <value type="string" value="samrewritten.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="appimagekit_12c5eda7371d2b6764d2a82cc41d3fa1-Perplexity_AI.desktop"/>
-        <value type="string" value="org.zealdocs.zeal.desktop"/>
-        <value type="string" value="heroic.desktop"/>
-        <value type="string" value="claws-mail.desktop"/>
-        <value type="string" value="gigaide.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="org.wesnoth.Wesnoth.desktop"/>
         <value type="string" value="vcmilauncher.desktop"/>
         <value type="string" value="vcmiclient.desktop"/>
+        <value type="string" value="rawtherapee.desktop"/>
+        <value type="string" value="rudesktop.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="remote-assistant.desktop"/>
+        <value type="string" value="vivaldi-stable.desktop"/>
+        <value type="string" value="brave-browser.desktop"/>
+        <value type="string" value="yandex-browser.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -198,10 +185,10 @@
       <property name="display-scale" type="uint" value="50"/>
       <property name="display-tooltip-icon" type="bool" value="true"/>
       <property name="display-type" type="uint" value="0"/>
-      <property name="group-policy" type="uint" value="2"/>
+      <property name="group-policy" type="uint" value="1"/>
       <property name="show-notifications" type="bool" value="false"/>
       <property name="offset" type="string" value="+06:00"/>
-      <property name="layout1-defaults" type="string" value="&quot;guake&quot;, &quot;Guake&quot;, &quot;code-oss&quot;, &quot;code-oss&quot;"/>
+      <property name="layout1-defaults" type="string" value="Guake, code, xfce4-terminal, kitty, putty, kate, Seam"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="false"/>
@@ -264,6 +251,7 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="app-00007FF1CE9958F0"/>
         <value type="string" value="8MViWl3r6m"/>
         <value type="string" value="XFiyEjzeUq"/>
         <value type="string" value="app-00007F06E77C08F0"/>
@@ -350,7 +338,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;de.haeckerfelix.Shortwave;Harmony Music Notification;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.kde.kdeconnect.app;smplayer;Яндекс Браузер"/>
+      <property name="known-players" type="string" value=";appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;Brave;de.haeckerfelix.Shortwave;Harmony Music Notification;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.kde.kdeconnect.app;smplayer;Vivaldi;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
@@ -375,7 +363,7 @@
     </property>
     <property name="plugin-13" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17530854491.desktop"/>
+        <value type="string" value="17689190041.desktop"/>
       </property>
     </property>
   </property>
@@ -396,8 +384,8 @@
         <value type="int" value="9"/>
         <value type="int" value="45"/>
         <value type="int" value="49"/>
-        <value type="int" value="1"/>
         <value type="int" value="13"/>
+        <value type="int" value="1"/>
         <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>

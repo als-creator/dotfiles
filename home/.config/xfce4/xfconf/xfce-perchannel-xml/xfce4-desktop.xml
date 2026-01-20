@@ -76,6 +76,12 @@
           <property name="last-image" type="string" value="/home/als/.conky/Green Apple Desktop/wallpaper.jpg"/>
         </property>
       </property>
+      <property name="monitorHDMI-A-0" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/run/media/als/Data/Рисунки/Обои/dark/Минимальный фон (1920x1080).jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+        </property>
+      </property>
     </property>
   </property>
   <property name="last" type="empty">

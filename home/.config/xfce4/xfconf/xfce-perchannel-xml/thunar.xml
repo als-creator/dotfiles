@@ -21,14 +21,11 @@
   <property name="last-restore-tabs" type="bool" value="true"/>
   <property name="misc-show-delete-action" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,145,50,50,359,50,50,967,50,50,81,50,197"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,145,50,50,492,50,50,886,50,50,81,50,145"/>
   <property name="last-tabs-left" type="array">
-    <value type="string" value="file:///run/media/als/Work/Distrib"/>
-    <value type="string" value="file:///home/als"/>
-    <value type="string" value="file:///run/media/als/Work/Distrib/Linux/%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D0%B8%20%D1%81%D0%BE%D1%84%D1%82"/>
-    <value type="string" value="file:///run/media/als/Data/%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B/Krutaya.peremena.S02.2025.WEB-DLRip.(AVC).ExKinoRay"/>
+    <value type="string" value="file:///run/media/als/Data/%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B/Yellowstone/2"/>
   </property>
-  <property name="last-focused-tab-left" type="int" value="3"/>
+  <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
   <property name="misc-exec-shell-scripts-by-default" type="string" value="THUNAR_EXECUTE_SHELL_SCRIPT_ASK"/>

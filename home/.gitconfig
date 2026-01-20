@@ -1,10 +1,10 @@
 [user]
-name = user
-email = mail@gmail.com
+name = als
+email = mrstuzer@gmail.com
 [init]
 defaultBranch = main
 [core]
-editor = vim --wait
+editor = kate --wait
 [color]
 ui = auto
 [credential]
