@@ -7,7 +7,7 @@ TEMP_DIR="$(mktemp -d)"
 HOME_DIR="$HOME"
 
 echo "Загрузка dotfiles из $REPO_URL..."
-git clone --depth=1 "$REPO_URL" "$TEMP_DIR" >/dev/null 2>&1
+git clone "$REPO_URL" "$TEMP_DIR" >/dev/null 2>&1
 
 if [ ! -d "$TEMP_DIR/home" ]; then
   echo "Папка 'home' не найдена в репозитории!"
