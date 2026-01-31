@@ -19,7 +19,7 @@
 ## Automatically indent a newly created line to the same number of
 ## tabs and/or spaces as the preceding line -- or as the next line
 ## if the preceding line is the beginning of a paragraph.
-# set autoindent
+set autoindent
 
 ## Back up files to the current filename plus a tilde.
 # set backup
@@ -36,10 +36,10 @@
 ## The characters treated as closing brackets when justifying paragraphs.
 ## This may not include any blank characters.  Only closing punctuation,
 ## optionally followed by these closing brackets, can end sentences.
-# set brackets ""')>]}"
+set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
-# set breaklonglines
+set breaklonglines
 
 ## Do case-sensitive searches by default.
 # set casesensitive
@@ -62,10 +62,10 @@
 # set historylog
 
 ## Display a "scrollbar" on the righthand side of the edit window.
-# set indicator
+set indicator
 
 ## Scroll the buffer contents per half-screen instead of per line.
-# set jumpyscrolling
+set jumpyscrolling
 
 ## Display line numbers to the left (and any anchors in the margin).
 set linenumbers
@@ -76,16 +76,16 @@ set linenumbers
 # set locking
 
 ## Fall back to slow libmagic to try and determine an applicable syntax.
-# set magic
+set magic
 
 ## The opening and closing brackets that are found by a matching-bracket
 ## search.  This may not contain blank characters.  The opening brackets
 ## must come before the closing ones, and they must be in the same order.
-# set matchbrackets "(<[{)>]}"
+set matchbrackets "(<[{)>]}"
 
 ## Suppress the title bar and show the filename plus a cursor-position
 ## percentage in the space of the status bar.
-# set minibar
+set minibar
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a
@@ -95,7 +95,7 @@ set linenumbers
 
 ## Switch on multiple file buffers (inserting a file will put it into
 ## a separate buffer).
-# set multibuffer
+set multibuffer
 
 ## Don't convert files from DOS/Mac format.
 # set noconvert
@@ -138,10 +138,10 @@ set nonewlines
 
 ## Do regular-expression searches by default.
 ## Regular expressions are of the extended type (ERE).
-# set regexp
+set regexp
 
 ## Save a changed buffer automatically on exit; don't prompt.
-# set saveonexit
+set saveonexit
 ## (The old form of this option, 'set tempfile', is deprecated.)
 
 ## Put the cursor on the highlighted item in the file browser, and
@@ -157,7 +157,7 @@ set nonewlines
 # set smarthome
 
 ## Spread overlong lines over multiple screen lines.
-# set softwrap
+set softwrap
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not have a default value.
@@ -165,7 +165,7 @@ set nonewlines
 
 ## Use the end of the title bar for some state flags: I = auto-indenting,
 ## M = mark, L = hard-wrapping long lines, R = recording, S = soft-wrapping.
-# set stateflags
+set stateflags
 
 ## Use this tab size instead of the default; it must be greater than 0.
 set tabsize 4
@@ -320,4 +320,4 @@ include "/usr/share/nano/*.nanorc"
 #bind M-R redo main
 #bind ^Z undo main
 #bind ^Y redo main
-#set multibuffer
+set multibuffer

@@ -7,6 +7,24 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "file_types": {
+    "django-txt": [
+      "**/templates/**/*"
+    ],
+    "html": [
+      "**/*.html"
+    ],
+    "django-html": [
+      "**/templates/**/*.html"
+    ],
+    "pip-requirements": [
+      "**/requirements{/**,*}.{txt,in}"
+    ]
+  },
   "agent": {
     "default_model": {
       "provider": "deepseek",
@@ -15,8 +33,8 @@
     "model_parameters": []
   },
   "terminal": {
-    "font_size": 16.0,
-    "font_family": "JetBrainsMono Nerd Font Mono",
+    "font_size": 12.0,
+    "font_family": "JetBrainsMonoNL Nerd Font Mono",
     "cursor_shape": "bar",
     "copy_on_select": true
   },
@@ -34,7 +52,7 @@
   "gutter": {
     "line_numbers": true
   },
-  "hover_popover_delay": 1200,
+  "hover_popover_delay": 200,
   "autosave": "on_focus_change",
   "buffer_font_family": "Noto Sans Mono",
   "colorize_brackets": true,
@@ -57,8 +75,8 @@
   "theme": {
     "mode": "dark",
     "light": "Ayu Dark",
-    "dark": "One Dark Pro"
+    "dark": "Ayu Dark"
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 18.0
+  "ui_font_size": 14,
+  "buffer_font_size": 14.0
 }

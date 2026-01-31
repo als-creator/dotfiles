@@ -49,7 +49,7 @@
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/als/.conky/Green Apple Desktop/wallpaper.jpg"/>
         </property>
-        <property name="image-path" type="string" value="/run/media/als/Data/Рисунки/Обои/dark/Темная туманность (1920x1080).jpg"/>
+        <property name="image-path" type="string" value="/run/media/als/Data/Рисунки/Обои/dark/Code is Poetry (1920x1080).jpg"/>
         <property name="image-show" type="bool" value="true"/>
         <property name="image-style" type="int" value="5"/>
       </property>
@@ -78,8 +78,9 @@
       </property>
       <property name="monitorHDMI-A-0" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/run/media/als/Data/Рисунки/Обои/dark/Минимальный фон (1920x1080).jpg"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="last-image" type="string" value="/home/als/.config/Code is Poetry (1920x1080).jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
+          <property name="image-style" type="int" value="5"/>
         </property>
       </property>
     </property>

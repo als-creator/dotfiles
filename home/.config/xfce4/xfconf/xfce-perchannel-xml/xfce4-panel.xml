@@ -5,33 +5,23 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="yandex-browser.desktop"/>
-        <value type="string" value="vivaldi-stable.desktop"/>
-        <value type="string" value="radiotray-ng.desktop"/>
-        <value type="string" value="vcmiclient.desktop"/>
-        <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="brave-browser.desktop"/>
-        <value type="string" value="remote-assistant.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="rudesktop.desktop"/>
-        <value type="string" value="guake.desktop"/>
-        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="galculator.desktop"/>
+        <value type="string" value="ranger.desktop"/>
         <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="vcmieditor.desktop"/>
+        <value type="string" value="AmneziaVPN.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="rawtherapee.desktop"/>
+        <value type="string" value="obsidian.desktop"/>
+        <value type="string" value="guake.desktop"/>
         <value type="string" value="org.kde.kdenlive.desktop"/>
         <value type="string" value="virtualbox.desktop"/>
         <value type="string" value="org.pulseaudio.pavucontrol.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
         <value type="string" value="org.kde.konsole.desktop"/>
-        <value type="string" value="xterm.desktop"/>
-        <value type="string" value="uxterm.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
-        <value type="string" value="QDiskInfo.desktop"/>
-        <value type="string" value="conky.desktop"/>
         <value type="string" value="thunar.desktop"/>
-        <value type="string" value="ranger.desktop"/>
         <value type="string" value="designer.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-accessibility-settings.desktop"/>
@@ -39,7 +29,6 @@
         <value type="string" value="xfce4-clipman-settings.desktop"/>
         <value type="string" value="engrampa.desktop"/>
         <value type="string" value="putty.desktop"/>
-        <value type="string" value="rtng-bookmark-editor.desktop"/>
         <value type="string" value="lstopo.desktop"/>
         <value type="string" value="thunar-volman-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
@@ -50,12 +39,10 @@
         <value type="string" value="bssh.desktop"/>
         <value type="string" value="bvnc.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
-        <value type="string" value="QDiskInfo.desktop"/>
         <value type="string" value="kdiskmark.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
         <value type="string" value="galculator.desktop"/>
         <value type="string" value="filezilla.desktop"/>
-        <value type="string" value="pyradio.desktop"/>
         <value type="string" value="putty.desktop"/>
         <value type="string" value="org.wireshark.Wireshark.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
@@ -65,15 +52,10 @@
         <value type="string" value="ranger.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="vcmiclient.desktop"/>
         <value type="string" value="rawtherapee.desktop"/>
-        <value type="string" value="rudesktop.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="remote-assistant.desktop"/>
-        <value type="string" value="vivaldi-stable.desktop"/>
-        <value type="string" value="brave-browser.desktop"/>
-        <value type="string" value="yandex-browser.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="AmneziaVPN.desktop"/>
+        <value type="string" value="anydesk.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -188,7 +170,7 @@
       <property name="group-policy" type="uint" value="1"/>
       <property name="show-notifications" type="bool" value="false"/>
       <property name="offset" type="string" value="+06:00"/>
-      <property name="layout1-defaults" type="string" value="Guake, code, xfce4-terminal, kitty, putty, kate, Seam"/>
+      <property name="layout1-defaults" type="string" value="Guake,code-oss,obs,Xfce4-terminal,kitty,putty,kate,Steam,steamwebhelper"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="false"/>
