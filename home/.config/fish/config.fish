@@ -6,7 +6,7 @@ fastfetch
 set fish_greeting
 set -gx EDITOR micro
 set -gx VISUAL micro
-alias update="sudo pacman -Syyu"
+alias steamguard="/run/media/als/Work/Distrib/Linux/AppImage/steamguard"
 alias mirror="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist"
 alias upgrade="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
