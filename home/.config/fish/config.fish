@@ -6,18 +6,12 @@ fastfetch
 set fish_greeting
 set -gx EDITOR micro
 set -gx VISUAL micro
-alias pac="sudo pacman -S"
-alias pacs="sudo pacman -Ss"
-alias pacu="sudo pacman -Syy"
 alias update="sudo pacman -Syyu"
-alias mirrors="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist"
+alias mirror="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist"
 alias upgrade="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
-alias clean="sudo pacman -Scc"
-alias remove="sudo pacman -R"
+alias clean="sudo pacman -Sc"
 alias info="sudo pacman -Qi"
-alias aur="yay -S"
-alias aurno="yay -S --noconfirm"
 alias ga="git add"
 alias gc="git commit"
 alias gcm="git commit -m"
