@@ -8,12 +8,12 @@
 		"title",
 		"separator",
 		//"datetime",
-		{
-			"type": "os",
-			"format": "Arch Linux ({12})"
-		},
+		//{
+			//"type": "os",
+			//"format": "Arch Linux ({12})"
+		//},
 		//"host",
-		//"os",
+		"os",
 		"kernel",
 		//{
 		//		"type": "packages",

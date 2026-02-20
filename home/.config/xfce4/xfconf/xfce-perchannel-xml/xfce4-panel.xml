@@ -5,39 +5,34 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="galculator.desktop"/>
-        <value type="string" value="ranger.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="AmneziaVPN.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="rawtherapee.desktop"/>
-        <value type="string" value="obsidian.desktop"/>
-        <value type="string" value="guake.desktop"/>
+        <value type="string" value="steam.desktop"/>
+        <value type="string" value="vcmilauncher.desktop"/>
+        <value type="string" value="assistant.desktop"/>
+        <value type="string" value="anydesk.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="rudesktop.desktop"/>
+        <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="org.kde.kdenlive.desktop"/>
         <value type="string" value="virtualbox.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="ranger.desktop"/>
+        <value type="string" value="guake.desktop"/>
+        <value type="string" value="galculator.desktop"/>
         <value type="string" value="org.pulseaudio.pavucontrol.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
-        <value type="string" value="org.kde.konsole.desktop"/>
-        <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
         <value type="string" value="thunar.desktop"/>
-        <value type="string" value="designer.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-accessibility-settings.desktop"/>
-        <value type="string" value="xfce4-clipman.desktop"/>
-        <value type="string" value="xfce4-clipman-settings.desktop"/>
-        <value type="string" value="engrampa.desktop"/>
         <value type="string" value="putty.desktop"/>
-        <value type="string" value="lstopo.desktop"/>
         <value type="string" value="thunar-volman-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
       </property>
-      <property name="button-icon" type="string" value="archlinux-logo"/>
+      <property name="button-icon" type="string" value="8tracks"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="favorites" type="array">
-        <value type="string" value="bssh.desktop"/>
-        <value type="string" value="bvnc.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="kdiskmark.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
@@ -52,10 +47,15 @@
         <value type="string" value="ranger.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="rawtherapee.desktop"/>
         <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="AmneziaVPN.desktop"/>
+        <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="rudesktop.desktop"/>
         <value type="string" value="anydesk.desktop"/>
+        <value type="string" value="assistant.desktop"/>
+        <value type="string" value="localsend_app.desktop"/>
+        <value type="string" value="youtube-music.desktop"/>
+        <value type="string" value="simplescreenrecorder.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -328,24 +328,14 @@
     <property name="plugin-18" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17511045461.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-11" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17523938241.desktop"/>
-      </property>
-    </property>
     <property name="plugin-7" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17526592071.desktop"/>
+        <value type="string" value="17712184691.desktop"/>
       </property>
     </property>
-    <property name="plugin-13" type="string" value="launcher">
+    <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17689190041.desktop"/>
+        <value type="string" value="17712184912.desktop"/>
       </property>
     </property>
   </property>
@@ -361,13 +351,11 @@
       <property name="nrows" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="26"/>
-        <value type="int" value="7"/>
-        <value type="int" value="11"/>
-        <value type="int" value="9"/>
         <value type="int" value="45"/>
+        <value type="int" value="7"/>
         <value type="int" value="49"/>
-        <value type="int" value="13"/>
         <value type="int" value="1"/>
+        <value type="int" value="9"/>
         <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>

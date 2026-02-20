@@ -14,25 +14,14 @@ if [ ! -d "$TEMP_DIR/home" ]; then
   exit 1
 fi
 
-echo "Копирование файлов в $HOME_DIR..."
+echo "Копирование файлов в $HOME_DIR с сохранением структуры..."
 
-# Проверяем наличие файлов и папок в директории home
-if find "$TEMP_DIR/home" -mindepth 1 -print -quit | grep . > /dev/null; then
-  # Копируем обычные файлы и папки
-  cp -rfv "$TEMP_DIR/home/*" "$HOME_DIR/"
-
-  # Обрабатываем скрытые файлы и папки отдельно
-  for hidden_file in "$TEMP_DIR/home"/.[^.]@(?:.+); do
-    if [[ -e "$hidden_file" ]]; then
-      cp -rfv "$hidden_file" "$HOME_DIR/"
-    fi
-  done
-else
-  echo "Ошибка: Директория 'home' в репозитории пустая."
-  exit 1
-fi
+# Копируем содержимое home/ в $HOME (включая .config и скрытые файлы)
+# -a = архивный режим (сохраняет права, владельца, timestamps, символические ссылки)
+cp -a "$TEMP_DIR/home/." "$HOME_DIR/"
 
 echo "Очистка временных файлов..."
 rm -rf "$TEMP_DIR"
 
-echo "Dotfiles успешно установлены в $HOME_DIR!"
+echo "✅ Dotfiles успешно установлены в $HOME_DIR!"
+ls -la "$HOME_DIR" | head -15  # Покажем что скопировалось

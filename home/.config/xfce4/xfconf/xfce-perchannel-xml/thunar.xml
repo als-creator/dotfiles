@@ -21,12 +21,11 @@
   <property name="last-restore-tabs" type="bool" value="true"/>
   <property name="misc-show-delete-action" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,145,50,50,131,50,50,1320,50,50,81,50,72"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,147,50,50,335,50,50,1041,50,50,81,50,145"/>
   <property name="last-tabs-left" type="array">
-    <value type="string" value="file:///home/als/.config/fish"/>
-    <value type="string" value="file:///home/als/.ssh"/>
+    <value type="string" value="file:///run/media/als/Work/Distrib/Linux/Bash_scripts"/>
   </property>
-  <property name="last-focused-tab-left" type="int" value="1"/>
+  <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
   <property name="misc-exec-shell-scripts-by-default" type="string" value="THUNAR_EXECUTE_SHELL_SCRIPT_ASK"/>

@@ -1,7 +1,7 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=Profile 1.profile
+DefaultProfile=Профиль 1.profile
 
 [Favorite Profiles]
 Favorites=
@@ -39,6 +39,9 @@ ToolButtonStyle=IconOnly
 [MainWindow][Toolbar sessionToolbar]
 IconSize=16
 ToolButtonStyle=IconOnly
+
+[MemorySettings]
+EnableMemoryMonitoring=true
 
 [Notification Messages]
 CloseAllTabs=true
