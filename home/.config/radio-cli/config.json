@@ -7,9 +7,13 @@
 			"station": "Cassiopeia Station",
 			"url": "https://stream.cassiopeia-station.ru:1075/stream"
 		},
+				{
+			"station": "SCRadio",
+			"url": "https://radio.k0nus.ru:8443/scradio"
+		},
 		{
 			"station": "Голоса Вселенной",
-			"url": "https://stream.cassiopeia-station.ru:1205/stream"
+			"url": "http://[300:7edb:435a:c68f::5c12]:8000/scradio"
 		},
 		{
 			"station": "n5MD Radio (Ambient and Experimental)",
