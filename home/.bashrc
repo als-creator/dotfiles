@@ -44,4 +44,6 @@ alias bashrc="nano ~/.bashrc"
 alias zshrc="nano ~/.zshrc"
 # GRUB
 alias editgrub="sudo nano /etc/default/grub"
-alias updgrub="sudo update-grub"
+alias updategrub="sudo update-grub"
+alias grubupdate="sudo update-grub"
+eval "$(fzf --bash)"

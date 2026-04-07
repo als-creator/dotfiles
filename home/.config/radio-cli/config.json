@@ -3,13 +3,13 @@
 	"max_lines": 7,
 	"country": "RU",
 	"data": [
-		{
-			"station": "Cassiopeia Station",
-			"url": "https://stream.cassiopeia-station.ru:1075/stream"
-		},
 				{
 			"station": "SCRadio",
 			"url": "https://radio.k0nus.ru:8443/scradio"
+		},
+		{
+			"station": "Cassiopeia Station",
+			"url": "https://stream.cassiopeia-station.ru:1075/stream"
 		},
 		{
 			"station": "Голоса Вселенной",

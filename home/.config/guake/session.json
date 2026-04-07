@@ -8,7 +8,7 @@
                     "panes": [
                         {
                             "type": "term",
-                            "directory": "/home/als",
+                            "directory": "/home/$USER",
                             "custom_colors": {
                                 "fg_color": null,
                                 "bg_color": null,
@@ -27,7 +27,7 @@
                     "panes": [
                         {
                             "type": "term",
-                            "directory": "/home/als",
+                            "directory": "/home/$USER",
                             "custom_colors": {
                                 "fg_color": null,
                                 "bg_color": null,
@@ -46,7 +46,7 @@
                     "panes": [
                         {
                             "type": "term",
-                            "directory": "/home/als",
+                            "directory": "/home/$USER",
                             "custom_colors": {
                                 "fg_color": null,
                                 "bg_color": null,
@@ -65,7 +65,7 @@
                     "panes": [
                         {
                             "type": "term",
-                            "directory": "/home/als",
+                            "directory": "/home/$USER",
                             "custom_colors": {
                                 "fg_color": null,
                                 "bg_color": null,

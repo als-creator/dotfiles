@@ -2,13 +2,13 @@
 	{
 		"group": "root",
 		"stations": [
-			{
-				"name": "Cassiopeia Station",
-				"url": "https://stream.cassiopeia-station.ru:1075/stream"
-			},
 						{
 				"name": "SCRAdio",
 				"url": "https://radio.k0nus.ru:8443/scradio"
+			},
+			{
+				"name": "Cassiopeia Station",
+				"url": "https://stream.cassiopeia-station.ru:1075/stream"
 			},
 			{
 				"name": "Голоса Вселенной",
