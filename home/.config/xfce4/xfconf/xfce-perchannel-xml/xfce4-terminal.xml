@@ -8,7 +8,7 @@
   <property name="dropdown-width" type="uint" value="60"/>
   <property name="dropdown-height" type="uint" value="60"/>
   <property name="dropdown-always-show-tabs" type="bool" value="false"/>
-  <property name="font-name" type="string" value="Fira Mono Medium 14"/>
+  <property name="font-name" type="string" value="Terminus Bold 14"/>
   <property name="font-use-system" type="bool" value="false"/>
   <property name="misc-always-show-tabs" type="bool" value="false"/>
   <property name="misc-bell" type="bool" value="false"/>

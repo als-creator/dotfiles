@@ -5,32 +5,77 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="steam.desktop"/>
+        <value type="string" value="helix.desktop"/>
+        <value type="string" value="alterator-notes-license.desktop"/>
+        <value type="string" value="mysql-workbench.desktop"/>
+        <value type="string" value="deadbeef.desktop"/>
+        <value type="string" value="rygel-preferences.desktop"/>
+        <value type="string" value="audacious.desktop"/>
+        <value type="string" value="org.gnome.Software.desktop"/>
         <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="assistant.desktop"/>
-        <value type="string" value="anydesk.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="rudesktop.desktop"/>
+        <value type="string" value="grub-customizer.desktop"/>
+        <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="QDiskInfo.desktop"/>
+        <value type="string" value="xsane.desktop"/>
+        <value type="string" value="gimagereader-gtk.desktop"/>
+        <value type="string" value="org.gnome.gThumb.desktop"/>
+        <value type="string" value="qimgv.desktop"/>
+        <value type="string" value="org.xfce.ristretto.desktop"/>
+        <value type="string" value="simplescreenrecorder.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="Ri-li.desktop"/>
+        <value type="string" value="org.gnome.Klotski.desktop"/>
+        <value type="string" value="chromium.desktop"/>
+        <value type="string" value="brave-browser.desktop"/>
+        <value type="string" value="pidgin.desktop"/>
+        <value type="string" value="lynx.desktop"/>
+        <value type="string" value="ru.launcher.StartWine.desktop"/>
+        <value type="string" value="guake-prefs.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
-        <value type="string" value="org.kde.kdenlive.desktop"/>
-        <value type="string" value="virtualbox.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="ranger.desktop"/>
-        <value type="string" value="guake.desktop"/>
-        <value type="string" value="galculator.desktop"/>
-        <value type="string" value="org.pulseaudio.pavucontrol.desktop"/>
-        <value type="string" value="org.kde.kdeconnect.app.desktop"/>
-        <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
-        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="kdiskmark.desktop"/>
+        <value type="string" value="localsend_app.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="conky.desktop"/>
+        <value type="string" value="appinstall.desktop"/>
+        <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
+        <value type="string" value="v2rayN.desktop"/>
+        <value type="string" value="radiotray-ng.desktop"/>
+        <value type="string" value="org.kde.neochat.desktop"/>
+        <value type="string" value="nheko.desktop"/>
+        <value type="string" value="libreoffice-startcenter.desktop"/>
+        <value type="string" value="indexhtml.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
-        <value type="string" value="xfce4-accessibility-settings.desktop"/>
+        <value type="string" value="vlc.desktop"/>
+        <value type="string" value="org.kde.konsole.desktop"/>
+        <value type="string" value="guake.desktop"/>
+        <value type="string" value="org.fontforge.FontForge.desktop"/>
+        <value type="string" value="org.gnome.Mines.desktop"/>
+        <value type="string" value="sol.desktop"/>
+        <value type="string" value="org.gnome.Tetravex.desktop"/>
+        <value type="string" value="org.gnome.Mahjongg.desktop"/>
+        <value type="string" value="xfce4-screenshooter.desktop"/>
         <value type="string" value="putty.desktop"/>
+        <value type="string" value="ranger.desktop"/>
+        <value type="string" value="virtualbox.desktop"/>
+        <value type="string" value="galculator.desktop"/>
+        <value type="string" value="audacity.desktop"/>
+        <value type="string" value="libreoffice-base.desktop"/>
+        <value type="string" value="AmneziaVPN.desktop"/>
+        <value type="string" value="org.gnome.seahorse.Application.desktop"/>
+        <value type="string" value="it.mijorus.gearlever.desktop"/>
+        <value type="string" value="org.kde.kdeconnect.app.desktop"/>
+        <value type="string" value="pokerth.desktop"/>
+        <value type="string" value="obsidian.desktop"/>
+        <value type="string" value="codium.desktop"/>
+        <value type="string" value="steam.desktop"/>
+        <value type="string" value="org.kde.kdenlive.desktop"/>
+        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="xfce4-accessibility-settings.desktop"/>
         <value type="string" value="thunar-volman-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
       </property>
-      <property name="button-icon" type="string" value="8tracks"/>
+      <property name="button-icon" type="string" value="arcolinux-hello"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="favorites" type="array">
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
@@ -47,15 +92,35 @@
         <value type="string" value="ranger.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="com.obsproject.Studio.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="rudesktop.desktop"/>
-        <value type="string" value="anydesk.desktop"/>
-        <value type="string" value="assistant.desktop"/>
-        <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="youtube-music.desktop"/>
         <value type="string" value="simplescreenrecorder.desktop"/>
+        <value type="string" value="obsidian.desktop"/>
+        <value type="string" value="AmneziaVPN.desktop"/>
+        <value type="string" value="vcmiclient.desktop"/>
+        <value type="string" value="vcmilauncher.desktop"/>
+        <value type="string" value="org.gnome.Chess.desktop"/>
+        <value type="string" value="myconnector.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="appinstall.desktop"/>
+        <value type="string" value="audacious.desktop"/>
+        <value type="string" value="audacity.desktop"/>
+        <value type="string" value="chromium.desktop"/>
+        <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="pokerth.desktop"/>
+        <value type="string" value="Ri-li.desktop"/>
+        <value type="string" value="org.gnome.Klotski.desktop"/>
+        <value type="string" value="org.gnome.Mines.desktop"/>
+        <value type="string" value="org.gnome.Tetravex.desktop"/>
+        <value type="string" value="org.gnome.Mahjongg.desktop"/>
+        <value type="string" value="sol.desktop"/>
+        <value type="string" value="mysql-workbench.desktop"/>
+        <value type="string" value="org.gnome.gThumb.desktop"/>
+        <value type="string" value="v2rayN.desktop"/>
+        <value type="string" value="org.gnome.Software.desktop"/>
+        <value type="string" value="localsend_app.desktop"/>
+        <value type="string" value="brave-browser.desktop"/>
+        <value type="string" value="grub-customizer.desktop"/>
+        <value type="string" value="org.clementine_player.Clementine.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -103,11 +168,6 @@
         <property name="version" type="string" value="1.12.0"/>
         <property name="background-color" type="string" value="GTK+"/>
         <property name="tabs-position" type="int" value="3"/>
-      </property>
-    </property>
-    <property name="plugin-1" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17115360351.desktop"/>
       </property>
     </property>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -170,7 +230,7 @@
       <property name="group-policy" type="uint" value="1"/>
       <property name="show-notifications" type="bool" value="false"/>
       <property name="offset" type="string" value="+06:00"/>
-      <property name="layout1-defaults" type="string" value="Guake,code-oss,obs,Xfce4-terminal,kitty,putty,kate,Steam,steamwebhelper"/>
+      <property name="layout1-defaults" type="string" value="Guake,code-oss,VSCodium,obs,Xfce4-terminal,kitty,putty,kate"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="false"/>
@@ -218,21 +278,19 @@
         <value type="string" value="171146322039.desktop"/>
       </property>
     </property>
-    <property name="plugin-45" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="171146327840.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-49" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="171146503044.desktop"/>
-      </property>
-    </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="Clementine"/>
+        <value type="string" value="LDlIwZkw9l"/>
+        <value type="string" value="StartWine"/>
+        <value type="string" value="chrome_status_icon_2"/>
+        <value type="string" value="Сначала проверьте настройки сервера"/>
+        <value type="string" value="Please check the Configuration settings first."/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="obs"/>
         <value type="string" value="app-00007FF1CE9958F0"/>
         <value type="string" value="8MViWl3r6m"/>
         <value type="string" value="XFiyEjzeUq"/>
@@ -266,6 +324,16 @@
         <value type="string" value="Yakuake"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="deadbeef"/>
+        <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (73%)"/>
+        <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (81%)"/>
+        <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (77%)"/>
+        <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (79%)"/>
+        <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (75%)"/>
+        <value type="string" value="audacious"/>
+        <value type="string" value="сетевое подключение wi-fi «home» активно: home (81%)"/>
+        <value type="string" value="сетевое подключение wi-fi «home» активно: home (79%)"/>
+        <value type="string" value="сетевое подключение wi-fi «home» активно: home (85%)"/>
         <value type="string" value="сетевое соединение wi-fi «home» активно: home (79%)"/>
         <value type="string" value="запрос адреса сети wi-fi для «yotamany»…"/>
         <value type="string" value="сетевое соединение wi-fi «home» активно: home (61%)"/>
@@ -320,23 +388,13 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;Brave;de.haeckerfelix.Shortwave;Harmony Music Notification;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.kde.kdeconnect.app;smplayer;Vivaldi;Яндекс Браузер"/>
+      <property name="known-players" type="string" value=";appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;audacious;Brave;clementine;de.haeckerfelix.Shortwave;Harmony Music Notification;io.bassi.Amberol;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.gnome.Showtime;org.kde.kdeconnect.app;smplayer;Vivaldi;vlc;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-18" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-7" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17712184691.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17712184912.desktop"/>
-      </property>
     </property>
   </property>
   <property name="panels" type="array">
@@ -351,11 +409,6 @@
       <property name="nrows" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="26"/>
-        <value type="int" value="45"/>
-        <value type="int" value="7"/>
-        <value type="int" value="49"/>
-        <value type="int" value="1"/>
-        <value type="int" value="9"/>
         <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>

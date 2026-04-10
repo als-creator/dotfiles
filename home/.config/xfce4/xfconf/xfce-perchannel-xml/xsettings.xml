@@ -5,7 +5,7 @@
     <property name="ThemeName" type="string" value="Adwaita-dark"/>
     <property name="IconThemeName" type="string" value="kora-pgrey"/>
     <property name="DoubleClickTime" type="int" value="2000"/>
-    <property name="DoubleClickDistance" type="int" value="5"/>
+    <property name="DoubleClickDistance" type="int" value="7"/>
     <property name="DndDragThreshold" type="empty"/>
     <property name="CursorBlink" type="empty"/>
     <property name="CursorBlinkTime" type="empty"/>
@@ -15,7 +15,7 @@
   </property>
   <property name="Xft" type="empty">
     <property name="DPI" type="empty"/>
-    <property name="Antialias" type="empty"/>
+    <property name="Antialias" type="int" value="1"/>
     <property name="Hinting" type="int" value="1"/>
     <property name="HintStyle" type="string" value="hintfull"/>
     <property name="RGBA" type="string" value="rgb"/>
@@ -37,6 +37,16 @@
     <property name="TitlebarMiddleClick" type="empty"/>
     <property name="ToolbarStyle" type="empty"/>
     <property name="ToolbarIconSize" type="empty"/>
+    <property name="ImModule" type="string" value=""/>
+    <property name="CursorBlinkTimeout" type="int" value="10"/>
+    <property name="OverlayScrolling" type="bool" value="true"/>
+    <property name="EnableAnimations" type="bool" value="true"/>
+    <property name="EnablePrimaryPaste" type="bool" value="true"/>
+    <property name="RecentFilesEnabled" type="bool" value="true"/>
+    <property name="RecentFilesMaxAge" type="int" value="-1"/>
+    <property name="TitlebarRightClick" type="string" value="menu"/>
+    <property name="TitlebarDoubleClick" type="string" value="toggle-maximize"/>
+    <property name="KeynavUseCaret" type="bool" value="false"/>
   </property>
   <property name="Gdk" type="empty">
     <property name="WindowScalingFactor" type="empty"/>
