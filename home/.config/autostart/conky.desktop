@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Conky
-Exec=sh -c "conky -c /home/als/.config/conky/conky.conf"
+Exec=sh -c "conky -c /home/$USER/.config/conky/conky.conf"
 Comment=Conky system monitor
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

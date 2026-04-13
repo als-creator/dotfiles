@@ -72,7 +72,7 @@
             file_ops.enable_delete_key = "true" 
             file_ops.use_system_trash = "true" 
             file_ops.safe_delete_enable = "true" 
-            file_ops.safe_delete_path = "/home/als/.local/share/geeqie/trash" 
+            file_ops.safe_delete_path = "/home/$USER/.local/share/geeqie/trash"
             file_ops.safe_delete_folder_maxsize = "128" 
             file_ops.no_trash = "false" 
             properties.tabs_order = "" 
