@@ -5,50 +5,46 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="helix.desktop"/>
+        <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="qmmp.desktop"/>
+        <value type="string" value="appinstall.desktop"/>
+        <value type="string" value="kdiskmark.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="virtualbox.desktop"/>
+        <value type="string" value="rudesktop.desktop"/>
+        <value type="string" value="QDiskInfo.desktop"/>
+        <value type="string" value="assistant.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="libreoffice-base.desktop"/>
+        <value type="string" value="com.saivert.pwvucontrol.desktop"/>
+        <value type="string" value="mate-calc.desktop"/>
+        <value type="string" value="guake.desktop"/>
         <value type="string" value="alterator-notes-license.desktop"/>
-        <value type="string" value="mysql-workbench.desktop"/>
-        <value type="string" value="deadbeef.desktop"/>
-        <value type="string" value="rygel-preferences.desktop"/>
-        <value type="string" value="audacious.desktop"/>
         <value type="string" value="org.gnome.Software.desktop"/>
         <value type="string" value="vcmilauncher.desktop"/>
         <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="com.obsproject.Studio.desktop"/>
-        <value type="string" value="QDiskInfo.desktop"/>
         <value type="string" value="xsane.desktop"/>
         <value type="string" value="gimagereader-gtk.desktop"/>
-        <value type="string" value="org.gnome.gThumb.desktop"/>
         <value type="string" value="qimgv.desktop"/>
         <value type="string" value="org.xfce.ristretto.desktop"/>
-        <value type="string" value="simplescreenrecorder.desktop"/>
-        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="Ri-li.desktop"/>
         <value type="string" value="org.gnome.Klotski.desktop"/>
         <value type="string" value="chromium.desktop"/>
-        <value type="string" value="brave-browser.desktop"/>
         <value type="string" value="pidgin.desktop"/>
         <value type="string" value="lynx.desktop"/>
-        <value type="string" value="ru.launcher.StartWine.desktop"/>
         <value type="string" value="guake-prefs.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
-        <value type="string" value="kdiskmark.desktop"/>
         <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
         <value type="string" value="conky.desktop"/>
-        <value type="string" value="appinstall.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
-        <value type="string" value="v2rayN.desktop"/>
         <value type="string" value="radiotray-ng.desktop"/>
-        <value type="string" value="org.kde.neochat.desktop"/>
-        <value type="string" value="nheko.desktop"/>
         <value type="string" value="libreoffice-startcenter.desktop"/>
         <value type="string" value="indexhtml.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="vlc.desktop"/>
         <value type="string" value="org.kde.konsole.desktop"/>
-        <value type="string" value="guake.desktop"/>
         <value type="string" value="org.fontforge.FontForge.desktop"/>
         <value type="string" value="org.gnome.Mines.desktop"/>
         <value type="string" value="sol.desktop"/>
@@ -57,11 +53,8 @@
         <value type="string" value="xfce4-screenshooter.desktop"/>
         <value type="string" value="putty.desktop"/>
         <value type="string" value="ranger.desktop"/>
-        <value type="string" value="virtualbox.desktop"/>
         <value type="string" value="galculator.desktop"/>
         <value type="string" value="audacity.desktop"/>
-        <value type="string" value="libreoffice-base.desktop"/>
-        <value type="string" value="AmneziaVPN.desktop"/>
         <value type="string" value="org.gnome.seahorse.Application.desktop"/>
         <value type="string" value="it.mijorus.gearlever.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
@@ -92,9 +85,7 @@
         <value type="string" value="ranger.desktop"/>
         <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="simplescreenrecorder.desktop"/>
         <value type="string" value="obsidian.desktop"/>
-        <value type="string" value="AmneziaVPN.desktop"/>
         <value type="string" value="vcmiclient.desktop"/>
         <value type="string" value="vcmilauncher.desktop"/>
         <value type="string" value="org.gnome.Chess.desktop"/>
@@ -102,10 +93,8 @@
         <value type="string" value="rustdesk.desktop"/>
         <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
         <value type="string" value="appinstall.desktop"/>
-        <value type="string" value="audacious.desktop"/>
         <value type="string" value="audacity.desktop"/>
         <value type="string" value="chromium.desktop"/>
-        <value type="string" value="com.obsproject.Studio.desktop"/>
         <value type="string" value="pokerth.desktop"/>
         <value type="string" value="Ri-li.desktop"/>
         <value type="string" value="org.gnome.Klotski.desktop"/>
@@ -113,14 +102,16 @@
         <value type="string" value="org.gnome.Tetravex.desktop"/>
         <value type="string" value="org.gnome.Mahjongg.desktop"/>
         <value type="string" value="sol.desktop"/>
-        <value type="string" value="mysql-workbench.desktop"/>
-        <value type="string" value="org.gnome.gThumb.desktop"/>
-        <value type="string" value="v2rayN.desktop"/>
         <value type="string" value="org.gnome.Software.desktop"/>
         <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="brave-browser.desktop"/>
         <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="org.clementine_player.Clementine.desktop"/>
+        <value type="string" value="mysql-workbench.desktop"/>
+        <value type="string" value="assistant.desktop"/>
+        <value type="string" value="QDiskInfo.desktop"/>
+        <value type="string" value="rudesktop.desktop"/>
+        <value type="string" value="vncviewer.desktop"/>
+        <value type="string" value="qmmp.desktop"/>
+        <value type="string" value="com.obsproject.Studio.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -283,6 +274,8 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="com.sayonara-player.Sayonara"/>
+        <value type="string" value="qmmp"/>
         <value type="string" value="Clementine"/>
         <value type="string" value="LDlIwZkw9l"/>
         <value type="string" value="StartWine"/>
@@ -388,13 +381,43 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;audacious;Brave;clementine;de.haeckerfelix.Shortwave;Harmony Music Notification;io.bassi.Amberol;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.gnome.Showtime;org.kde.kdeconnect.app;smplayer;Vivaldi;vlc;Яндекс Браузер"/>
+      <property name="known-players" type="string" value=";aimp;appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;audacious;Brave;clementine;com.sayonara-player.Sayonara;de.haeckerfelix.Shortwave;Harmony Music Notification;io.bassi.Amberol;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.gnome.Showtime;org.kde.kdeconnect.app;smplayer;Vivaldi;vlc;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-18" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17760759281.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17760759302.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17760759653.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17760759794.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-13" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17760760125.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17760764066.desktop"/>
+      </property>
     </property>
   </property>
   <property name="panels" type="array">
@@ -409,6 +432,12 @@
       <property name="nrows" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="26"/>
+        <value type="int" value="1"/>
+        <value type="int" value="11"/>
+        <value type="int" value="13"/>
+        <value type="int" value="9"/>
+        <value type="int" value="7"/>
+        <value type="int" value="15"/>
         <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>

@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-taskmanager" version="1.0">
+  <property name="interface" type="empty">
+    <property name="show-all-processes" type="bool" value="false"/>
+  </property>
+  <property name="show-status-icon" type="bool" value="false"/>
+  <property name="window-maximized" type="bool" value="false"/>
+  <property name="window-width" type="int" value="473"/>
+  <property name="window-height" type="int" value="600"/>
+</channel>

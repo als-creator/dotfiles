@@ -1,3 +1,10 @@
 [Desktop Entry]
-Hidden=false
-
+Categories=AudioVideo;Audio;Player;GTK;
+Comment=Internet Radio Player
+Exec=env GDK_BACKEND=x11 /usr/bin/radiotray-ng
+Icon=radiotray-ng-on
+Name=Radiotray-NG
+StartupNotify=false
+Terminal=false
+Type=Application
+X-Desktop-File-Install-Version=0.26
