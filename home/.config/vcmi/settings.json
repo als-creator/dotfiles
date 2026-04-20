@@ -1,0 +1,19 @@
+{
+	"battle" : {
+		"speedFactor" : 2
+	},
+	"general" : {
+		"language" : "russian",
+		"lastMap" : "Maps/[HotA] Carpe Jugulum",
+		"lastSettingsTab" : 2
+	},
+	"launcher" : {
+		"setupCompleted" : true
+	},
+	"video" : {
+		"performanceOverlay" : {
+		},
+		"resolution" : {
+		}
+	}
+}

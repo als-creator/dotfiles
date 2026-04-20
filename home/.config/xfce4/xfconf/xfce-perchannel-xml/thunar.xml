@@ -24,6 +24,7 @@
   <property name="last-details-view-column-widths" type="string" value="50,50,137,50,50,362,50,50,1026,50,50,79,50,145"/>
   <property name="last-tabs-left" type="array">
     <value type="string" value="file:///run/media/als/Data/%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B"/>
+    <value type="string" value="file:///run/media/als/Data/Projects"/>
   </property>
   <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>
@@ -35,4 +36,5 @@
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="false"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_24"/>
   <property name="last-toolbar-items" type="string" value="menu:0,back:1,forward:1,open-parent:1,open-home:1,new-tab:0,new-window:0,toggle-split-view:1,undo:0,redo:0,zoom-out:0,zoom-in:0,zoom-reset:0,view-as-icons:0,view-as-detailed-list:0,view-as-compact-list:0,view-switcher:0,location-bar:1,reload:0,search:1,uca-action-1711440284587103-1:1,uca-action-1715691033752515-2:0,uca-action-1715691136499756-4:1,uca-action-1715691216748839-5:0,uca-action-1715691526617711-6:0"/>
+  <property name="terminal-height" type="int" value="166"/>
 </channel>

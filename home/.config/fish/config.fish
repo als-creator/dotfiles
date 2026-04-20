@@ -1,8 +1,8 @@
 if status is-interactive
+fastfetch
     # Commands to run in interactive sessions can go here
 end
 
-fastfetch
 set fish_greeting
 # Editor
 set -gx EDITOR micro

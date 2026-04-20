@@ -12,11 +12,11 @@
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
-      <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;L" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
+      <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="XF86WWW" type="empty"/>
       <property name="HomePage" type="empty"/>
       <property name="XF86Mail" type="empty"/>
@@ -67,9 +67,10 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Cyrillic_ie" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;Cyrillic_tse" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar"/>
-      <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
       <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/codium --unity-launch %F"/>
       <property name="F1" type="string" value="guake"/>
+      <property name="&lt;Primary&gt;Insert" type="string" value="flameshot gui"/>
+      <property name="&lt;Primary&gt;F12" type="string" value="xfce4-screenshooter"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

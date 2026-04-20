@@ -6,61 +6,41 @@
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
         <value type="string" value="com.obsproject.Studio.desktop"/>
-        <value type="string" value="qmmp.desktop"/>
-        <value type="string" value="appinstall.desktop"/>
-        <value type="string" value="kdiskmark.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="guake.desktop"/>
+        <value type="string" value="vcmilauncher.desktop"/>
+        <value type="string" value="xfce4-screenshooter.desktop"/>
+        <value type="string" value="chromium.desktop"/>
+        <value type="string" value="yandex-browser.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="org.flameshot.Flameshot.desktop"/>
+        <value type="string" value="org.gnome.Vte.App.Gtk3.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="grub-customizer.desktop"/>
+        <value type="string" value="kdiskmark.desktop"/>
         <value type="string" value="virtualbox.desktop"/>
         <value type="string" value="rudesktop.desktop"/>
         <value type="string" value="QDiskInfo.desktop"/>
         <value type="string" value="assistant.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="libreoffice-base.desktop"/>
-        <value type="string" value="com.saivert.pwvucontrol.desktop"/>
-        <value type="string" value="mate-calc.desktop"/>
-        <value type="string" value="guake.desktop"/>
         <value type="string" value="alterator-notes-license.desktop"/>
-        <value type="string" value="org.gnome.Software.desktop"/>
-        <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="xsane.desktop"/>
-        <value type="string" value="gimagereader-gtk.desktop"/>
         <value type="string" value="qimgv.desktop"/>
         <value type="string" value="org.xfce.ristretto.desktop"/>
-        <value type="string" value="Ri-li.desktop"/>
-        <value type="string" value="org.gnome.Klotski.desktop"/>
-        <value type="string" value="chromium.desktop"/>
-        <value type="string" value="pidgin.desktop"/>
         <value type="string" value="lynx.desktop"/>
         <value type="string" value="guake-prefs.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="org.gnome.baobab.desktop"/>
         <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="conky.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
         <value type="string" value="radiotray-ng.desktop"/>
-        <value type="string" value="libreoffice-startcenter.desktop"/>
         <value type="string" value="indexhtml.desktop"/>
-        <value type="string" value="org.flameshot.Flameshot.desktop"/>
-        <value type="string" value="vlc.desktop"/>
         <value type="string" value="org.kde.konsole.desktop"/>
         <value type="string" value="org.fontforge.FontForge.desktop"/>
-        <value type="string" value="org.gnome.Mines.desktop"/>
-        <value type="string" value="sol.desktop"/>
-        <value type="string" value="org.gnome.Tetravex.desktop"/>
-        <value type="string" value="org.gnome.Mahjongg.desktop"/>
-        <value type="string" value="xfce4-screenshooter.desktop"/>
         <value type="string" value="putty.desktop"/>
         <value type="string" value="ranger.desktop"/>
         <value type="string" value="galculator.desktop"/>
-        <value type="string" value="audacity.desktop"/>
-        <value type="string" value="org.gnome.seahorse.Application.desktop"/>
         <value type="string" value="it.mijorus.gearlever.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
-        <value type="string" value="pokerth.desktop"/>
         <value type="string" value="obsidian.desktop"/>
-        <value type="string" value="codium.desktop"/>
         <value type="string" value="steam.desktop"/>
         <value type="string" value="org.kde.kdenlive.desktop"/>
         <value type="string" value="thunar.desktop"/>
@@ -88,30 +68,18 @@
         <value type="string" value="obsidian.desktop"/>
         <value type="string" value="vcmiclient.desktop"/>
         <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="org.gnome.Chess.desktop"/>
         <value type="string" value="myconnector.desktop"/>
         <value type="string" value="rustdesk.desktop"/>
         <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="appinstall.desktop"/>
-        <value type="string" value="audacity.desktop"/>
         <value type="string" value="chromium.desktop"/>
-        <value type="string" value="pokerth.desktop"/>
-        <value type="string" value="Ri-li.desktop"/>
-        <value type="string" value="org.gnome.Klotski.desktop"/>
-        <value type="string" value="org.gnome.Mines.desktop"/>
-        <value type="string" value="org.gnome.Tetravex.desktop"/>
-        <value type="string" value="org.gnome.Mahjongg.desktop"/>
-        <value type="string" value="sol.desktop"/>
-        <value type="string" value="org.gnome.Software.desktop"/>
         <value type="string" value="localsend_app.desktop"/>
         <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="mysql-workbench.desktop"/>
         <value type="string" value="assistant.desktop"/>
         <value type="string" value="QDiskInfo.desktop"/>
         <value type="string" value="rudesktop.desktop"/>
         <value type="string" value="vncviewer.desktop"/>
-        <value type="string" value="qmmp.desktop"/>
         <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="qmmp.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -256,6 +224,7 @@
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
+      <property name="size" type="uint" value="8"/>
     </property>
     <property name="plugin-4" type="string" value="pager">
       <property name="miniature-view" type="bool" value="true"/>
@@ -271,9 +240,11 @@
     </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+      <property name="size" type="uint" value="8"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="guake-indicator"/>
         <value type="string" value="com.sayonara-player.Sayonara"/>
         <value type="string" value="qmmp"/>
         <value type="string" value="Clementine"/>
@@ -388,6 +359,7 @@
     </property>
     <property name="plugin-18" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+      <property name="size" type="uint" value="8"/>
     </property>
     <property name="plugin-1" type="string" value="launcher">
       <property name="items" type="array">

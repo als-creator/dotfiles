@@ -15,11 +15,11 @@ configs:
     "trash:///":
       row: 8
       col: 17
-    "/home/als":
-      row: 0
+    "/":
+      row: 1
       col: 0
-    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/alt_log.log":
-      row: 6
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/steam.desktop":
+      row: 5
       col: 0
     "/run/media/als/Work":
       row: 2
@@ -28,17 +28,23 @@ configs:
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/assistant.desktop":
       row: 5
       col: 0
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/alt_log.log":
+      row: 6
+      col: 0
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 Alt Linux.md":
+      row: 5
+      col: 0
     "/run/media/als/Data":
       row: 3
       col: 0
       last_seen: 1776078460241868
-    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/Out":
-      row: 4
-      col: 0
     "F1C0-7621":
       row: 6
       col: 0
       last_seen: 1776076271105486
-    "/":
-      row: 1
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/Out":
+      row: 4
+      col: 0
+    "/home/als":
+      row: 0
       col: 0
