@@ -5,8 +5,8 @@ end
 
 set fish_greeting
 # Editor
-set -gx EDITOR micro
-set -gx VISUAL micro
+set -gx EDITOR nano
+set -gx VISUAL nano
 alias steamguard="/run/media/als/Work/Distrib/Linux/AppImage/steamguard"
 alias cat="bat"
 # ArchLinux
@@ -20,10 +20,15 @@ alias commit="git commit -m"
 alias push="git push"
 alias pull="git pull"
 alias log="git log"
-alias glo="git log --oneline"
 alias diff="git diff"
 alias diffs="git diff --staged"
 alias restore="git restore"
+alias checkout='git checkout'
+alias gs='git status'
+alias gc='git commit -m'
+alias gp='git push'
+alias glo='git log —oneline —graph —all'
+alias gco='git checkout'
 # Logs
 alias syslog="sudo dmesg --level=err,warn"
 # YouTube
@@ -32,11 +37,20 @@ alias youtubemp3='yt-dlp -x --audio-format mp3 --output "%(title)s_audio.%(ext)s
 # inxi
 alias pc="inxi -Ixxx"
 alias net="inxi -Nxxx"
+# Net
+alias ports='netstat -tulanp'
+alias ipinfo='curl ifconfig.me'
 # Upgrade System
 alias up="epm update && epm full-upgrade"
 alias cc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get check && flatpak uninstall --unused -y && sudo journalctl --vacuum-time=1weeks"
+alias update='sudo apt-get update && sudo apt-get -dist-upgrade -y'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
 # PC
-alias ls="ls --color"
+alias ls='ls —color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 alias l="lsd --date '+%d.%m.%Y %H:%M' -lah"
 # System folders
 alias fishrc="nano /home/$USER/.config/fish/config.fish"
