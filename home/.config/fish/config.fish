@@ -52,6 +52,19 @@ alias net "inxi -Nxxx"
 alias ports "netstat -tulanp"
 alias ipinfo "curl ifconfig.me"
 
+# Алиасы для управления пакетами в Arch Linux
+alias mirror="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist"
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias clean="sudo pacman -Sc"
+alias info="sudo pacman -Qi"
+
+# Алиасы для управления пакетами в Debian/Ubuntu
+alias up="sudo apt-get update && sudo apt-get dist-upgrade -y"
+alias cc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get check && flatpak uninstall --unused -y && sudo journalctl --vacuum-time=1w"
+alias upgrade='sudo apt-get update && sudo apt-get dist-upgrade -y'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+
 # Работа с конфигурационными файлами
 alias fishrc "nano /home/$USER/.config/fish/config.fish"
 alias fstab "sudo nano /etc/fstab"
