@@ -61,9 +61,9 @@ alias gco='git checkout'
 # Алиасы для просмотра системных логов
 alias syslog="sudo dmesg --level=err,warn"
 
-# Алиасы для скачивания видео и аудио с YouTube
-alias youtube='yt-dlp -f "bestvideo[height<=1080]+bestaudio" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
-alias youtubemp3='yt-dlp -x --audio-format mp3 --output "%(title)s_audio.%(ext)s"'
+# Скачивание видео и аудио c youtube
+alias youtube='yt-dlp --cookies-from-browser chromium -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias youtubemp3='yt-dlp --cookies-from-browser chromium -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
 
 # Алиасы для получения информации о системе через inxi
 alias pc="inxi -Ixxx"

@@ -12,6 +12,10 @@ set -gx EDITOR nano
 # Задаём nano как приоритетный редактор
 set -gx VISUAL nano
 
+# Скачивание видео и аудио c youtube
+alias youtube='yt-dlp --cookies-from-browser chromium -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias youtubemp3='yt-dlp --cookies-from-browser chromium -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
+
 # Steam
 alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 
@@ -39,10 +43,6 @@ alias gco "git checkout"
 
 # Логи системы
 alias syslog "sudo dmesg --level=err,warn"
-
-# YouTube (скачивание видео и аудио)
-alias youtube 'yt-dlp -f "bestvideo[height<=1080]+bestaudio" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
-alias youtubemp3 'yt-dlp -x --audio-format mp3 --output "%(title)s_audio.%(ext)s"'
 
 # Информация о системе через inxi
 alias pc "inxi -Ixxx"
