@@ -12,7 +12,6 @@
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;L" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
@@ -20,9 +19,6 @@
       <property name="XF86WWW" type="empty"/>
       <property name="HomePage" type="empty"/>
       <property name="XF86Mail" type="empty"/>
-      <property name="XF86AudioRaiseVolume" type="empty"/>
-      <property name="XF86AudioLowerVolume" type="empty"/>
-      <property name="XF86AudioMute" type="empty"/>
       <property name="Print" type="empty"/>
       <property name="&lt;Alt&gt;Print" type="empty"/>
       <property name="&lt;Shift&gt;Print" type="empty"/>
@@ -34,6 +30,10 @@
         <property name="startup-notify" type="empty"/>
       </property>
       <property name="&lt;Alt&gt;&lt;Super&gt;s" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;L" type="empty"/>
+      <property name="XF86AudioRaiseVolume" type="empty"/>
+      <property name="XF86AudioLowerVolume" type="empty"/>
+      <property name="XF86AudioMute" type="empty"/>
     </property>
     <property name="custom" type="empty">
       <property name="&lt;Alt&gt;F2" type="string" value="xfce4-appfinder --collapsed">
@@ -69,8 +69,7 @@
       <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar"/>
       <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/codium --unity-launch %F"/>
       <property name="F1" type="string" value="guake"/>
-      <property name="&lt;Primary&gt;Insert" type="string" value="flameshot gui"/>
-      <property name="&lt;Primary&gt;F12" type="string" value="xfce4-screenshooter"/>
+      <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

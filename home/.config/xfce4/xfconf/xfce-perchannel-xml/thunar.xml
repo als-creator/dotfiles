@@ -2,11 +2,11 @@
 
 <channel name="thunar" version="1.0">
   <property name="last-view" type="string" value="ThunarIconView"/>
-  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_250_PERCENT"/>
+  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_200_PERCENT"/>
   <property name="last-window-width" type="int" value="1920"/>
   <property name="last-window-height" type="int" value="1045"/>
   <property name="last-window-maximized" type="bool" value="true"/>
-  <property name="last-separator-position" type="int" value="170"/>
+  <property name="last-separator-position" type="int" value="171"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="last-show-hidden" type="bool" value="true"/>
@@ -21,10 +21,9 @@
   <property name="last-restore-tabs" type="bool" value="true"/>
   <property name="misc-show-delete-action" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,137,50,50,362,50,50,1026,50,50,79,50,145"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,144,50,50,162,50,50,1446,50,50,81,50,77"/>
   <property name="last-tabs-left" type="array">
-    <value type="string" value="file:///run/media/als/Data/%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B"/>
-    <value type="string" value="file:///run/media/als/Data/Projects"/>
+    <value type="string" value="file:///run/media/als/Data/%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B/Yellowstone/5"/>
   </property>
   <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>
@@ -37,4 +36,5 @@
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_24"/>
   <property name="last-toolbar-items" type="string" value="menu:0,back:1,forward:1,open-parent:1,open-home:1,new-tab:0,new-window:0,toggle-split-view:1,undo:0,redo:0,zoom-out:0,zoom-in:0,zoom-reset:0,view-as-icons:0,view-as-detailed-list:0,view-as-compact-list:0,view-switcher:0,location-bar:1,reload:0,search:1,uca-action-1711440284587103-1:1,uca-action-1715691033752515-2:0,uca-action-1715691136499756-4:1,uca-action-1715691216748839-5:0,uca-action-1715691526617711-6:0"/>
   <property name="terminal-height" type="int" value="166"/>
+  <property name="last-side-pane" type="string" value="THUNAR_SIDEPANE_TYPE_SHORTCUTS"/>
 </channel>

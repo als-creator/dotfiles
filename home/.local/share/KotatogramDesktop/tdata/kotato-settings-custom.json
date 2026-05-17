@@ -1,0 +1,73 @@
+
+// This file was automatically generated from current settings
+// It's better to edit it with app closed, so there will be no rewrites
+// You should restart app to see changes
+
+{
+    "adaptive_bubbles": true,
+    "always_show_scheduled": true,
+    "always_show_top_userpic": false,
+    "auto_scroll_unfocused": false,
+    "big_emoji_outline": false,
+    "block_users_in_groups": true,
+    "chat_list_lines": 1,
+    "confirm_before_calls": true,
+    "custom_app_icon": 1,
+    "disable_chat_themes": true,
+    "disable_short_info_box": true,
+    "disable_tray_counter": true,
+    "disable_up_edit": false,
+    "emoji_sidebar": true,
+    "emoji_sidebar_right_click": false,
+    "ffmpeg_multithread": true,
+    "ffmpeg_thread_count": 0,
+    "file_dialog_type": 0,
+    "folders": {
+        "count_unmuted_only": false,
+        "default": {
+            "380881875": 0,
+            "7165906332": 0
+        },
+        "hide_all_chats": false,
+        "hide_edit_button": false,
+        "hide_names": false,
+        "local": {
+            "380881875": [
+            ],
+            "7165906332": [
+            ]
+        }
+    },
+    "fonts": {
+        "main": "Noto Sans Georgian",
+        "monospaced": "",
+        "semibold": "Noto Sans Georgian",
+        "semibold_is_bold": false,
+        "size": 0,
+        "use_original_metrics": false,
+        "use_system_font": true
+    },
+    "forward_force_old_unquoted": false,
+    "forward_grouping_mode": 0,
+    "forward_mode": 1,
+    "forward_on_click": false,
+    "forward_remember_mode": true,
+    "forward_retain_selection": false,
+    "monospace_large_bubbles": false,
+    "net_speed_boost": 3,
+    "profile_top_mute": false,
+    "recent_stickers_limit": 200,
+    "remember_compress_images": true,
+    "replaces": [
+    ],
+    "scales": [
+    ],
+    "show_chat_id": 2,
+    "show_phone_in_drawer": true,
+    "sticker_height": 170,
+    "sticker_scale_both": true,
+    "telegram_sites_autologin": true,
+    "use_telegram_panel_icon": false,
+    "userpic_corner_type": 3,
+    "view_profile_on_top": true
+}

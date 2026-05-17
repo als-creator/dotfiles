@@ -1,4 +1,4 @@
-WebBrowser=yandex-browser
+WebBrowser=custom-WebBrowser
 AudioPlayer=custom-AudioPlayer
 VideoPlayer=custom-VideoPlayer
 

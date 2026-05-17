@@ -5,44 +5,28 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="com.obsproject.Studio.desktop"/>
-        <value type="string" value="guake.desktop"/>
-        <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="xfce4-screenshooter.desktop"/>
-        <value type="string" value="chromium.desktop"/>
-        <value type="string" value="yandex-browser.desktop"/>
-        <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="org.flameshot.Flameshot.desktop"/>
-        <value type="string" value="org.gnome.Vte.App.Gtk3.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="kdiskmark.desktop"/>
-        <value type="string" value="virtualbox.desktop"/>
-        <value type="string" value="rudesktop.desktop"/>
-        <value type="string" value="QDiskInfo.desktop"/>
-        <value type="string" value="assistant.desktop"/>
-        <value type="string" value="alterator-notes-license.desktop"/>
-        <value type="string" value="qimgv.desktop"/>
-        <value type="string" value="org.xfce.ristretto.desktop"/>
-        <value type="string" value="lynx.desktop"/>
-        <value type="string" value="guake-prefs.desktop"/>
-        <value type="string" value="org.gnome.DiskUtility.desktop"/>
-        <value type="string" value="org.gnome.baobab.desktop"/>
-        <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
-        <value type="string" value="radiotray-ng.desktop"/>
-        <value type="string" value="indexhtml.desktop"/>
-        <value type="string" value="org.kde.konsole.desktop"/>
-        <value type="string" value="org.fontforge.FontForge.desktop"/>
-        <value type="string" value="putty.desktop"/>
-        <value type="string" value="ranger.desktop"/>
-        <value type="string" value="galculator.desktop"/>
-        <value type="string" value="it.mijorus.gearlever.desktop"/>
+        <value type="string" value="com.github.geigi.cozy.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
-        <value type="string" value="obsidian.desktop"/>
-        <value type="string" value="steam.desktop"/>
-        <value type="string" value="org.kde.kdenlive.desktop"/>
+        <value type="string" value="localsend.desktop"/>
+        <value type="string" value="org.kde.kdeconnect.nonplasma.desktop"/>
+        <value type="string" value="org.kde.kdevelop.desktop"/>
+        <value type="string" value="org.kde.kdevelop_ps.desktop"/>
+        <value type="string" value="blueman-manager.desktop"/>
+        <value type="string" value="guake-prefs.desktop"/>
+        <value type="string" value="guake.desktop"/>
+        <value type="string" value="qmmp.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="thorium-shell.desktop"/>
+        <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
+        <value type="string" value="org.gnome.Software.desktop"/>
+        <value type="string" value="nvtop.desktop"/>
+        <value type="string" value="yazi.desktop"/>
+        <value type="string" value="lf.desktop"/>
+        <value type="string" value="yandex-browser.desktop"/>
+        <value type="string" value="vim.desktop"/>
+        <value type="string" value="xfce4-screenshooter.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="thunar.desktop"/>
         <value type="string" value="xfce4-accessibility-settings.desktop"/>
         <value type="string" value="thunar-volman-settings.desktop"/>
@@ -51,45 +35,42 @@
       <property name="button-icon" type="string" value="arcolinux-hello"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="favorites" type="array">
-        <value type="string" value="org.gnome.DiskUtility.desktop"/>
-        <value type="string" value="kdiskmark.desktop"/>
-        <value type="string" value="org.gnome.baobab.desktop"/>
-        <value type="string" value="galculator.desktop"/>
-        <value type="string" value="filezilla.desktop"/>
-        <value type="string" value="putty.desktop"/>
-        <value type="string" value="org.wireshark.Wireshark.desktop"/>
-        <value type="string" value="org.kde.kdeconnect.app.desktop"/>
-        <value type="string" value="org.kde.kdenlive.desktop"/>
-        <value type="string" value="fr.handbrake.ghb.desktop"/>
-        <value type="string" value="virtualbox.desktop"/>
-        <value type="string" value="ranger.desktop"/>
-        <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="obsidian.desktop"/>
-        <value type="string" value="vcmiclient.desktop"/>
-        <value type="string" value="vcmilauncher.desktop"/>
-        <value type="string" value="myconnector.desktop"/>
-        <value type="string" value="rustdesk.desktop"/>
-        <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="chromium.desktop"/>
-        <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="assistant.desktop"/>
-        <value type="string" value="QDiskInfo.desktop"/>
+        <value type="string" value="virtualbox.desktop"/>
+        <value type="string" value="filezilla.desktop"/>
+        <value type="string" value="com.github.johnfactotum.Foliate.desktop"/>
+        <value type="string" value="org.gnome.baobab.desktop"/>
+        <value type="string" value="org.gnome.DiskUtility.desktop"/>
+        <value type="string" value="putty.desktop"/>
         <value type="string" value="rudesktop.desktop"/>
-        <value type="string" value="vncviewer.desktop"/>
+        <value type="string" value="rustdesk.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="thorium-browser.desktop"/>
+        <value type="string" value="remote-assistant.desktop"/>
+        <value type="string" value="zenmap.desktop"/>
         <value type="string" value="com.obsproject.Studio.desktop"/>
+        <value type="string" value="org.kde.kdenlive.desktop"/>
+        <value type="string" value="org.avidemux.Avidemux.desktop"/>
+        <value type="string" value="fr.handbrake.ghb.desktop"/>
+        <value type="string" value="kdiskmark.desktop"/>
+        <value type="string" value="org.gnome.Software.desktop"/>
+        <value type="string" value="QDiskInfo.desktop"/>
         <value type="string" value="qmmp.desktop"/>
+        <value type="string" value="org.kde.kdevelop.desktop"/>
+        <value type="string" value="assistant.desktop"/>
+        <value type="string" value="localsend.desktop"/>
+        <value type="string" value="org.kde.kdeconnect.app.desktop"/>
+        <value type="string" value="com.github.geigi.cozy.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
       <property name="launcher-show-description" type="bool" value="false"/>
       <property name="launcher-show-name" type="bool" value="true"/>
       <property name="launcher-show-tooltip" type="bool" value="true"/>
-      <property name="menu-height" type="int" value="1045"/>
-      <property name="menu-width" type="int" value="600"/>
-      <property name="position-categories-alternate" type="bool" value="false"/>
-      <property name="position-categories-horizontal" type="bool" value="false"/>
+      <property name="menu-height" type="int" value="784"/>
+      <property name="menu-width" type="int" value="581"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="position-categories-horizontal" type="bool" value="true"/>
       <property name="position-commands-alternate" type="bool" value="true"/>
       <property name="position-profile-alternate" type="bool" value="true"/>
       <property name="position-search-alternate" type="bool" value="true"/>
@@ -98,7 +79,7 @@
       <property name="show-command-lockscreen" type="bool" value="false"/>
       <property name="show-command-restart" type="bool" value="true"/>
       <property name="show-command-shutdown" type="bool" value="true"/>
-      <property name="view-mode" type="int" value="0"/>
+      <property name="view-mode" type="int" value="2"/>
       <property name="sort-categories" type="bool" value="true"/>
       <property name="recent-items-max" type="int" value="100"/>
       <property name="default-category" type="int" value="0"/>
@@ -106,6 +87,7 @@
       <property name="confirm-session-command" type="bool" value="true"/>
       <property name="show-command-logout" type="bool" value="false"/>
       <property name="show-command-logoutuser" type="bool" value="true"/>
+      <property name="button-title" type="string" value=" Пуск"/>
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
@@ -189,7 +171,7 @@
       <property name="group-policy" type="uint" value="1"/>
       <property name="show-notifications" type="bool" value="false"/>
       <property name="offset" type="string" value="+06:00"/>
-      <property name="layout1-defaults" type="string" value="Guake,code-oss,VSCodium,obs,Xfce4-terminal,kitty,putty,kate"/>
+      <property name="layout1-defaults" type="string" value="Guake,code-oss,VSCodium,Code,obs,Xfce4-terminal,kitty,putty,kate"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="false"/>
@@ -244,6 +226,8 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="BrNirJ7AG-"/>
+        <value type="string" value="TgWsProxy"/>
         <value type="string" value="guake-indicator"/>
         <value type="string" value="com.sayonara-player.Sayonara"/>
         <value type="string" value="qmmp"/>
@@ -288,6 +272,7 @@
         <value type="string" value="Yakuake"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="parole"/>
         <value type="string" value="deadbeef"/>
         <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (73%)"/>
         <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (81%)"/>
@@ -352,7 +337,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";aimp;appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;audacious;Brave;clementine;com.sayonara-player.Sayonara;de.haeckerfelix.Shortwave;Harmony Music Notification;io.bassi.Amberol;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.gnome.Showtime;org.kde.kdeconnect.app;smplayer;Vivaldi;vlc;Яндекс Браузер"/>
+      <property name="known-players" type="string" value=";aimp;appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop;audacious;Brave;clementine;com.github.geigi.cozy;com.sayonara-player.Sayonara;de.haeckerfelix.Shortwave;firefox;Harmony Music Notification;io.bassi.Amberol;io.github.quodlibet.QuodLibet;io.gitlab.Goodvibes;org.gnome.Showtime;org.kde.kdeconnect.app;parole;qmmp;smplayer;Vivaldi;vlc;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
@@ -373,22 +358,27 @@
     </property>
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17760759653.desktop"/>
+        <value type="string" value="17783252721.desktop"/>
       </property>
     </property>
     <property name="plugin-11" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17760759794.desktop"/>
+        <value type="string" value="17783252982.desktop"/>
       </property>
     </property>
     <property name="plugin-13" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17760760125.desktop"/>
+        <value type="string" value="17783256483.desktop"/>
       </property>
     </property>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17760764066.desktop"/>
+        <value type="string" value="17783265984.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-17" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17787485601.desktop"/>
       </property>
     </property>
   </property>
@@ -405,11 +395,12 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="26"/>
         <value type="int" value="1"/>
+        <value type="int" value="17"/>
         <value type="int" value="11"/>
-        <value type="int" value="13"/>
         <value type="int" value="9"/>
-        <value type="int" value="7"/>
         <value type="int" value="15"/>
+        <value type="int" value="7"/>
+        <value type="int" value="13"/>
         <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>

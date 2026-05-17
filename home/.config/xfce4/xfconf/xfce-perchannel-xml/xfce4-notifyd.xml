@@ -5,6 +5,8 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="/tmp/.private/als/sayonara/com.sayonara-player.Sayonara.desktop"/>
+      <value type="string" value="blueman"/>
+      <value type="string" value="firefox"/>
       <value type="string" value="flameshot"/>
       <value type="string" value="Guake"/>
       <value type="string" value="notify-send"/>
@@ -13,6 +15,7 @@
       <value type="string" value="org.qbittorrent.qBittorrent"/>
       <value type="string" value="org.xfce.Thunar"/>
       <value type="string" value="org.xfce.xfdesktop"/>
+      <value type="string" value="Qmmp"/>
       <value type="string" value="radiotray-ng"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="xfce4-settings-helper"/>
@@ -23,4 +26,7 @@
   <property name="do-not-disturb" type="bool" value="false"/>
   <property name="do-fadeout" type="bool" value="false"/>
   <property name="notify-location" type="string" value="bottom-right"/>
+  <property name="plugin" type="empty">
+    <property name="hide-on-read" type="bool" value="true"/>
+  </property>
 </channel>
