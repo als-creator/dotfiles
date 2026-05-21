@@ -61,9 +61,13 @@ alias gco='git checkout'
 # Алиасы для просмотра системных логов
 alias syslog="sudo dmesg --level=err,warn"
 
-# Скачивание видео и аудио c youtube
-alias youtube='yt-dlp --cookies-from-browser chromium -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
-alias youtubemp3='yt-dlp --cookies-from-browser chromium -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
+# Скачивание видео и аудио c youtube, vk, rutube, нужен firefox
+alias youtube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias youtubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
+alias vk='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias vkmp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
+alias rutube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias rutubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
 
 # Алиасы для получения информации о системе через inxi
 alias pc="inxi -Ixxx"

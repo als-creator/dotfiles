@@ -12,7 +12,7 @@ set -gx EDITOR nano
 # Задаём nano как приоритетный редактор
 set -gx VISUAL nano
 
-# Скачивание видео и аудио c youtube
+# Скачивание видео и аудио c youtube, rutube, vk, нужен firefox
 alias youtube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
 alias youtubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
 alias vk='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
