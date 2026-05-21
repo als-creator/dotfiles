@@ -13,9 +13,12 @@ set -gx EDITOR nano
 set -gx VISUAL nano
 
 # Скачивание видео и аудио c youtube
-alias youtube='yt-dlp --cookies-from-browser chromium -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
-alias youtubemp3='yt-dlp --cookies-from-browser chromium -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
-
+alias youtube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias youtubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
+alias vk='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias vkmp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
+alias rutube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "%(title)s.%(ext)s"'
+alias rutubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "%(title)s_audio.%(ext)s"'
 # Steam
 alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 
