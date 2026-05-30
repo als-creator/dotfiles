@@ -9,7 +9,6 @@ export EDITOR=nano
 # Задаём nano как приоритетный редактор
 export VISUAL=nano
 
-
 # Скачивание видео и аудио c видеохостингов
 # Устанавливаем дефолтный путь для скачивания
 target_dir="/run/media/$USER/Work"
@@ -41,7 +40,6 @@ export BAT_THEME='Catppuccin Mocha'
 # Отображение man‑страниц через bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-
 # Git алиасы
 alias add="git add ."
 alias commit="git commit -m"
@@ -58,7 +56,6 @@ alias gc="git commit -m"
 alias gp="git push"
 alias glo="git log --oneline --graph --all"
 alias gco="git checkout"
-
 
 # Логи системы
 alias syslog="sudo dmesg --level=err,warn"
@@ -84,7 +81,6 @@ alias upgrade='sudo apt-get update && sudo apt-get dist-upgrade -y'
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 
-
 # Работа с конфигурационными файлами
 alias fishrc="nano /home/$USER/.config/fish/config.fish"
 alias fstab="sudo nano /etc/fstab"
@@ -96,12 +92,10 @@ alias editgrub="sudo nano /etc/default/grub"
 alias updategrub="sudo update-grub"
 alias grubupdate="sudo update-grub"
 
-
 # Файловые команды
 alias ls="ls --color=auto"
 alias ll="ls -alF"
 alias la="ls -A"
-
 
 # Если установлен lsd, используем его вместо ls
 if command -v lsd &>/dev/null; then
@@ -109,7 +103,6 @@ if command -v lsd &>/dev/null; then
 else
     alias l="ls -CF"
 fi
-
 
 # Tools
 # UV
@@ -125,21 +118,17 @@ fi
 # Сообщает GPG, какой терминал используется
 export GPG_TTY=$(tty)
 
-
 # Проверяет, установлен ли direnv, и подключает хуки
 if command -v direnv &>/dev/null; then
     eval "$(direnv hook zsh)"
 fi
 
-
 # Настройки fzf для zsh
 # Основные опции FZF
 export FZF_DEFAULT_OPTS="--no-mouse --height 80% --border --reverse --multi --info=inline --preview-window='right:60%:wrap' --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-y:execute-silent(echo {+} | xclip -selection clipboard),ctrl-x:execute(rm -i {+})+abort,ctrl-l:clear-query'"
 
-
 # Настройки автодополнения FZF
 export FZF_COMPLETION_OPTS='--border --info=inline'
-
 
 # Проверка установки fd (аналог find)
 if command -v fd &>/dev/null; then
@@ -147,7 +136,6 @@ if command -v fd &>/dev/null; then
     __fzf_compgen_path() {
         command fd --hidden --follow --exclude .git --exclude node_modules . "$1"
     }
-
 
     # Функция для генерации директорий (аналог _fzf_compgen_dir)
     __fzf_compgen_dir() {
@@ -160,7 +148,6 @@ if command -v fd &>/dev/null; then
 else
     echo "fd не установлен. FZF будет использовать стандартные команды поиска." >/dev/null
 fi
-
 
 # Инициализация FZF для zsh
 if command -v fzf &>/dev/null; then

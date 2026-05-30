@@ -3,20 +3,15 @@ if [[ $- == *i* ]]; then
     fastfetch
 fi
 
-# Отключаем стандартное приветствие (в Bash нет аналога fish_greeting, поэтому просто пропускаем)
-
-
 # Задаём nano как редактор по умолчанию
 # для Git (git commit), crontab -e, visudo и др.
 export EDITOR=nano
 # Задаём nano как приоритетный редактор
 export VISUAL=nano
 
-
 # Скачивание видео и аудио c видеохостингов
 # Устанавливаем дефолтный путь для скачивания
 target_dir="/run/media/$USER/Work"
-
 
 if [[ -d "$target_dir" ]]; then
     export YT_DOWNLOAD_DIR="$target_dir"
@@ -32,7 +27,6 @@ alias vkmp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio
 alias rutube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR%(title)s.%(ext)s"'
 alias rutubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR%(title)s_audio.%(ext)s"'
 
-
 # Steam
 alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 
@@ -40,13 +34,12 @@ alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 if command -v bat &>/dev/null; then
     alias cat=bat
 fi
+
 # Цветовая схема для bat
 export BAT_THEME='Catppuccin Mocha'
 
-
 # Отображение man‑страниц через bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
 
 # Git алиасы
 alias add="git add ."
@@ -64,7 +57,6 @@ alias gc="git commit -m"
 alias gp="git push"
 alias glo="git log --oneline --graph --all"
 alias gco="git checkout"
-
 
 # Логи системы
 alias syslog="sudo dmesg --level=err,warn"
@@ -101,7 +93,6 @@ alias editgrub="sudo nano /etc/default/grub"
 alias updategrub="sudo update-grub"
 alias grubupdate="sudo update-grub"
 
-
 # Файловые команды
 alias ls="ls --color=auto"
 alias ll="ls -alF"
@@ -137,10 +128,8 @@ fi
 # Основные опции FZF
 export FZF_DEFAULT_OPTS="--no-mouse --height 80% --border --reverse --multi --info=inline --preview-window='right:60%:wrap' --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-y:execute-silent(echo {+} | xclip -selection clipboard),ctrl-x:execute(rm -i {+})+abort,ctrl-l:clear-query'"
 
-
 # Настройки автодополнения FZF
 export FZF_COMPLETION_OPTS='--border --info=inline'
-
 
 # Проверка установки fd (аналог find)
 if command -v fd &>/dev/null; then
