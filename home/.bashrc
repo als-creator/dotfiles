@@ -16,7 +16,6 @@ SAVEHIST=10000         # Количество команд для сохране
 HISTFILE=~/.bash_history # Файл, в котором сохраняется история команд
 HISTCONTROL=ignoreboth  # Игнорировать дубликаты и команды с пробелом в начале
 
-
 # Опции истории команд
 shopt -s histappend      # Добавлять историю вместо перезаписи
 shopt -s cmdhist       # Сохранять многострочные команды как одну запись
@@ -79,7 +78,6 @@ alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias clean="sudo pacman -Sc"
 alias info="sudo pacman -Qi"
 
-
 # Алиасы для управления пакетами в Debian/Ubuntu
 alias up="sudo apt-get update && sudo apt-get dist-upgrade -y"
 alias cc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get check && flatpak uninstall --unused -y && sudo journalctl --vacuum-time=1w"
@@ -92,6 +90,13 @@ alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias cat='bat'
+
+# Цветовая схема для bat
+export BAT_THEME='Catppuccin Mocha'
+
+# Отображение man‑страниц через bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Алиасы для редактирования конфигурационных файлов
 alias fishrc="nano /home/$USER/.config/fish/config.fish"
@@ -116,4 +121,22 @@ fi
 # Подсветка синтаксиса в командной строке через bash-preexec (если установлено)
 if [ -f ~/.bash-preexec.sh ]; then
   source ~/.bash-preexec.sh
+fi
+
+# Сообщает GPG, какой терминал используется
+export GPG_TTY=$(tty)
+
+# Путь к закладкам lf
+export LF_BOOKMARK_PATH=$HOME/.config/lf/.bookmarks
+
+# Путь к бинарникам Go
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+# Путь к утилитам PostgreSQL
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+# Проверяет, установлен ли direnv; если да — подключает хуки
+# Проверка нужна, чтобы не выдавать ошибку, если direnv не установлен
+if command -v direnv &> /dev/null; then
+    eval "$(direnv hook bash)"
 fi

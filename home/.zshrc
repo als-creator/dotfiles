@@ -97,6 +97,13 @@ alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias cat='bat'
+
+# Задаёт цветовую схему для утилиты bat (аналог cat с подсветкой синтаксиса)
+export BAT_THEME='Catppuccin Mocha'
+
+# Настраивает отображение страниц man через bat с подсветкой синтаксиса
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Алиасы для редактирования конфигурационных файлов
 alias fishrc="nano /home/$USER/.config/fish/config.fish"
@@ -118,3 +125,21 @@ eval "$(zoxide init zsh)" 2>/dev/null
 # Подключение FZF (расширенное автодополнение и поиск)
 source /usr/share/fzf/key-bindings.zsh 2>/dev/null
 source /usr/share/fzf/completion.zsh 2>/dev/null
+
+# Сообщает GPG (Gnu Privacy Guard), какой терминал используется,
+# чтобы корректно запрашивать пароль при шифровании/дешифровании
+export GPG_TTY=$(tty)
+
+# Указывает путь к файлу закладок для файлового менеджера lf
+export LF_BOOKMARK_PATH=$HOME/.config/lf/.bookmarks
+
+# Добавляет путь к бинарным файлам Go в переменную PATH
+# Позволяет запускать утилиты, установленные через go install
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+# Добавляет путь к утилитам PostgreSQL (psql) в PATH
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+# Подключает хуки direnv — автоматически загружает/выгружает
+# переменные окружения при переходе между папками (например, разные PATH или PYTHONPATH для проектов)
+eval "$(direnv hook zsh)"

@@ -22,7 +22,6 @@ alias vkmp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio
 alias rutube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR%(title)s.%(ext)s"'
 alias rutubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR%(title)s_audio.%(ext)s"'
 
-
 # Steam
 alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 
@@ -30,6 +29,11 @@ alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 if type -q bat
     alias cat bat
 end
+# Цветовая схема для bat
+set -x BAT_THEME 'Catppuccin Mocha'
+
+# Отображение man‑страниц через bat
+set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # Git алиасы
 alias add "git add ."
@@ -109,4 +113,25 @@ end
 # FZF
 if type -q fzf
     fzf --fish | source
+end
+
+# Сообщает GPG, какой терминал используется
+set -x GPG_TTY (tty)
+
+# Путь к закладкам lf
+set -x LF_BOOKMARK_PATH $HOME/.config/lf/.bookmarks
+
+# В fish PATH собирается иначе: проверяем, нет ли путей уже в PATH,
+# и добавляем их, если нужно
+if not contains (go env GOPATH)/bin $PATH
+    set -p PATH (go env GOPATH)/bin
+end
+
+if not contains /usr/local/opt/libpq/bin $PATH
+    set -p PATH /usr/local/opt/libpq/bin
+end
+
+# Проверяет, установлен ли direnv, и подключает хуки специфичным для fish синтаксисом
+if type -q direnv
+    direnv hook fish | source
 end
