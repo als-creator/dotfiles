@@ -23,8 +23,8 @@
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]};',./", // Разделительные символы слов для навигации по тексту
   "editor.wordWrap": "on", // Гибкий перенос строк по ширине редактора
   "editor.renderLineHighlight": "none", // Отключить подсветку строк по умолчанию
-  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
-  "editor.fontSize": 16, // Размер шрифта
+  "editor.fontFamily": "'Droid Sans Mono', monospace", // Шрифт редактора
+  "editor.fontSize": 20, // Размер шрифта редактора
   "editor.tabSize": 2, // Размер табуляции равен двум пробелам
   "editor.insertSpaces": true, // Вставка правильного числа пробелов при табуляции
   "editor.detectIndentation": true, // Автоматически определять стиль отступов
