@@ -1,61 +1,29 @@
-# Редактор по умолчанию для утилит (Git, crontab и др.)
-export EDITOR=nano
-export VISUAL=nano
-
-# Алиас для Steam Guard
-alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
-
-# Включаем автодополнение команд (если установлено)
-if [ -f /etc/bash_completion ]; then
-  . /etc/bash_completion
+# Запускаем fastfetch только в интерактивных сессиях
+if [[ $- == *i* ]]; then
+    fastfetch
 fi
 
-# Настройки истории команд
-HISTSIZE=10000          # Количество команд, хранящихся в памяти
-SAVEHIST=10000         # Количество команд для сохранения в файл истории
-HISTFILE=~/.bash_history # Файл, в котором сохраняется история команд
-HISTCONTROL=ignoreboth  # Игнорировать дубликаты и команды с пробелом в начале
+# Отключаем стандартное приветствие (в Bash нет аналога fish_greeting, поэтому просто пропускаем)
 
-# Опции истории команд
-shopt -s histappend      # Добавлять историю вместо перезаписи
-shopt -s cmdhist       # Сохранять многострочные команды как одну запись
-shopt -s lithist       # Сохранять команды с комментариями
 
-# Настройка формата времени в истории
-HISTTIMEFORMAT='%F %T ' # Формат: ГГГГ-ММ-ДД ЧЧ:ММ:СС
+# Задаём nano как редактор по умолчанию
+# для Git (git commit), crontab -e, visudo и др.
+export EDITOR=nano
+# Задаём nano как приоритетный редактор
+export VISUAL=nano
 
-# Настройка приглашения командной строки (prompt)
-# \u — пользователь, \h — хост, \W — текущая директория, \$ — приглашение ($ или #)
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \$ '
 
-# Функция для перехода в директорию с одновременным выводом её содержимого
-cdls() {
-  cd "$@" && ls -la --color=auto
-}
-# Алиас для функции cdls (не переопределяет стандартную команду cd)
-alias cdl="cdls"
+# Скачивание видео и аудио c видеохостингов
+# Устанавливаем дефолтный путь для скачивания
+target_dir="/run/media/$USER/Work"
 
-# Алиасы для работы с Git
-alias add="git add ."
-alias commit="git commit -m"
-alias push="git push"
-alias pull="git pull"
-alias log="git log"
-alias diff="git diff"
-alias diffs="git diff --staged"
-alias restore="git restore"
-alias checkout='git checkout'
-alias gs='git status'
-alias gc='git commit -m'
-alias gp='git push'
-alias glo='git log --oneline --graph --all'
-alias gco='git checkout'
 
-# Алиасы для просмотра системных логов
-alias syslog="sudo dmesg --level=err,warn"
-
-# Скачивание видео и аудио c youtube, vk, rutube
-export YT_DOWNLOAD_DIR="/run/media/als/Work/"
+if [[ -d "$target_dir" ]]; then
+    export YT_DOWNLOAD_DIR="$target_dir"
+else
+    export YT_DOWNLOAD_DIR="$HOME/Загрузки"
+    echo "Предупреждение: $target_dir не существует. Используем $HOME/Загрузки"
+fi
 
 alias youtube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR%(title)s.%(ext)s"'
 alias youtubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR%(title)s_audio.%(ext)s"'
@@ -64,13 +32,50 @@ alias vkmp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio
 alias rutube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR%(title)s.%(ext)s"'
 alias rutubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR%(title)s_audio.%(ext)s"'
 
-# Алиасы для получения информации о системе через inxi
+
+# Steam
+alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
+
+# Просмотр файлов через bat
+if command -v bat &>/dev/null; then
+    alias cat=bat
+fi
+# Цветовая схема для bat
+export BAT_THEME='Catppuccin Mocha'
+
+
+# Отображение man‑страниц через bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+
+# Git алиасы
+alias add="git add ."
+alias commit="git commit -m"
+alias push="git push"
+alias pull="git pull"
+alias log="git log"
+alias diff="git diff"
+alias diffs="git diff --staged"
+alias restore="git restore"
+alias clone="git clone"
+alias checkout="git checkout"
+alias gs="git status"
+alias gc="git commit -m"
+alias gp="git push"
+alias glo="git log --oneline --graph --all"
+alias gco="git checkout"
+
+
+# Логи системы
+alias syslog="sudo dmesg --level=err,warn"
+
+# Информация о системе через inxi
 alias pc="inxi -Ixxx"
 alias net="inxi -Nxxx"
 
-# Сетевые алиасы
-alias ports='netstat -tulanp'
-alias ipinfo='curl ifconfig.me'
+# Сетевые команды
+alias ports="netstat -tulanp"
+alias ipinfo="curl ifconfig.me"
 
 # Алиасы для управления пакетами в Arch Linux
 alias mirror="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist"
@@ -85,58 +90,126 @@ alias upgrade='sudo apt-get update && sudo apt-get dist-upgrade -y'
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 
-# Файловые алиасы
-alias ls='ls --color=auto'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias cat='bat'
-
-# Цветовая схема для bat
-export BAT_THEME='Catppuccin Mocha'
-
-# Отображение man‑страниц через bat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# Алиасы для редактирования конфигурационных файлов
+# Работа с конфигурационными файлами
 alias fishrc="nano /home/$USER/.config/fish/config.fish"
 alias fstab="sudo nano /etc/fstab"
 alias bashrc="nano ~/.bashrc"
 alias zshrc="nano ~/.zshrc"
 
-# Алиасы для настройки GRUB
+# Управление GRUB
 alias editgrub="sudo nano /etc/default/grub"
 alias updategrub="sudo update-grub"
 alias grubupdate="sudo update-grub"
 
-# Улучшенное автодополнение для Git (если установлено)
-if type __git_complete &>/dev/null; then
-  __git_complete gc git-commit
-  __git_complete glo git-log
-  __git_complete gco git-checkout
-  __git_complete gp git-push
-  __git_complete gs git-status
+
+# Файловые команды
+alias ls="ls --color=auto"
+alias ll="ls -alF"
+alias la="ls -A"
+
+# Если установлен lsd, используем его вместо ls
+if command -v lsd &>/dev/null; then
+    alias l="lsd --date-format '+%d.%m.%Y %H:%M' -lah"
+else
+    alias l="ls -CF"
 fi
 
-# Подсветка синтаксиса в командной строке через bash-preexec (если установлено)
-if [ -f ~/.bash-preexec.sh ]; then
-  source ~/.bash-preexec.sh
+# Tools
+# UV
+if command -v uv &>/dev/null; then
+    eval "$(uv generate-shell-completion bash)"
+fi
+
+# Zoxide
+if command -v zoxide &>/dev/null; then
+    eval "$(zoxide init bash)"
 fi
 
 # Сообщает GPG, какой терминал используется
 export GPG_TTY=$(tty)
 
-# Путь к закладкам lf
-export LF_BOOKMARK_PATH=$HOME/.config/lf/.bookmarks
-
-# Путь к бинарникам Go
-export PATH="$PATH:$(go env GOPATH)/bin"
-
-# Путь к утилитам PostgreSQL
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-
-# Проверяет, установлен ли direnv; если да — подключает хуки
-# Проверка нужна, чтобы не выдавать ошибку, если direnv не установлен
-if command -v direnv &> /dev/null; then
+# Проверяет, установлен ли direnv, и подключает хуки
+if command -v direnv &>/dev/null; then
     eval "$(direnv hook bash)"
+fi
+
+# Настройки fzf для bash
+# Основные опции FZF
+export FZF_DEFAULT_OPTS="--no-mouse --height 80% --border --reverse --multi --info=inline --preview-window='right:60%:wrap' --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-y:execute-silent(echo {+} | xclip -selection clipboard),ctrl-x:execute(rm -i {+})+abort,ctrl-l:clear-query'"
+
+
+# Настройки автодополнения FZF
+export FZF_COMPLETION_OPTS='--border --info=inline'
+
+
+# Проверка установки fd (аналог find)
+if command -v fd &>/dev/null; then
+    # Функция для генерации путей (аналог _fzf_compgen_path)
+    __fzf_compgen_path() {
+        command fd --hidden --follow --exclude .git --exclude node_modules . "$1"
+    }
+
+    # Функция для генерации директорий (аналог _fzf_compgen_dir)
+    __fzf_compgen_dir() {
+        command fd --type d --hidden --follow --exclude .git --exclude node_modules . "$1"
+    }
+
+    # Регистрируем функции для использования с FZF
+    export __FZF_COMPGEN_PATH_COMMAND=__fzf_compgen_path
+    export __FZF_COMPGEN_DIR_COMMAND=__fzf_compgen_dir
+else
+    echo "fd не установлен. FZF будет использовать стандартные команды поиска." >/dev/null
+fi
+
+# Инициализация FZF для bash
+if command -v fzf &>/dev/null; then
+    source <(fzf --bash)
+fi
+
+# Настройки для Go, проверка установки и путей
+# Безопасная настройка путей для Go — проверяем установку Go перед работой с путями
+if command -v go &>/dev/null; then
+    # Получаем GOPATH через go env
+    go_gopath=$(go env GOPATH)
+
+    # Проверяем, что GOPATH не пустой и директория существует
+    if [[ -n "$go_gopath" && -d "$go_gopath" ]]; then
+        if [[ ":$PATH:" != *":$go_gopath/bin:"* ]]; then
+            export PATH="$go_gopath/bin:$PATH"
+        fi
+    else
+        # Если GOPATH не задан или директория не существует, создаём стандартную
+        default_gopath="$HOME/.go"
+        if [[ ! -d "$default_gopath" ]]; then
+            mkdir -p "$default_gopath"
+        fi
+        export GOPATH="$default_gopath"
+        if [[ ":$PATH:" != *":$default_gopath/bin:"* ]]; then
+            export PATH="$default_gopath/bin:$PATH"
+        fi
+    fi
+
+    # Добавляем GOROOT/bin, если GOROOT задан
+    go_goroot=$(go env GOROOT)
+    if [[ -n "$go_goroot" && -d "$go_goroot/bin" ]]; then
+        if [[ ":$PATH:" != *":$go_goroot/bin:"* ]]; then
+            export PATH="$go_goroot/bin:$PATH"
+        fi
+    fi
+
+    # Устанавливаем GOBIN, если он не задан
+    if [[ -z "$GOBIN" ]]; then
+        export GOBIN="$GOPATH/bin"
+    fi
+
+    # Дополнительные переменные окружения для Go
+    export GOCACHE="$HOME/.cache/go-build"
+    export GO111MODULE=on
+
+    # Создаём стандартные директории внутри GOPATH
+    mkdir -p "$GOPATH"/{bin,pkg,src}
+
+    echo "Go настроен: GOPATH=$GOPATH, GOROOT=$go_goroot"
+else
+    echo "Go не установлен. Пропускаем настройку путей для Go." >/dev/null
 fi

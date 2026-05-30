@@ -7,13 +7,21 @@ end
 set -gx fish_greeting ""
 
 # Задаём nano как редактор по умолчанию
-# Используется утилитами Git (git commit), crontab -e, visudo и др.
+# для Git (git commit), crontab -e, visudo и др.
 set -gx EDITOR nano
 # Задаём nano как приоритетный редактор
 set -gx VISUAL nano
 
-# Скачивание видео и аудио c youtube
-export YT_DOWNLOAD_DIR="/run/media/als/Work/"
+# Скачивание видео и аудио c видеохостингов
+# Устанавливаем дефолтный путь для скачивания
+set -l target_dir "/run/media/$USER/Work"
+
+if test -d "$target_dir"
+    set -gx YT_DOWNLOAD_DIR "$target_dir"
+else
+    set -gx YT_DOWNLOAD_DIR "$HOME/Загрузки"
+    echo "Предупреждение: $target_dir не существует. Используем $HOME/Загрузки"
+end
 
 alias youtube='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR%(title)s.%(ext)s"'
 alias youtubemp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR%(title)s_audio.%(ext)s"'
@@ -30,10 +38,10 @@ if type -q bat
     alias cat bat
 end
 # Цветовая схема для bat
-set -x BAT_THEME 'Catppuccin Mocha'
+set -gx BAT_THEME 'Catppuccin Mocha'
 
 # Отображение man‑страниц через bat
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # Git алиасы
 alias add "git add ."
@@ -110,28 +118,84 @@ if type -q zoxide
     zoxide init fish | source
 end
 
-# FZF
-if type -q fzf
-    fzf --fish | source
-end
-
 # Сообщает GPG, какой терминал используется
-set -x GPG_TTY (tty)
-
-# Путь к закладкам lf
-set -x LF_BOOKMARK_PATH $HOME/.config/lf/.bookmarks
-
-# В fish PATH собирается иначе: проверяем, нет ли путей уже в PATH,
-# и добавляем их, если нужно
-if not contains (go env GOPATH)/bin $PATH
-    set -p PATH (go env GOPATH)/bin
-end
-
-if not contains /usr/local/opt/libpq/bin $PATH
-    set -p PATH /usr/local/opt/libpq/bin
-end
+set -gx GPG_TTY (tty)
 
 # Проверяет, установлен ли direnv, и подключает хуки специфичным для fish синтаксисом
 if type -q direnv
     direnv hook fish | source
+end
+
+# Настройки fzf для fish
+# Основные опции FZF
+set -gx FZF_DEFAULT_OPTS "--no-mouse --height 80% --border --reverse --multi --info=inline --preview-window='right:60%:wrap' --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-y:execute-silent(echo {+} | xclip -selection clipboard),ctrl-x:execute(rm -i {+})+abort,ctrl-l:clear-query'"
+
+# Настройки автодополнения FZF
+set -gx FZF_COMPLETION_OPTS '--border --info=inline'
+
+# Проверка установки fd (аналог find)
+if type -q fd
+    # Функция для генерации путей (аналог _fzf_compgen_path)
+    function __fzf_compgen_path --description "Generate file paths using fd for FZF"
+        command fd --hidden --follow --exclude .git --exclude node_modules . $argv[1]
+    end
+
+    # Функция для генерации директорий (аналог _fzf_compgen_dir)
+    function __fzf_compgen_dir --description "Generate directories using fd for FZF"
+        command fd --type d --hidden --follow --exclude .git --exclude node_modules . $argv[1]
+    end
+
+    # Регистрируем функции для использования с FZF
+    set -g __FZF_COMPGEN_PATH_COMMAND __fzf_compgen_path
+    set -g __FZF_COMPGEN_DIR_COMMAND __fzf_compgen_dir
+else
+    echo "fd не установлен. FZF будет использовать стандартные команды поиска." >/dev/null
+end
+
+# Инициализация FZF для Fish
+if type -q fzf
+    fzf --fish | source
+end
+
+# Настройки для go, проверка установки и путей
+# Безопасная настройка путей для Go — проверяем установку Go перед работой с путями
+if type -q go
+    # Получаем GOPATH через go env
+    set -l go_gopath (go env GOPATH)
+
+    # Проверяем, что GOPATH не пустой и директория существует
+    if test -n "$go_gopath" && test -d "$go_gopath"
+        if not contains "$go_gopath/bin" $PATH
+            set -p PATH "$go_gopath/bin"
+        end
+    else
+        # Если GOPATH не задан или директория не существует, создаём стандартную
+        set -l default_gopath $HOME/.go
+        if not test -d "$default_gopath"
+            mkdir -p "$default_gopath"
+        end
+        set -gx GOPATH "$default_gopath"
+        if not contains "$default_gopath/bin" $PATH
+            set -p PATH "$default_gopath/bin"
+        end
+    end
+
+    # Добавляем GOROOT/bin, если GOROOT задан
+    set -l go_goroot (go env GOROOT)
+    if test -n "$go_goroot" && test -d "$go_goroot/bin"
+        if not contains "$go_goroot/bin" $PATH
+            set -p PATH "$go_goroot/bin"
+        end
+    end
+else
+    echo "Go не установлен. Пропускаем настройку путей для Go." >/dev/null
+end
+
+# Безопасная проверка и добавление libpq в PATH
+if test -d /usr/local/opt/libpq/bin
+    if not contains /usr/local/opt/libpq/bin $PATH
+        set -p PATH /usr/local/opt/libpq/bin
+    end
+else
+    echo "libpq не установлен или путь /usr/local/opt/libpq/bin не существует. Пропускаем." >/dev/null
 end
