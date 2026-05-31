@@ -37,8 +37,6 @@ alias steamguard="/run/media/$USER/Work/Distrib/Linux/AppImage/steamguard"
 if type -q bat
     alias cat bat
 end
-# Цветовая схема для bat
-set -gx BAT_THEME 'Catppuccin Mocha'
 
 # Отображение man‑страниц через bat
 set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
