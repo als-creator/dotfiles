@@ -13,9 +13,9 @@
       </property>
       <property name="monitorHDMI-1" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/run/media/als/Data/Рисунки/Обои/dark/GNU Linux (1920x1080).jpg"/>
+          <property name="last-image" type="string" value="/home/als/.config/Code is Poetry (1920x1080).jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="false"/>
         </property>
       </property>
     </property>

@@ -35,9 +35,6 @@ if command -v bat &>/dev/null; then
     alias cat=bat
 fi
 
-# Цветовая схема для bat
-export BAT_THEME='Catppuccin Mocha'
-
 # Отображение man‑страниц через bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 

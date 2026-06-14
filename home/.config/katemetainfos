@@ -1,0 +1,17 @@
+[file:///home/als/lab/1/1_intro/header.bin]
+Checksum=5924a73b58dce668ed940cce637aa704e658ed09
+Encoding=Big5
+Time=2026,5,28,18,42,50.65,UTC
+URL=file:///home/als/lab/1/1_intro/header.bin
+
+[file:///home/als/lab/2/5_xxd/новый_исполняемый_файл]
+Checksum=f32bc797c4dcad97cd590374050c6bdb532abf59
+Encoding=ISO-8859-1
+Time=2026,5,28,15,54,12.16,UTC
+URL=file:///home/als/lab/2/5_xxd/новый_исполняемый_файл
+
+[file:///run/media/als/Work/Distrib/Linux/AppImage/TgWsProxy_linux_amd64]
+Checksum=5fcdfd9fb55c1d7a5193cd677121e064ffabc27e
+Encoding=ISO-8859-1
+Time=2026,6,2,9,10,12.866,UTC
+URL=file:///run/media/als/Work/Distrib/Linux/AppImage/TgWsProxy_linux_amd64

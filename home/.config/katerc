@@ -115,7 +115,7 @@ Color Theme=Catppuccin Mocha
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
-Text Font=Monospace,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font=Monospace,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 Text Font Features=
 Word Wrap Marker=false
 
@@ -131,6 +131,7 @@ Bracket Match Preview=false
 Chars To Enclose Selection=<>(){}[]'"
 Cycle Through Bookmarks=true
 Default Mark Type=1
+Disable bracket match highlight if inactive=false
 Disable current line highlight if inactive=false
 Dynamic Word Wrap=true
 Dynamic Word Wrap Align Indent=80
@@ -228,6 +229,9 @@ SetEditor=true
 1920x1080 screen: Height=1017
 1920x1080 screen: Width=1920
 1920x1080 screen: Window-Maximized=true
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=24
+HDMI-1=HDMI-1
 
 [PluginSymbolViewer]
 ExpandTree=false
@@ -260,6 +264,9 @@ selected_mail_address_index=-1
 show_only_private_keys=true
 use_ASCII_armor=true
 use_symmetric_encryption=false
+
+[kategit]
+lastExecutedGitCmds=git push origin main,git pull origin main
 
 [lspclient]
 AllowedServerCommandLines=

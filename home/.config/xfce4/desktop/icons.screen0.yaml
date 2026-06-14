@@ -25,6 +25,9 @@ configs:
     "trash:///":
       row: 8
       col: 17
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/\u041D\u043E\u0432\u044B\u0439 \u0444\u0430\u0439\u043B":
+      row: 6
+      col: 0
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 Alt Linux.md":
       row: 5
       col: 0
@@ -38,13 +41,13 @@ configs:
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/alt_log.log":
       row: 6
       col: 0
-    "/home/als":
-      row: 0
-      col: 0
     "/run/media/als/Work":
       row: 2
       col: 0
       last_seen: 1776078460239010
+    "/home/als":
+      row: 0
+      col: 0
     "/run/media/als/Data":
       row: 3
       col: 0
@@ -55,14 +58,14 @@ configs:
     "/":
       row: 1
       col: 0
-    "Work":
-      row: 5
-      col: 0
-      last_seen: 1778174054325001
     "/home/als/\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438":
       row: 3
       col: 0
       last_seen: 1778130012439699
+    "Work":
+      row: 5
+      col: 0
+      last_seen: 1778174054325001
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/assistant.desktop":
       row: 5
       col: 0
@@ -70,10 +73,16 @@ configs:
       row: 4
       col: 0
       last_seen: 1778141706446188
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/\u0438\u0441\u0445":
+      row: 7
+      col: 0
     "Data":
       row: 6
       col: 0
       last_seen: 1778174054328691
     "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/arch_log.log":
-      row: 6
+      row: 0
+      col: 1
+    "/home/als/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/\u041D\u043E\u0432\u044B\u0439 \u0444\u0430\u0439\u043B 1":
+      row: 8
       col: 0

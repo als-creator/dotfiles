@@ -67,9 +67,9 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Cyrillic_ie" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;Cyrillic_tse" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/codium --unity-launch %F"/>
       <property name="F1" type="string" value="guake"/>
       <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
+      <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/code --unity-launch %F"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

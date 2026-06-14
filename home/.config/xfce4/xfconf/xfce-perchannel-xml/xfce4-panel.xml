@@ -5,28 +5,34 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="com.github.geigi.cozy.desktop"/>
+        <value type="string" value="dev.zed.Zed.desktop"/>
+        <value type="string" value="guake.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="org.gnome.Software.desktop"/>
+        <value type="string" value="vcmilauncher.desktop"/>
         <value type="string" value="localsend.desktop"/>
+        <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
+        <value type="string" value="zenmap.desktop"/>
+        <value type="string" value="putty.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="mysql-workbench.desktop"/>
+        <value type="string" value="com.github.geigi.cozy.desktop"/>
         <value type="string" value="org.kde.kdeconnect.nonplasma.desktop"/>
         <value type="string" value="org.kde.kdevelop.desktop"/>
         <value type="string" value="org.kde.kdevelop_ps.desktop"/>
         <value type="string" value="blueman-manager.desktop"/>
         <value type="string" value="guake-prefs.desktop"/>
-        <value type="string" value="guake.desktop"/>
         <value type="string" value="qmmp.desktop"/>
-        <value type="string" value="firefox.desktop"/>
         <value type="string" value="thorium-shell.desktop"/>
         <value type="string" value="com.obsproject.Studio.desktop"/>
         <value type="string" value="appimagekit_4229450a89f320768095ff2818c67a50-Kotatogram_Desktop.desktop"/>
-        <value type="string" value="org.gnome.Software.desktop"/>
         <value type="string" value="nvtop.desktop"/>
         <value type="string" value="yazi.desktop"/>
         <value type="string" value="lf.desktop"/>
         <value type="string" value="yandex-browser.desktop"/>
         <value type="string" value="vim.desktop"/>
         <value type="string" value="xfce4-screenshooter.desktop"/>
-        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="thunar.desktop"/>
         <value type="string" value="xfce4-accessibility-settings.desktop"/>
         <value type="string" value="thunar-volman-settings.desktop"/>
@@ -61,14 +67,18 @@
         <value type="string" value="localsend.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="com.github.geigi.cozy.desktop"/>
+        <value type="string" value="mysql-workbench.desktop"/>
+        <value type="string" value="vcmilauncher.desktop"/>
+        <value type="string" value="vcmiclient.desktop"/>
+        <value type="string" value="dev.zed.Zed.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
       <property name="launcher-show-description" type="bool" value="false"/>
       <property name="launcher-show-name" type="bool" value="true"/>
       <property name="launcher-show-tooltip" type="bool" value="true"/>
-      <property name="menu-height" type="int" value="784"/>
-      <property name="menu-width" type="int" value="581"/>
+      <property name="menu-height" type="int" value="916"/>
+      <property name="menu-width" type="int" value="364"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
       <property name="position-categories-horizontal" type="bool" value="true"/>
       <property name="position-commands-alternate" type="bool" value="true"/>
@@ -94,7 +104,7 @@
         <property name="add-primary-clipboard" type="bool" value="false"/>
         <property name="enable-actions" type="bool" value="true"/>
         <property name="max-texts-in-history" type="uint" value="1000"/>
-        <property name="persistent-primary-clipboard" type="bool" value="false"/>
+        <property name="persistent-primary-clipboard" type="bool" value="true"/>
         <property name="show-qr-code" type="bool" value="false"/>
         <property name="max-images-in-history" type="uint" value="0"/>
       </property>
@@ -226,6 +236,7 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="BGuzFOFRxj"/>
         <value type="string" value="BrNirJ7AG-"/>
         <value type="string" value="TgWsProxy"/>
         <value type="string" value="guake-indicator"/>
@@ -272,6 +283,7 @@
         <value type="string" value="Yakuake"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="lxmusic"/>
         <value type="string" value="parole"/>
         <value type="string" value="deadbeef"/>
         <value type="string" value="сетевое подключение wi-fi «home 1» активно: home (73%)"/>
@@ -371,14 +383,14 @@
         <value type="string" value="17783256483.desktop"/>
       </property>
     </property>
-    <property name="plugin-15" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17783265984.desktop"/>
-      </property>
-    </property>
     <property name="plugin-17" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17787485601.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17804967501.desktop"/>
       </property>
     </property>
   </property>
