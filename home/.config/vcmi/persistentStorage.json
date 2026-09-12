@@ -1,0 +1,108 @@
+{
+	"battleModeSettings" : {
+		 // game
+		"selectedTerrain" : "core:dirt",
+		"slots" : [
+			{
+				"primSkillLevel" : [
+					0,
+					0,
+					0,
+					0
+				],
+				"secSkillLevel" : [
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					}
+				],
+				"selectedArmy" : [
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					}
+				],
+				"spellBook" : true
+			},
+			{
+				"primSkillLevel" : [
+					0,
+					0,
+					0,
+					0
+				],
+				"secSkillLevel" : [
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					},
+					{
+					}
+				],
+				"selectedArmy" : [
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					},
+					{
+						"amount" : -1
+					}
+				],
+				"spellBook" : true
+			}
+		]
+	}
+}

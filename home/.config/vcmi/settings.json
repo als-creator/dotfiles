@@ -1,0 +1,38 @@
+{
+	"adventure" : {
+		"enemyMoveTime" : 150,
+		"heroMoveTime" : 100,
+		"scrollSpeedPixels" : 800
+	},
+	"battle" : {
+		"cellBorders" : true,
+		"rangeLimitHighlightOnHover" : true,
+		"showHealthBar" : true,
+		"speedFactor" : 18
+	},
+	"gameTweaks" : {
+		"forceMovementInfo" : true,
+		"infoBarPick" : true,
+		"numericCreaturesQuantities" : true
+	},
+	"general" : {
+		"language" : "russian",
+		"lastMap" : "Maps/[HotA] Upper Kingdom",
+		"lastSave" : "SAVES/AUTOSAVE/2026-08-10_18-29_Верхнее_короле/3",
+		"music" : 88,
+		"sound" : 88
+	},
+	"launcher" : {
+		"setupCompleted" : true
+	},
+	"video" : {
+		"performanceOverlay" : {
+			"show" : true
+		},
+		"resolution" : {
+			"height" : 720,
+			"scaling" : 150,
+			"width" : 960
+		}
+	}
+}

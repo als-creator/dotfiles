@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=OBS Studio (Tray Mode)
+Comment=Запуск OBS Studio в свернутом виде для записи по хоткеям
+Exec=obs --minimize-to-tray
+Icon=obs
+Terminal=false
+Categories=AudioVideo;Recorder;
+X-GNOME-Autostart-enabled=true
+X-XFCE-Autostart-enabled=true
