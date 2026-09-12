@@ -1,0 +1,129 @@
+/* Waybar style for Omarchy/Hyprland.
+   Migrated look from the XFCE panel: dark, flat, ~38px, bottom bar. */
+
+* {
+  font-family: "Noto Sans", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window#waybar {
+  background-color: rgba(21, 22, 26, 0.92);
+  color: #d6d6d6;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background-color: rgba(21, 22, 26, 0.98);
+  color: #d6d6d6;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  padding: 0 4px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#workspaces button {
+  padding: 0 4px;
+  color: #7a7f89;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  background-color: #2b2e36;
+}
+
+#workspaces button.urgent {
+  color: #f0833a;
+}
+
+#window {
+  color: #a9adb4;
+  padding: 0 8px;
+}
+
+/* Left cluster (menu + dock launchers), slightly spaced like XFCE separators */
+#custom-menu,
+#custom-calc,
+#custom-steam,
+#custom-yandex,
+#custom-kate,
+#custom-thunar {
+  font-size: 18px;
+  padding: 0 8px;
+}
+
+#custom-menu {
+  color: #a9adb4;
+}
+
+#custom-thunar {
+  margin-right: 6px;
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#weather,
+#xkb {
+  padding: 0 8px;
+}
+
+#cpu {
+  color: #8fc15d;
+}
+
+#memory {
+  color: #7fb3d6;
+}
+
+#pulseaudio {
+  color: #cdd3da;
+}
+
+#pulseaudio.muted {
+  color: #6d727b;
+}
+
+#weather {
+  color: #d6b35f;
+}
+
+#xkb {
+  color: #a9adb4;
+}
+
+#tray {
+  padding: 2px 6px;
+}
+
+#tray > .passive {
+  color: #6d727b;
+}
+
+#tray > .needs-attention {
+  background-color: #f0833a;
+  color: #ffffff;
+}
+
+/* Clock: big time on top, date below (XFCE had time Sans 18) */
+#clock {
+  font-size: 18px;
+  line-height: 1.1;
+  padding: 4px 10px;
+  color: #ffffff;
+  text-align: center;
+}

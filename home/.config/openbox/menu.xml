@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- openbox menu.xml — mirrors the XFCE "Пуск" menu (whiskermenu favorites) -->
+<openbox_menu xmlns="http://openbox.org/3.5/menu">
+  <menu id="root-menu" label="Пуск">
+    <item label="Terminal">
+      <action name="Execute"><command>foot</command></action>
+    </item>
+    <item label="File Manager">
+      <action name="Execute"><command>thunar</command></action>
+    </item>
+    <item label="Browser">
+      <action name="Execute"><command>firefox</command></action>
+    </item>
+    <item label="Editor">
+      <action name="Execute"><command>code</command><command>--unity-launch</command></action>
+    </item>
+    <separator/>
+
+    <menu id="favorites" label="Избранное (XFCE)">
+      <item label="VirtualBox"><action name="Execute"><command>virtualbox</command></action></item>
+      <item label="FileZilla"><action name="Execute"><command>filezilla</command></action></item>
+      <item label="Foliate"><action name="Execute"><command>foliate</command></action></item>
+      <item label="Disks"><action name="Execute"><command>gnome-disks</command></action></item>
+      <item label="Putty"><action name="Execute"><command>putty</command></action></item>
+      <item label="RustDesk"><action name="Execute"><command>rustdesk</command></action></item>
+      <item label="Screenkey"><action name="Execute"><command>screenkey</command></action></item>
+      <item label="Thunderbird"><action name="Execute"><command>thunderbird</command></action></item>
+      <item label="OBS Studio"><action name="Execute"><command>obs</command></action></item>
+      <item label="Kdenlive"><action name="Execute"><command>kdenlive</command></action></item>
+      <item label="HandBrake"><action name="Execute"><command>ghb</command></action></item>
+      <item label="Qmmp"><action name="Execute"><command>qmmp</command></action></item>
+      <item label="Obsidian"><action name="Execute"><command>obsidian</command></action></item>
+      <item label="Poedit"><action name="Execute"><command>poedit</command></action></item>
+    </menu>
+
+    <separator/>
+    <menu id="ai" label="AI">
+      <item label="OpenCode (AI-агент)">
+        <action name="Execute"><command>foot</command><command>-e</command><command>opencode</command></action>
+      </item>
+      <item label="Herdr (агент-менеджер)">
+        <action name="Execute"><command>foot</command><command>-e</command><command>herdr</command></action>
+      </item>
+    </menu>
+    <separator/>
+    <menu id="system" label="System">
+      <item label="Lock">
+        <action name="Execute"><command>loginctl</command><command>lock-session</command></action>
+      </item>
+      <item label="Log Out">
+        <action name="Execute"><command>loginctl</command><command>terminate-session</command></action>
+      </item>
+      <item label="Reboot">
+        <action name="Execute"><command>systemctl</command><command>reboot</command></action>
+      </item>
+    </menu>
+  </menu>
+</openbox_menu>

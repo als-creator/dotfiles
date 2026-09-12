@@ -1,0 +1,133 @@
+# KDE Plasma custom shortcuts — mirrors the XFCE hotkeys (2026-09-12).
+# Copy to ~/.config/khotkeysrc before/after first login; Plasma imports it
+# automatically (Custom Shortcuts > Import is only needed if it was created
+# after the session was already running).
+
+[Data]
+DataCount=9
+
+Data_1Comment=Terminal
+Data_1Enabled=true
+Data_1Name=Terminal
+Data_1Type=SIMPLE_ACTION_DATA
+Data_1Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a01}
+Data_1ActionsCount=1
+Data_1Actions0CommandExec=foot
+Data_1Actions0CommandExecTerminal=false
+Data_1Actions0Type=COMMAND
+Data_1TriggersCount=1
+Data_1Triggers0Type=SHORTCUT
+Data_1Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f104}
+Data_1Triggers0Key=Ctrl+Alt+T
+
+Data_2Comment=Launcher
+Data_2Enabled=true
+Data_2Name=Launcher
+Data_2Type=SIMPLE_ACTION_DATA
+Data_2Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a02}
+Data_2ActionsCount=1
+Data_2Actions0CommandExec=rofi -show drun
+Data_2Actions0CommandExecTerminal=false
+Data_2Actions0Type=COMMAND
+Data_2TriggersCount=1
+Data_2Triggers0Type=SHORTCUT
+Data_2Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f105}
+Data_2Triggers0Key=Meta+Space
+
+Data_3Comment=Browser
+Data_3Enabled=true
+Data_3Name=Browser
+Data_3Type=SIMPLE_ACTION_DATA
+Data_3Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a03}
+Data_3ActionsCount=1
+Data_3Actions0CommandExec=firefox
+Data_3Actions0CommandExecTerminal=false
+Data_3Actions0Type=COMMAND
+Data_3TriggersCount=1
+Data_3Triggers0Type=SHORTCUT
+Data_3Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f106}
+Data_3Triggers0Key=Meta+Shift+Return
+
+Data_4Comment=File manager
+Data_4Enabled=true
+Data_4Name=File manager
+Data_4Type=SIMPLE_ACTION_DATA
+Data_4Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a04}
+Data_4ActionsCount=1
+Data_4Actions0CommandExec=thunar
+Data_4Actions0CommandExecTerminal=false
+Data_4Actions0Type=COMMAND
+Data_4TriggersCount=1
+Data_4Triggers0Type=SHORTCUT
+Data_4Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f107}
+Data_4Triggers0Key=Meta+E
+
+Data_5Comment=Editor
+Data_5Enabled=true
+Data_5Name=Editor
+Data_5Type=SIMPLE_ACTION_DATA
+Data_5Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a05}
+Data_5ActionsCount=1
+Data_5Actions0CommandExec=code --unity-launch
+Data_5Actions0CommandExecTerminal=false
+Data_5Actions0Type=COMMAND
+Data_5TriggersCount=1
+Data_5Triggers0Type=SHORTCUT
+Data_5Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f108}
+Data_5Triggers0Key=Meta+Y
+
+Data_6Comment=AI agent
+Data_6Enabled=true
+Data_6Name=AI agent
+Data_6Type=SIMPLE_ACTION_DATA
+Data_6Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a06}
+Data_6ActionsCount=1
+Data_6Actions0CommandExec=foot -e opencode
+Data_6Actions0CommandExecTerminal=false
+Data_6Actions0Type=COMMAND
+Data_6TriggersCount=1
+Data_6Triggers0Type=SHORTCUT
+Data_6Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f109}
+Data_6Triggers0Key=Meta+A
+
+Data_7Comment=Agent manager
+Data_7Enabled=true
+Data_7Name=Agent manager
+Data_7Type=SIMPLE_ACTION_DATA
+Data_7Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a07}
+Data_7ActionsCount=1
+Data_7Actions0CommandExec=foot -e herdr
+Data_7Actions0CommandExecTerminal=false
+Data_7Actions0Type=COMMAND
+Data_7TriggersCount=1
+Data_7Triggers0Type=SHORTCUT
+Data_7Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10a}
+Data_7Triggers0Key=Meta+Ctrl+Return
+
+Data_8Comment=Screenshot
+Data_8Enabled=true
+Data_8Name=Screenshot
+Data_8Type=SIMPLE_ACTION_DATA
+Data_8Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a08}
+Data_8ActionsCount=1
+Data_8Actions0CommandExec=flameshot gui
+Data_8Actions0CommandExecTerminal=false
+Data_8Actions0Type=COMMAND
+Data_8TriggersCount=1
+Data_8Triggers0Type=SHORTCUT
+Data_8Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10b}
+Data_8Triggers0Key=Print
+
+Data_9Comment=Lock
+Data_9Enabled=true
+Data_9Name=Lock
+Data_9Type=SIMPLE_ACTION_DATA
+Data_9Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a09}
+Data_9ActionsCount=1
+Data_9Actions0CommandExec=loginctl lock-session
+Data_9Actions0CommandExecTerminal=false
+Data_9Actions0Type=COMMAND
+Data_9TriggersCount=1
+Data_9Triggers0Type=SHORTCUT
+Data_9Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10c}
+Data_9Triggers0Key=Meta+Ctrl+L

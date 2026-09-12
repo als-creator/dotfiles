@@ -6,14 +6,15 @@
     <property name="screen0" type="empty">
       <property name="monitorHDMI-A-0" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/mnt/Data/Рисунки/Обои/dark/Abstract (1920x1080).jpg"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+          <property name="last-image" type="string" value="/home/als/.config/Code is Poetry (1920x1080).jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="image-show" type="bool" value="true"/>
         </property>
       </property>
       <property name="monitorHDMI-1" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/mnt/Data/Рисунки/Обои/dark/RAZER NIGHTSHADE (1920x1080).jpg"/>
+          <property name="last-image" type="string" value="/mnt/Data/Рисунки/Обои/dark/Феникс (1920x1080).jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
           <property name="image-style" type="int" value="5"/>
@@ -21,14 +22,14 @@
         </property>
       </property>
       <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/mnt/Data/Рисунки/Обои/dark/Кали Линукс (1920x1080).jpg"/>
+        <property name="image-path" type="string" value="/home/als/.config/Code is Poetry (1920x1080).jpg"/>
         <property name="image-show" type="bool" value="true"/>
         <property name="image-style" type="int" value="5"/>
       </property>
     </property>
   </property>
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="767"/>
+    <property name="window-width" type="int" value="1093"/>
     <property name="window-height" type="int" value="559"/>
   </property>
   <property name="desktop-icons" type="empty">

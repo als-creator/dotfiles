@@ -2,9 +2,10 @@
 Type=Application
 Name=Obsidian
 Comment=Obsidian knowledge base
-Exec=/usr/bin/obsidian %U
+Exec=sh -c 'until [ -d /mnt/Work/Distrib ]; do sleep 0.5; done && exec /usr/bin/obsidian %U'
 X-GNOME-Autostart-enabled=true
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
 Hidden=false
+EOF

@@ -265,6 +265,9 @@ show_only_private_keys=true
 use_ASCII_armor=true
 use_symmetric_encryption=false
 
+[kateformatplugin]
+configPath=
+
 [kategit]
 lastExecutedGitCmds=git push origin main,git pull origin main
 

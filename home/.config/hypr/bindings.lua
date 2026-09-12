@@ -12,18 +12,19 @@
 -- To disable all preinstalled app/webapp bindings, set:
 --   omarchy_preinstalled_bindings = false
 
--- Add a new binding.
--- o.bind("SUPER + SHIFT + R", "SSH", "alacritty -e ssh your-server")
+-- Migrated from XFCE (xfce4-keyboard-shortcuts.xml, 2026-09-12).
+-- Omarchy defaults are kept: SUPER+W (close window) and SUPER+C (copy) are
+-- sacred, so the old XFCE uses of those keys moved elsewhere:
+--   XFCE SUPER+W = browser      -> omarchy default SUPER+SHIFT+RETURN (browser)
+--   XFCE SUPER+C = /usr/bin/code-> bound to SUPER+Y below (no conflict)
+-- Screenshots (Print / Alt+Print) and the menu are omarchy defaults already.
 
--- Change an existing binding by unbinding it first, then binding the key again.
--- This example changes SUPER+SPACE from the launcher to the Omarchy root menu.
--- hl.unbind("SUPER + SPACE")
--- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
+-- Terminal: XFCE used Ctrl+Alt+T (and Ctrl+Alt+Cyrillic_ie = Ctrl+Alt+Q).
+o.bind("CONTROL + ALT + T", "Terminal", "foot")
 
--- Disable a default binding without replacing it.
--- hl.unbind("SUPER + SHIFT + B")
+-- File manager: XFCE used Super+E (and Super+Cyrillic_u = the E key).
+o.bind("SUPER + E", "File manager", "thunar")
 
--- Logitech MX Keys examples:
--- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
--- o.bind("SUPER + H", nil, "voxtype record toggle")
--- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
+-- Editor: XFCE used Super+C = "code --unity-launch %F"; moved off Super+C
+-- (that's omarchy copy). Picked the free SUPER+Y comb.
+o.bind("SUPER + Y", "Editor", "code --unity-launch %F")

@@ -1,0 +1,160 @@
+// Waybar config for Hyprland.
+// Migrated from the XFCE panel (xfce4-panel.xml, plugin order 1:1) 2026-09-12.
+//
+// XFCE panel layout (bottom, dark, 38px):
+//   [Whisker " Пуск"] [Galculator] [Steam] [Yandex] [Kate] [Yandex] [Thunar]
+//   [tasklist] | [systemload cpu+mem] [pager] | [systray] [pulseaudio]
+//   [notifications] [xkb ru/us] [weather Omsk] | [clock %H:%M + %a %d %b %Y] [showdesktop]
+//
+// Waybar equivalents:
+//   whiskermenu  -> custom/menu       pager/tasklist -> hyprland/workspaces + window
+//   dock apps    -> custom/<app>      systray        -> tray
+//   systemload   -> cpu + memory      pulseaudio     -> pulseaudio
+//   xkb          -> xkb (ru,us)       weather        -> weather (Omsk, wttr.in)
+//   clock        -> clock (two lines) notifications  -> (omarchy has its own OSD)
+//   showdesktop  -> not used          clipman/notes  -> built into omarchy
+
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 38,
+  "spacing": 0,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "modules-left": [
+    "custom/menu",
+    "custom/calc",
+    "custom/steam",
+    "custom/yandex",
+    "custom/kate",
+    "custom/thunar",
+    "hyprland/workspaces",
+    "window"
+  ],
+  "modules-center": [
+    "cpu",
+    "memory"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "weather",
+    "xkb",
+    "clock"
+  ],
+
+  // --- Whisker " Пуск" menu button ---------------------------------------
+  "custom/menu": {
+    "format": " {}",                       // bars glyph
+    "tooltip": false,
+    "on-click": "rofi -show drun",         // launcher (rofi/wofi); swap for the omarchy menu
+    "on-click-right": "wlogout"
+  },
+
+  // --- Dock launchers (XFCE bottom panel, launched the same .desktop ids) ---
+  "custom/calc": {
+    "exec": "echo ''",
+    "format": " {}",                       // FA6 calculator
+    "tooltip": false,
+    "on-click": "gtk-launch galculator.desktop"
+  },
+  "custom/steam": {
+    "exec": "echo ''",
+    "format": " {}",                       // FA6 brands steam
+    "tooltip": false,
+    "on-click": "gtk-launch steam.desktop"
+  },
+  "custom/yandex": {
+    "exec": "echo ''",
+    "format": " {}",                       // FA6 globe
+    "tooltip": false,
+    "on-click": "gtk-launch yandex-browser.desktop"
+  },
+  "custom/kate": {
+    "exec": "echo ''",
+    "format": " {}",                       // FA6 code
+    "tooltip": false,
+    "on-click": "gtk-launch org.kde.kate.desktop"
+  },
+  "custom/thunar": {
+    "exec": "echo ''",
+    "format": " {}",                       // FA6 folder-open
+    "tooltip": false,
+    "on-click": "gtk-launch thunar.desktop"
+  },
+
+  // --- Pager (XFCE pager, numbered, 2 rows) --------------------------------
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate",
+    "on-scroll-up": "cyclenext",
+    "on-scroll-down": "cycleprev",
+    "sort-by-number": true,
+    "persistent-workspaces": "*"
+  },
+
+  // --- Tasklist (XFCE tasklist, ungrouped) ---------------------------------
+  "window": {
+    "format": "{title}",
+    "max-length": 60,
+    "separate-outputs": true
+  },
+
+  // --- Systemload (XFCE systemload: cpu + memory) ---------------------------
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 2,
+    "on-click": "hyprctl dispatch exec -- foot -e btop"
+  },
+  "memory": {
+    "format": " {used:0.1f}GiB",
+    "interval": 5
+  },
+
+  // --- Systray (XFCE systray, 22px square icons) ----------------------------
+  "tray": {
+    "icon-size": 22,
+    "spacing": 4
+  },
+
+  // --- Pulseaudio (XFCE pulseaudio plugin) ----------------------------------
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " {volume}%",
+    "format-icons": {
+      "default": ["", "", ""],
+      "muted": ""
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+  },
+
+  // --- Weather (XFCE weather plugin: Omsk, +06:00) --------------------------
+  "weather": {
+    "city": "Omsk",
+    "interval": 1800,
+    "format": "{temperature_c}°C",
+    "format-icons": {
+      "sun": "", "cloud": "", "rain": "", "snow": ""
+    },
+    "tooltip-format": "{location}\n{condition} {temperature_c}°C"
+  },
+
+  // --- Keyboard layout (XFCE xkb plugin: ru, us) ----------------------------
+  "xkb": {
+    "layout": "ru,us",
+    "allowed-layouts": ["ru", "us"],
+    "format": "{name}",
+    "tooltip": false
+  },
+
+  // --- Clock (XFCE clock: time Sans 18 + date %a %d %b %Y) ------------------
+  "clock": {
+    "format": "{:%H:%M}\n{:%a, %d %b %Y}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "interval": 10
+  }
+}

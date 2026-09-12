@@ -53,8 +53,7 @@
 		"board",
 		        {
             "type": "disk",
-            "folders": "/:/home:/mnt/Data:/mnt/Work",
-            "format": "{name}: {size-used} / {size-total} ({size-percentage})"
+            "format": "{mountpoint}: {size-used} / {size-total} ({size-percentage})"
         },
 //                {
 //          "type": "physicaldisk",

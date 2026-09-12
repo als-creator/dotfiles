@@ -100,6 +100,14 @@ if command -v bat >/dev/null 2>&1; then
     else
         export MANPAGER='bat -l man -p'
     fi
+elif command -v batcat >/dev/null 2>&1; then
+    alias cat='batcat --paging=never --style=plain'
+
+    if command -v col >/dev/null 2>&1; then
+        export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+    else
+        export MANPAGER='batcat -l man -p'
+    fi
 else
     export MANPAGER='less -R'
 fi
@@ -119,7 +127,6 @@ alias diffs="git diff --staged"
 alias restore="git restore"
 alias clone="git clone"
 alias checkout="git checkout"
-
 alias gs="git status"
 alias stat="git status"
 alias gc="git commit -m"
@@ -149,7 +156,12 @@ fi
 # Сетевые команды
 # ============================================================
 
-alias ports="sudo ss -tulpn"
+alias ports="sudo ss -tulpen"
+
+if ! command -v ss >/dev/null 2>&1 && command -v netstat >/dev/null 2>&1; then
+    alias ports="netstat -tulanp"
+fi
+
 alias ipinfo="curl -4 https://ifconfig.me"
 
 
@@ -157,7 +169,7 @@ alias ipinfo="curl -4 https://ifconfig.me"
 # Arch Linux
 # ============================================================
 
-alias mirror="sudo reflector --verbose --country Russia --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias mirror="sudo reflector --verbose --country 'Russia' --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 unlock() {
     if pgrep -x pacman >/dev/null || \
@@ -174,7 +186,7 @@ unlock() {
     fi
 }
 
-alias clean="sudo pacman -Sc"
+alias clean='sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} +'
 alias info="sudo pacman -Qi"
 
 
@@ -290,25 +302,6 @@ fi
 export FZF_COMPLETION_OPTS="--border --info=inline"
 
 if command -v fd >/dev/null 2>&1; then
-    _fzf_compgen_path() {
-        command fd \
-            --hidden \
-            --follow \
-            --exclude .git \
-            --exclude node_modules \
-            . "$1"
-    }
-
-    _fzf_compgen_dir() {
-        command fd \
-            --type d \
-            --hidden \
-            --follow \
-            --exclude .git \
-            --exclude node_modules \
-            . "$1"
-    }
-
     export FZF_COMPLETION_PATH_OPTS='--walker=file,dir,follow,hidden'
     export FZF_COMPLETION_DIR_OPTS='--walker=dir,follow,hidden'
 fi
@@ -326,6 +319,8 @@ if command -v go >/dev/null 2>&1; then
     export GOPATH="${GOPATH:-$HOME/go}"
     export GOBIN="${GOBIN:-$GOPATH/bin}"
     export GOCACHE="${GOCACHE:-$HOME/.cache/go-build}"
+
+    mkdir -p "$GOBIN"
 
     path_prepend "$GOBIN"
 
@@ -427,3 +422,100 @@ shopt -s cdspell
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
 bind 'set menu-complete-display-prefix on'
+
+# ============================================================
+# AI-агенты (как в omarchy: opencode + herdr)
+# ============================================================
+
+if command -v opencode >/dev/null 2>&1; then
+    alias ai='opencode'          # Запустить AI-агента в текущем терминале
+fi
+
+if command -v herdr >/dev/null 2>&1; then
+    alias agent='herdr'          # Менеджер агентов (как Super+Ctrl+Return)
+fi
+
+# ============================================================
+# Навигация: .. ... .... mkcd d
+# ============================================================
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+mkcd() { mkdir -p -- "$1" && cd -- "$1"; }          # Создать каталог и перейти в него
+
+alias d='dirs -v'                                   # Список каталогов-закладок
+
+# ============================================================
+# Буфер обмена: c (копия), p (вставка), copypath
+# ============================================================
+
+if command -v wl-copy >/dev/null 2>&1; then
+    c() { printf '%s' "$*" | wl-copy; }             # Wayland
+    p() { wl-paste; }
+elif command -v xclip >/dev/null 2>&1; then
+    c() { printf '%s' "$*" | xclip -selection clipboard; }   # X11
+    p() { xclip -o -selection clipboard; }
+fi
+
+copypath() { command pwd | c; }                     # Скопировать текущий путь
+
+# ============================================================
+# Безопасное удаление: rm -I и корзина (trash)
+# ============================================================
+
+alias rm='rm -I'
+if command -v gio >/dev/null 2>&1; then
+    alias trash='gio trash'
+fi
+
+# ============================================================
+# sysup — обновление всего одной командой
+# ============================================================
+
+sysup() {
+    if command -v pacman >/dev/null 2>&1; then
+        sudo pacman -Syu --noconfirm
+    fi
+    if command -v apt-get >/dev/null 2>&1; then
+        sudo apt-get update && sudo apt-get dist-upgrade -y
+    fi
+    if command -v flatpak >/dev/null 2>&1; then
+        flatpak update -y
+        flatpak uninstall --unused -y
+    fi
+}
+
+# ============================================================
+# fzf: ff (открыть файл), fcd (перейти в каталог)
+# Ctrl+T / Alt+C уже задаются fzf --bash
+# ============================================================
+
+if command -v fzf >/dev/null 2>&1 && command -v fd >/dev/null 2>&1; then
+    ff() {
+        local file
+        file="$(fd --hidden --follow --exclude .git --exclude node_modules | fzf --preview 'bat --color=always --style=plain {} 2>/dev/null || cat {}')"
+        if [[ -n "$file" ]]; then
+            "${EDITOR:-micro}" "$file"
+        fi
+    }
+    fcd() {
+        local dir
+        dir="$(fd --type d --hidden --follow --exclude .git --exclude node_modules | fzf)"
+        if [[ -n "$dir" ]]; then
+            cd "$dir"
+        fi
+    }
+fi
+
+# ============================================================
+# grep/less и поиск по истории (h)
+# ============================================================
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias less='less -R'
+
+alias h='history | grep -i'                          # Поиск по истории

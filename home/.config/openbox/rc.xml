@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- openbox rc.xml — mirrors the XFCE session (hotkeys, menu, autostart) 2026-09-12 -->
+<openbox_config xmlns="http://openbox.org/3.5/rc"
+                xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <resistance>
+    <strength>10</strength>
+    <corner_strength>10</corner_strength>
+  </resistance>
+
+  <focus>
+    <focusNew>yes</focusNew>
+    <followMouse>no</followMouse>
+    <focusLast>yes</focusLast>
+    <raiseOnFocus>no</raiseOnFocus>
+  </focus>
+
+  <placement>
+    <policy>Smart</policy>
+    <monitor>Primary</monitor>
+    <center>yes</center>
+  </placement>
+
+  <theme><name>Clearlooks</name></theme>
+
+  <margins>
+    <top>0</top><bottom>0</bottom><left>0</left><right>0</right>
+  </margins>
+
+  <desktops>
+    <number>9</number>
+    <firstdesk>1</firstdesk>
+    <names>
+      <name>1</name><name>2</name><name>3</name><name>4</name><name>5</name>
+      <name>6</name><name>7</name><name>8</name><name>9</name>
+    </names>
+    <popupTime>600</popupTime>
+  </desktops>
+
+  <mouse>
+    <dragThreshold>8</dragThreshold>
+    <doubleClickTime>500</doubleClickTime>
+    <context name="Frame">
+      <mousebind button="A-Left" action="StartMove"/>
+      <mousebind button="A-Right" action="StartResize"/>
+      <mousebind button="A-Middle" action="Lower"/>
+      <mousebind button="A-Up" action="Shade"/>
+      <mousebind button="A-Down" action="Unshade"/>
+    </context>
+    <context name="Titlebar">
+      <mousebind button="Left" action="Raise"/>
+      <mousebind button="Left" action="FocusAndRaise"/>
+      <mousebind button="A-Left" action="StartMove"/>
+      <mousebind button="A-Right" action="StartResize"/>
+    </context>
+  </mouse>
+
+  <keyboard>
+    <chainQuitKey>C-g</chainQuitKey>
+
+    <!-- The XFCE hotkeys -->
+    <keybind key="W-Return"><action name="Execute"><command>foot</command></action></keybind>
+    <keybind key="W-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
+    <keybind key="W-r"><action name="Execute"><command>rofi</command><command>-show</command><command>drun</command></action></keybind>
+    <keybind key="W-S-Return"><action name="Execute"><command>firefox</command></action></keybind>
+    <keybind key="W-e"><action name="Execute"><command>thunar</command></action></keybind>
+    <keybind key="W-y"><action name="Execute"><command>code</command><command>--unity-launch</command><command>%F</command></action></keybind>
+
+    <!-- AI agents (opencode / herdr) -->
+    <keybind key="W-a"><action name="Execute"><command>foot</command><command>-e</command><command>opencode</command></action></keybind>
+    <keybind key="W-C-Return"><action name="Execute"><command>foot</command><command>-e</command><command>herdr</command></action></keybind>
+
+    <!-- Screenshots (X11: flameshot) -->
+    <keybind key="Print"><action name="Execute"><command>flameshot</command><command>full</command><command>-p</command><command>~/Pictures</command></action></keybind>
+    <keybind key="S-Print"><action name="Execute"><command>flameshot</command><command>gui</command></action></keybind>
+    <keybind key="C-F12"><action name="Execute"><command>flameshot</command><command>gui</command></action></keybind>
+
+    <!-- Media/brightness -->
+    <keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>pactl</command><command>set-sink-volume</command><command>@DEFAULT_SINK@</command><command>+5%</command></action></keybind>
+    <keybind key="XF86AudioLowerVolume"><action name="Execute"><command>pactl</command><command>set-sink-volume</command><command>@DEFAULT_SINK@</command><command>-5%</command></action></keybind>
+    <keybind key="XF86AudioMuteVolume"><action name="Execute"><command>pactl</command><command>set-sink-mute</command><command>@DEFAULT_SINK@</command><command>toggle</command></action></keybind>
+    <keybind key="XF86MonBrightnessUp"><action name="Execute"><command>brightnessctl</command><command>set</command><command>+5%</command></action></keybind>
+    <keybind key="XF86MonBrightnessDown"><action name="Execute"><command>brightnessctl</command><command>set</command><command>5%-</command></action></keybind>
+
+    <!-- Window management -->
+    <keybind key="W-q"><action name="Close"/></keybind>
+    <keybind key="W-f"><action name="ToggleFullscreen"/></keybind>
+    <keybind key="W-z"><action name="ToggleMaximize"/></keybind>
+    <keybind key="W-Left"><action name="MoveToEdge"><direction>west</direction></action></keybind>
+    <keybind key="W-Right"><action name="MoveToEdge"><direction>east</direction></action></keybind>
+    <keybind key="W-Up"><action name="MoveToEdge"><direction>north</direction></action></keybind>
+    <keybind key="W-Down"><action name="MoveToEdge"><direction>south</direction></action></keybind>
+    <keybind key="W-S-Left"><action name="MoveToEdge"><direction>west</direction></action></keybind>
+    <keybind key="W-S-Right"><action name="MoveToEdge"><direction>east</direction></action></keybind>
+    <keybind key="W-S-Up"><action name="MoveToEdge"><direction>north</direction></action></keybind>
+    <keybind key="W-S-Down"><action name="MoveToEdge"><direction>south</direction></action></keybind>
+
+    <!-- Desktops -->
+    <keybind key="W-1"><action name="Desktop"><desktop>1</desktop></action></keybind>
+    <keybind key="W-2"><action name="Desktop"><desktop>2</desktop></action></keybind>
+    <keybind key="W-3"><action name="Desktop"><desktop>3</desktop></action></keybind>
+    <keybind key="W-4"><action name="Desktop"><desktop>4</desktop></action></keybind>
+    <keybind key="W-5"><action name="Desktop"><desktop>5</desktop></action></keybind>
+    <keybind key="W-6"><action name="Desktop"><desktop>6</desktop></action></keybind>
+    <keybind key="W-7"><action name="Desktop"><desktop>7</desktop></action></keybind>
+    <keybind key="W-8"><action name="Desktop"><desktop>8</desktop></action></keybind>
+    <keybind key="W-9"><action name="Desktop"><desktop>9</desktop></action></keybind>
+    <keybind key="W-S-1"><action name="SendToDesktop"><desktop>1</desktop></action></keybind>
+    <keybind key="W-S-2"><action name="SendToDesktop"><desktop>2</desktop></action></keybind>
+    <keybind key="W-S-3"><action name="SendToDesktop"><desktop>3</desktop></action></keybind>
+    <keybind key="W-S-4"><action name="SendToDesktop"><desktop>4</desktop></action></keybind>
+    <keybind key="W-S-5"><action name="SendToDesktop"><desktop>5</desktop></action></keybind>
+    <keybind key="W-S-6"><action name="SendToDesktop"><desktop>6</desktop></action></keybind>
+    <keybind key="W-S-7"><action name="SendToDesktop"><desktop>7</desktop></action></keybind>
+    <keybind key="W-S-8"><action name="SendToDesktop"><desktop>8</desktop></action></keybind>
+    <keybind key="W-S-9"><action name="SendToDesktop"><desktop>9</desktop></action></keybind>
+    <keybind key="W-S-Left"><action name="SendToDesktop"><direction>left</direction></action></keybind>
+    <keybind key="W-S-Right"><action name="SendToDesktop"><direction>right</direction></action></keybind>
+
+    <!-- System -->
+    <keybind key="W-C-l"><action name="Execute"><command>loginctl</command><command>lock-session</command></action></keybind>
+  </keyboard>
+</openbox_config>

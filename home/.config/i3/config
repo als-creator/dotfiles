@@ -1,0 +1,104 @@
+# i3 config — mirrors the XFCE session (hotkeys, launchers, autostart) 2026-09-12.
+# Same personal hotkey set as the sway / bspwm / openbox configs in this repo.
+
+set $mod Mod4
+
+font pango:Noto Sans 10
+
+# --- The XFCE hotkeys --------------------------------------------------------
+# Terminal, launcher, browser, files, editor (Super+E/Y match the XFCE/hypr set)
+bindsym $mod+Return exec --no-startup-id foot
+bindsym $mod+space   exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+Return exec --no-startup-id firefox
+bindsym $mod+e       exec --no-startup-id thunar
+bindsym $mod+y       exec --no-startup-id code --unity-launch %F
+
+# --- AI agents (opencode / herdr) --------------------------------------------
+bindsym $mod+a             exec --no-startup-id foot -e opencode
+bindsym $mod+Ctrl+Return   exec --no-startup-id foot -e herdr
+
+# --- Screenshots (flake/area, XFCE: Print/Shift+Print/Ctrl+F12 = flameshot) ---
+bindsym Print         exec --no-startup-id flameshot full -p ~/Pictures
+bindsym Shift+Print   exec --no-startup-id flameshot gui
+bindsym Control+F12   exec --no-startup-id flameshot gui
+
+# --- Media/brightness (pactl/brightnessctl) ----------------------------------
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMuteVolume   exec --no-startup-id pactl set-sink-mute   @DEFAULT_SINK@ toggle
+bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# --- Window management (omarchy-flavoured) -----------------------------------
+bindsym $mod+q         kill
+bindsym $mod+f         fullscreen toggle
+bindsym $mod+v         splith
+bindsym $mod+s         layout stacking
+bindsym $mod+t         layout tabbed
+bindsym $mod+z         focus parent
+bindsym $mod+Left      focus left
+bindsym $mod+Down      focus down
+bindsym $mod+Up        focus up
+bindsym $mod+Right     focus right
+bindsym $mod+Shift+Left   move left
+bindsym $mod+Shift+Down   move down
+bindsym $mod+Shift+Up     move up
+bindsym $mod+Shift+Right  move right
+
+# --- Workspaces (XFCE pager was numbered) ------------------------------------
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+
+# --- System -----------------------------------------------------------
+bindsym $mod+Ctrl+l   exec --no-startup-id loginctl lock-session
+bindsym $mod+Shift+e  exec --no-startup-id loginctl terminate-session
+bindsym $mod+Ctrl+r   reload
+bindsym $mod+Shift+r  restart
+bindsym $mod+Ctrl+s   exec --no-startup-id flameshot gui
+
+# --- Look: gaps rounded, dark bar like XFCE --------------------------------
+for_window [class=".*"] border pixel 1
+gaps inner 4
+gaps outer 2
+bar {
+    position bottom
+    status_command i3status
+    colors {
+        background #15161a
+        statusline #d6d6d6
+        separator  #2b2e36
+        focused_workspace  #f0833a #f0833a #15161a
+        active_workspace   #2b2e36 #2b2e36 #d6d6d6
+        inactive_workspace #1c1e24 #1c1e24 #7a7f89
+        urgent_workspace   #c0392b #c0392b #ffffff
+    }
+    tray_output primary
+}
+
+# --- Autostart (XFCE mirror) ------------------------------------------------
+exec_always --no-startup-id "$HOME/.local/bin/login-autostart.sh"
