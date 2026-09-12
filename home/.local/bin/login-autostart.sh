@@ -39,8 +39,8 @@ launch flameshot
 launch env GDK_BACKEND=x11 /usr/bin/radiotray-ng
 
 # Installed as local AppImages/bundles (absolute paths).
-launch /home/als/.apps/TgWsProxy_linux_amd64
-launch /home/als/.apps/Kotatogram -workdir "$HOME/.local/share/KotatogramDesktop/" -autostart
+launch "$HOME/.apps/TgWsProxy_linux_amd64"
+launch "$HOME/.apps/Kotatogram" -workdir "$HOME/.local/share/KotatogramDesktop/" -autostart
 
 # --- WM essentials -----------------------------------------------------------
 launch picom -b

@@ -4,7 +4,7 @@
   <property name="log-max-size-enabled" type="bool" value="true"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
-      <value type="string" value="/tmp/.private/als/sayonara/com.sayonara-player.Sayonara.desktop"/>
+      <value type="string" value="/tmp/.private/@USER@/sayonara/com.sayonara-player.Sayonara.desktop"/>
       <value type="string" value="AppImage"/>
       <value type="string" value="blueman"/>
       <value type="string" value="com.dec05eba.gpu_screen_recorder"/>

@@ -2,8 +2,8 @@
 Version=1.0
 Name=Kotatogram Desktop
 Comment=Experimental Telegram Desktop fork
-TryExec=/home/als/.apps/Kotatogram
-Exec=/home/als/.apps/Kotatogram -workdir /home/als/.local/share/KotatogramDesktop/ -autostart
+TryExec=@HOME@/.apps/Kotatogram
+Exec=@HOME@/.apps/Kotatogram -workdir @HOME@/.local/share/KotatogramDesktop/ -autostart
 Icon=kotatogram
 Terminal=false
 StartupWMClass=KotatogramDesktop
@@ -15,6 +15,6 @@ Actions=Quit;
 X-GNOME-UsesNotifications=true
 
 [Desktop Action Quit]
-Exec=/home/als/.apps/Kotatogram -workdir /home/als/.local/share/KotatogramDesktop/ -quit
+Exec=@HOME@/.apps/Kotatogram -workdir @HOME@/.local/share/KotatogramDesktop/ -quit
 Name=Quit Kotatogram
 Icon=application-exit

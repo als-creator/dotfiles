@@ -24,7 +24,7 @@
   <property name="last-details-view-column-widths" type="string" value="50,50,145,50,50,321,50,50,1056,50,50,81,50,145"/>
   <property name="last-tabs-left" type="array">
     <value type="string" value="file:///"/>
-    <value type="string" value="file:///home/als/.config/autostart"/>
+    <value type="string" value="file://@HOME@/.config/autostart"/>
   </property>
   <property name="last-focused-tab-left" type="int" value="1"/>
   <property name="last-focused-tab-right" type="int" value="0"/>

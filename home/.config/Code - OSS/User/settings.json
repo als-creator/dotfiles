@@ -88,7 +88,7 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
   "yaml.schemas": {
-    "/home/als/.vscode-oss/extensions/koda.koda-0.7.0/config-yaml-schema.json": [
+    "@HOME@/.vscode-oss/extensions/koda.koda-0.7.0/config-yaml-schema.json": [
       ".koda/**/*.yaml",
     ],
   },
