@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=TgWsProxy
+Comment=TgWsProxy
+Exec=/home/als/.apps/TgWsProxy_linux_amd64
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+

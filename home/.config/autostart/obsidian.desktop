@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Obsidian
+Comment=Obsidian knowledge base
+Exec=/usr/bin/obsidian %U
+X-GNOME-Autostart-enabled=true
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false

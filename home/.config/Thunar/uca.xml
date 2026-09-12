@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Открыть терминал</name>
+	<submenu></submenu>
+	<unique-id>1711440284587103-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>rotation-allowed</icon>
+	<name>Поворот изображения</name>
+	<submenu></submenu>
+	<unique-id>1715690961829406-1</unique-id>
+	<command>for file in %F; do exiftran -i9 &quot;$file&quot;; done</command>
+	<description>По часовой стрелке</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>plasma-search</icon>
+	<name>Поиск файлов в папке</name>
+	<submenu></submenu>
+	<unique-id>1715691033752515-2</unique-id>
+	<command>catfish %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>application-x-tar</icon>
+	<name>Извлечь здесь</name>
+	<submenu></submenu>
+	<unique-id>1715691080474573-3</unique-id>
+	<command>tar xjf %n</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+</action>
+<action>
+	<icon>gksu-root-terminal</icon>
+	<name>Терминал root</name>
+	<submenu></submenu>
+	<unique-id>1715691136499756-4</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-launch xfce4-terminal --default-working-directory=%f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>org.gnome.baobab.Devel</icon>
+	<name>Распределение места</name>
+	<submenu></submenu>
+	<unique-id>1715691216748839-5</unique-id>
+	<command>baobab %d</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>pyrenamer</icon>
+	<name>Массовове переименование</name>
+	<submenu></submenu>
+	<unique-id>1715691526617711-6</unique-id>
+	<command>thunar --bulk-rename %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>subtitleeditor</icon>
+	<name>Открыть в консольном редакторе</name>
+	<submenu></submenu>
+	<unique-id>1715691704910975-7</unique-id>
+	<command>xfce4-terminal -x editor %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>system-file-manager-root</icon>
+	<name>Редактировать от root</name>
+	<submenu></submenu>
+	<unique-id>1715691826801836-8</unique-id>
+	<command>pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dbus-launch put-your-favourite-text-editor-here %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+</actions>

@@ -1,0 +1,21 @@
+[Annotations]
+annotationToolType=12
+
+[General]
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
+
+[ImageSave]
+imageCompressionQuality=100
+imageSaveLocation=file:///home/als/Рабочий стол/Out
+lastImageSaveLocation=file:///home/als/Рабочий стол/Out/Снимок экрана_20260613_151956.png
+translatedScreenshotsFolder=Снимки экрана
+
+[VideoSave]
+preferredVideoFormat=0
+translatedScreencastsFolder=Записи экрана
+videoSaveLocation=file:///home/als/Рабочий стол/Out
+
+[ViewerWindow]
+1920x1080 screen: Height=494
+1920x1080 screen: Width=905
