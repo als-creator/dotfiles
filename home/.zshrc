@@ -184,7 +184,9 @@ unlock() {
         echo "Файл /var/lib/pacman/db.lck не найден."
     fi
 }
-alias clean='sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} +'
+
+alias clean='sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} + && rm -rf ~/.cache/yandex-browser'
+
 alias info="sudo pacman -Qi"
 
 # ============================================================
@@ -328,10 +330,10 @@ zstyle ':vcs_info:git:*' actionformats ' %F{magenta}%b%f %F{red}(%a)%f'
 zstyle ':vcs_info:*' enable git
 precmd() { vcs_info }
 
-LINE1='%F{blue}┌─%f%F{cyan}%n%f%F{white}@%f%F{cyan}%m%f %F{yellow}%D{%H:%M:%S}%f %F{green}%~%f${vcs_info_msg_0_}'
+LINE1='%F{blue}┌─%f%F{cyan}%n%f%F{white}@%f%F{cyan}%m%f %F{yellow}%D{%H:%M:%S}%f %F{green}%~%f'
 LINE2='%F{blue}└─%f%(?.%F{green}.%F{red})❯%f '
-PROMPT='${LINE1}
-${LINE2}'
+PROMPT='%F{blue}┌─%f%F{cyan}%n%f%F{white}@%f%F{cyan}%m%f %F{yellow}%D{%H:%M:%S}%f %F{green}%~%f${vcs_info_msg_0_}
+%F{blue}└─%f%(?.%F{green}.%F{red})❯%f '
 RPROMPT=''
 
 # ============================================================

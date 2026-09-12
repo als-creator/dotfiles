@@ -186,7 +186,7 @@ unlock() {
     fi
 }
 
-alias clean='sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} +'
+alias clean='sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} + && rm -rf ~/.cache/yandex-browser'
 alias info="sudo pacman -Qi"
 
 
