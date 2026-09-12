@@ -1,0 +1,52 @@
+body {
+    max-width: 75% !important;
+    margin: 0 auto !important;
+    width: 75% !important;
+}
+
+/* Печать: тёмный контрастный текст вместо блёклых цветов тёмной темы */
+@media print {
+    html, body, .rendered-md, .note-viewer {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    body, p, li, td, th, div, span, table {
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+
+    a {
+        color: #0000cc !important;
+        text-decoration: underline !important;
+    }
+
+    strong, b, em, i {
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+
+    code, pre, code * {
+        color: #000000 !important;
+        background: #e8e8e8 !important;
+        border: none !important;
+    }
+
+    /* Комментарии/цитаты оставляем серыми */
+    blockquote, .callout, blockquote *, .callout * {
+        color: #666666 !important;
+        background: #f2f2f2 !important;
+        border-color: #999999 !important;
+    }
+
+    /* Убираем блёклые фоны с цветных блоков */
+    div, ul, ol, table, [class] {
+        background-color: #ffffff !important;
+    }
+}

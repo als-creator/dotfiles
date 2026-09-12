@@ -15,25 +15,29 @@ set -gx VISUAL micro                                               # Редак�
 # Скачивание видео и аудио через yt-dlp
 # ============================================================
 
-set target_dir /mnt/Work                                           # Основной каталог загрузок
+if type -q yt-dlp
+    set target_dir /mnt/Work                                           # Основной каталог загрузок
 
-if test -d "$target_dir"; and test -w "$target_dir"
-    set -g YT_DOWNLOAD_DIR "$target_dir"                           # Использовать /mnt/Work
-else
-    set -g YT_DOWNLOAD_DIR "$HOME/Загрузки"                        # Запасной каталог
+    if test -d "$target_dir"; and test -w "$target_dir"
+        set -g YT_DOWNLOAD_DIR "$target_dir"                           # Использовать /mnt/Work
+    else
+        set -g YT_DOWNLOAD_DIR "$HOME/Загрузки"                        # Запасной каталог
+    end
+
+    mkdir -p "$YT_DOWNLOAD_DIR"                                       # Создать каталог, если его нет
+
+    alias dl 'yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR/%(title)s.%(ext)s"'                 # Скачать видео
+    alias dlmp3 'yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR/%(title)s_audio.%(ext)s"'                         # Скачать аудио в MP3
 end
-
-mkdir -p "$YT_DOWNLOAD_DIR"                                       # Создать каталог, если его нет
-
-alias dl 'yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR/%(title)s.%(ext)s"'                 # Скачать видео
-alias dlmp3 'yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR/%(title)s_audio.%(ext)s"'                         # Скачать аудио в MP3
 
 
 # ============================================================
 # Steam
 # ============================================================
 
-alias steamguard="/mnt/Work/Distrib/Linux/AppImage/steamguard"     # Запустить SteamGuard
+if test -x /mnt/Work/Distrib/Linux/AppImage/steamguard
+    alias steamguard "/mnt/Work/Distrib/Linux/AppImage/steamguard"     # Запустить SteamGuard
+end
 
 
 # ============================================================
@@ -41,9 +45,9 @@ alias steamguard="/mnt/Work/Distrib/Linux/AppImage/steamguard"     # Запус�
 # ============================================================
 
 if type -q bat
-    alias cat bat                                                 # Использовать bat вместо cat
+    alias cat 'bat --paging=never --style=plain'                      # Использовать bat вместо cat
 else if type -q batcat
-    alias cat batcat                                              # Использовать batcat вместо cat
+    alias cat 'batcat --paging=never --style=plain'                   # Использовать batcat вместо cat
 end
 
 
@@ -56,7 +60,11 @@ if type -q col
         set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"       # Показывать man через bat
     else if type -q batcat
         set -gx MANPAGER "sh -c 'col -bx | batcat -l man -p'"   # Показывать man через batcat
+    else
+        set -gx MANPAGER 'less -R'                             # Запасной вариант
     end
+else
+    set -gx MANPAGER 'less -R'                                 # Запасной вариант
 end
 
 
@@ -64,23 +72,23 @@ end
 # Git-алиасы
 # ============================================================
 
-alias add="git add ."                                              # Добавить все изменения
-alias commit="git commit -m"                                      # Создать коммит с сообщением
-alias push="git push"                                              # Отправить изменения
-alias pull="git pull"                                              # Получить изменения
-alias log="git log --graph --all"                                  # Показать граф коммитов
-alias diff="git diff"                                              # Показать изменения
-alias diffs="git diff --staged"                                   # Показать подготовленные изменения
-alias restore="git restore"                                       # Отменить изменения
-alias clone="git clone"                                           # Клонировать репозиторий
-alias checkout="git checkout"                                     # Переключить ветку
+alias add "git add ."                                              # Добавить все изменения
+alias commit "git commit -m"                                      # Создать коммит с сообщением
+alias push "git push"                                              # Отправить изменения
+alias pull "git pull"                                              # Получить изменения
+alias log "git log --graph --all"                                  # Показать граф коммитов
+alias diff "git diff"                                              # Показать изменения
+alias diffs "git diff --staged"                                   # Показать подготовленные изменения
+alias restore "git restore"                                       # Отменить изменения
+alias clone "git clone"                                           # Клонировать репозиторий
+alias checkout "git checkout"                                     # Переключить ветку
 
-alias gs="git status"                                              # Статус репозитория
-alias stat="git status"                                            # Статус репозитория
-alias gc="git commit -m"                                           # Создать коммит
-alias gp="git push"                                                # Отправить изменения
-alias glo="git log --oneline --graph --all"                       # Краткий граф коммитов
-alias gco="git checkout"                                           # Переключить ветку
+alias gs "git status"                                              # Статус репозитория
+alias stat "git status"                                            # Статус репозитория
+alias gc "git commit -m"                                           # Создать коммит
+alias gp "git push"                                                # Отправить изменения
+alias glo "git log --oneline --graph --decorate --all"             # Краткий граф коммитов с ветками
+alias gco "git checkout"                                           # Переключить ветку
 
 
 # ============================================================
@@ -94,8 +102,10 @@ alias syslog "sudo dmesg --level=err,warn"                         # Показ�
 # Информация о системе через inxi
 # ============================================================
 
-alias pc "inxi -Ixxx"                                              # Информация о системе
-alias net "inxi -Nxxx"                                             # Информация о сети
+if type -q inxi
+    alias pc "inxi -Ixxx"                                          # Информация о системе
+    alias net "inxi -Nxxx"                                         # Информация о сети
+end
 
 
 # ============================================================
@@ -109,7 +119,7 @@ else if type -q netstat
 end
 
 if type -q curl
-    alias ipinfo "curl -4 ifconfig.me"                            # Показать внешний IPv4-адрес
+    alias ipinfo "curl -4 https://ifconfig.me"                     # Показать внешний IPv4-адрес
 end
 
 
@@ -117,27 +127,40 @@ end
 # Управление пакетами Arch Linux
 # ============================================================
 
-alias mirror="sudo reflector --verbose --country 'Russia' -l 25 --sort rate --save /etc/pacman.d/mirrorlist"  # Обновить зеркала Arch
-alias unlock="sudo rm /var/lib/pacman/db.lck"                     # Удалить блокировку pacman
-alias clean="sudo pacman -Sc"                                     # Очистить кэш пакетов
-alias info="sudo pacman -Qi"                                      # Информация о пакете
+alias mirror "sudo reflector --verbose --country 'Russia' --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"  # Обновить зеркала Arch
+
+function unlock                                                 # Удалить блокировку pacman
+    if pgrep -x pacman >/dev/null; or pgrep -x yay >/dev/null; or pgrep -x paru >/dev/null
+        echo "Менеджер пакетов ещё запущен."
+        return 1
+    end
+
+    if test -e /var/lib/pacman/db.lck
+        sudo rm -i /var/lib/pacman/db.lck
+    else
+        echo "Файл /var/lib/pacman/db.lck не найден."
+    end
+end
+
+alias clean "sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name 'download-*' -print -exec rm -rf -- {} +"  # Очистить кэш pacman и временные загрузки
+alias info "sudo pacman -Qi"                                      # Информация о пакете
 
 
 # ============================================================
 # Управление пакетами Debian/Ubuntu
 # ============================================================
 
-alias up="sudo apt-get update && sudo apt-get dist-upgrade -y"     # Обновить систему
+alias up "sudo apt-get update && sudo apt-get dist-upgrade -y"     # Обновить систему
 
-alias cc="sudo apt-get clean && \
+alias cc "sudo apt-get clean && \
 sudo apt-get autoclean && \
 sudo apt-get check && \
 flatpak uninstall --unused -y && \
 sudo journalctl --vacuum-time=1w"                                 # Очистить пакеты, Flatpak и старые логи
 
-alias upgrade='sudo apt-get update && sudo apt-get dist-upgrade -y' # Обновить систему
-alias install='sudo apt-get install'                              # Установить пакет
-alias remove='sudo apt-get remove'                                # Удалить пакет
+alias upgrade 'sudo apt-get update && sudo apt-get dist-upgrade -y' # Обновить систему
+alias install 'sudo apt-get install'                              # Установить пакет
+alias remove 'sudo apt-get remove'                                # Удалить пакет
 
 
 # ============================================================
@@ -157,6 +180,9 @@ alias zshrc "micro ~/.zshrc"                                      # Открыт
 alias editgrub "sudo micro /etc/default/grub"                     # Открыть конфигурацию GRUB
 alias updategrub "sudo update-grub"                               # Обновить конфигурацию GRUB
 alias grubupdate "sudo update-grub"                               # Обновить конфигурацию GRUB
+
+# Для Arch Linux
+alias grubconfig "sudo grub-mkconfig -o /boot/grub/grub.cfg"      # Пересобрать конфигурацию GRUB
 
 
 # ============================================================
@@ -222,7 +248,13 @@ set -gx FZF_DEFAULT_OPTS \
     --multi \
     --info=inline \
     --preview-window='right:60%:wrap' \
-    --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-y:execute-silent(echo {+} | xclip -selection clipboard),ctrl-x:execute(rm -i {+})+abort,ctrl-l:clear-query'"  # Настройки интерфейса FZF
+    --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-x:execute(rm -i {+})+abort,ctrl-l:clear-query'"  # Настройки интерфейса FZF
+
+if type -q wl-copy
+    set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS --bind='ctrl-y:execute-silent(echo {+} | wl-copy)'"   # Копия через Wayland
+else if type -q xclip
+    set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS --bind='ctrl-y:execute-silent(echo {+} | xclip -selection clipboard)'"  # Копия через X11
+end
 
 set -gx FZF_COMPLETION_OPTS "--border --info=inline"               # Настройки автодополнения FZF
 
@@ -236,12 +268,14 @@ end
 # ============================================================
 
 if type -q go
-    set -l go_path (go env GOPATH 2>/dev/null)                    # Получить GOPATH
+    set -q GOPATH; or set -gx GOPATH (go env GOPATH 2>/dev/null)  # Получить GOPATH
 
-    if test -n "$go_path"
-        set -l go_bin "$go_path/bin"                              # Каталог Go-программ
-        mkdir -p "$go_bin"                                        # Создать каталог, если его нет
-        fish_add_path "$go_bin"                                   # Добавить каталог в PATH
+    if test -n "$GOPATH"
+        set -gx GOBIN "$GOPATH/bin"                               # Каталог Go-программ
+        set -q GOCACHE; or set -gx GOCACHE "$HOME/.cache/go-build" # Кэш сборки
+
+        mkdir -p "$GOBIN"                                         # Создать каталог, если его нет
+        fish_add_path "$GOBIN"                                    # Добавить каталог в PATH
     end
 end
 
@@ -283,15 +317,6 @@ if type -q fd
     end
 else
     echo "fd не установлен. FZF будет использовать стандартный поиск." >/dev/null
-end
-
-
-# ============================================================
-# libpq
-# ============================================================
-
-if test -d /usr/local/opt/libpq/bin
-    fish_add_path /usr/local/opt/libpq/bin                       # Добавить libpq в PATH
 end
 
 
@@ -344,3 +369,97 @@ function fish_prompt
 
     set_color normal
 end
+
+
+# ============================================================
+# Навигация: .. ... .... mkcd d
+# ============================================================
+
+alias .. 'cd ..'                                                  # На уровень вверх
+alias ... 'cd ../..'                                              # На два уровня вверх
+alias .... 'cd ../../..'                                          # На три уровня вверх
+
+function mkcd --description="Создать каталог и перейти в него"
+    mkdir -p -- $argv[1]; and cd -- $argv[1]
+end
+
+alias d 'dirs'                                                    # Список каталогов-закладок
+
+
+# ============================================================
+# Буфер обмена: c (копия), p (вставка), copypath
+# ============================================================
+
+if type -q wl-copy
+    function c; printf '%s' $argv | wl-copy; end                 # Копия через Wayland
+    function p; wl-paste; end                                    # Вставка через Wayland
+else if type -q xclip
+    function c; printf '%s' $argv | xclip -selection clipboard; end  # Копия через X11
+    function p; xclip -o -selection clipboard; end               # Вставка через X11
+end
+
+function copypath --description="Скопировать текущий путь в буфер"
+    command pwd | c
+end
+
+
+# ============================================================
+# Безопасное удаление: rm -I и корзина (trash)
+# ============================================================
+
+alias rm 'rm -I'                                                  # Запрашивать подтверждение
+if type -q gio
+    alias trash 'gio trash'                                       # Удалить в корзину
+end
+
+
+# ============================================================
+# sysup — обновление всего одной командой
+# ============================================================
+
+function sysup --description="Обновить pacman/apt + Flatpak"
+    if type -q pacman
+        sudo pacman -Syu --noconfirm
+    end
+    if type -q apt-get
+        sudo apt-get update; and sudo apt-get dist-upgrade -y
+    end
+    if type -q flatpak
+        flatpak update -y
+        flatpak uninstall --unused -y
+    end
+end
+
+
+# ============================================================
+# fzf: ff (открыть файл), fcd (перейти в каталог)
+# Ctrl+T / Alt+C уже задаются fzf --fish ниже
+# ============================================================
+
+if type -q fzf; and type -q fd
+    function ff --description="Найти файл через fzf+fd и открыть"
+        set -l file (fd --hidden --follow --exclude .git --exclude node_modules | fzf --preview 'bat --color=always --style=plain {} 2>/dev/null; or cat {}')
+        test -n "$file"; and command $EDITOR "$file"
+    end
+
+    function fcd --description="Перейти в каталог через fzf+fd"
+        set -l dir (fd --type d --hidden --follow --exclude .git --exclude node_modules | fzf)
+        test -n "$dir"; and cd "$dir"
+    end
+end
+
+
+# ============================================================
+# grep/less и поиск по истории (h)
+# ============================================================
+
+alias grep 'grep --color=auto'                                    # Цветной grep
+alias egrep 'egrep --color=auto'
+alias fgrep 'fgrep --color=auto'
+alias less 'less -R'                                              # Цветной less
+
+function h --description="Поиск по истории"
+    history search $argv
+end
+
+

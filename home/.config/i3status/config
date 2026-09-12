@@ -1,0 +1,53 @@
+// i3status — status bar for the i3 bar. Same info the XFCE panel showed:
+// cpu, memory, weather-less clock with ru date, volume, disk, battery.
+
+general {
+    output_format = i3bar
+    colors = true
+    interval = 2
+    color_good = "#8fc15d"
+    color_degraded = "#d6b35f"
+    color_bad = "#c0392b"
+    color_separator = "#2b2e36"
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "volume master"
+order += "disk /"
+order += "battery all"
+order += "clock"
+
+cpu_usage {
+    format = " %usage"
+}
+
+memory {
+    format = " %used/%total"
+    threshold_degraded = "1G"
+    threshold_critical = "1G"
+}
+
+volume master {
+    format = " %volume"
+    format_muted = " %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+disk "/" {
+    format = " %avail"
+    prefix_type = "custom"
+}
+
+battery all {
+    format = " %status %percentage"
+    format_download = " %status %percentage" 
+}
+
+clock {
+    format = " %H:%M %a %d.%m.%Y"
+    format_time = "%H:%M:%S"
+    timezone = "Asia/Omsk"
+}

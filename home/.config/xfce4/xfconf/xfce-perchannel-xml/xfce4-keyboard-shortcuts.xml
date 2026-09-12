@@ -69,6 +69,9 @@
       <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
       <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/code --unity-launch %F"/>
+      <property name="&lt;Super&gt;a" type="string" value="xfce4-terminal --command=opencode"/>
+      <property name="&lt;Super&gt;Cyrillic_ef" type="string" value="xfce4-terminal --command=opencode"/>
+      <property name="&lt;Super&gt;&lt;Primary&gt;Return" type="string" value="xfce4-terminal --command=herdr"/>
       <property name="F1" type="string" value="xfce4-terminal --drop-down"/>
     </property>
   </property>

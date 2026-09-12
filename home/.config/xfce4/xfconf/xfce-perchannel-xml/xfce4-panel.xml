@@ -5,10 +5,11 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
-        <value type="string" value="firefox.desktop"/>
-        <value type="string" value="simplescreenrecorder.desktop"/>
-        <value type="string" value="com.ayugram.desktop.desktop"/>
         <value type="string" value="obsidian.desktop"/>
+        <value type="string" value="appimagekit_00fabb23d4e4b9ef54db798875f9d878-LibreOffice.desktop"/>
+        <value type="string" value="appimagelaunchersettings.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="com.ayugram.desktop.desktop"/>
         <value type="string" value="emacs.desktop"/>
         <value type="string" value="nvim.desktop"/>
         <value type="string" value="ranger.desktop"/>
@@ -22,7 +23,6 @@
         <value type="string" value="foot-server.desktop"/>
         <value type="string" value="foot.desktop"/>
         <value type="string" value="htop.desktop"/>
-        <value type="string" value="appimagelaunchersettings.desktop"/>
         <value type="string" value="net.poedit.Poedit.desktop"/>
         <value type="string" value="qmmp.desktop"/>
         <value type="string" value="fheroes2.desktop"/>
@@ -96,7 +96,6 @@
         <value type="string" value="fheroes2.desktop"/>
         <value type="string" value="obsidian.desktop"/>
         <value type="string" value="net.poedit.Poedit.desktop"/>
-        <value type="string" value="simplescreenrecorder.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -289,7 +288,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="smplayer;Яндекс Браузер"/>
+      <property name="known-players" type="string" value="org.kde.kdeconnect.app;smplayer;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
@@ -320,19 +319,9 @@
         <value type="string" value="17783256483.desktop"/>
       </property>
     </property>
-    <property name="plugin-17" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17787485601.desktop"/>
-      </property>
-    </property>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17804967501.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-20" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17872292541.desktop"/>
       </property>
     </property>
   </property>
@@ -349,8 +338,6 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="26"/>
         <value type="int" value="1"/>
-        <value type="int" value="17"/>
-        <value type="int" value="20"/>
         <value type="int" value="11"/>
         <value type="int" value="15"/>
         <value type="int" value="7"/>

@@ -1,0 +1,66 @@
+# sxhkd — keybindings for bspwm, mirrors the XFCE hotkeys 2026-09-12.
+# Same personal hotkey set as the i3 / sway / openbox configs in this repo.
+
+# --- The XFCE hotkeys --------------------------------------------------------
+super + Return
+    foot
+super + space
+    rofi -show drun
+super + shift + Return
+    firefox
+super + e
+    thunar
+super + y
+    code --unity-launch %F
+
+# --- AI agents (opencode / herdr) --------------------------------------------
+super + a
+    foot -e opencode
+super + ctrl + Return
+    foot -e herdr
+
+# --- Screenshots (X11: flameshot) --------------------------------------------
+Print
+    flameshot full -p ~/Pictures
+shift + Print
+    flameshot gui
+ctrl + F12
+    flameshot gui
+
+# --- Media/brightness --------------------------------------------------------
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+XF86AudioMuteVolume
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+XF86MonBrightnessUp
+    brightnessctl set +5%
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
+# --- Window management (omarchy-flavoured) -----------------------------------
+super + q
+    bspc node -c
+super + f
+    bspc node -t ~fullscreen
+super + v
+    bspc node -t tiled; bspc node -p east
+super + t
+    bspc node -t tiled
+super + {j,k,l,;}, super + {Down,Up,Right,Left}
+    bspc node -f {south,north,east,west}
+super + shift + {j,k,l,;}, super + shift + {Down,Up,Right,Left}
+    bspc node -s {south,north,east,west}
+super + {_,shift + }1..9
+    bspc {desktop -f,node -d} ^{1..9}
+
+# --- System -----------------------------------------------------------
+super + ctrl + l
+    loginctl lock-session
+super + shift + e
+    loginctl terminate-session
+super + ctrl + r
+    pkill -x sxhkd; sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
+super + ctrl + s
+    flameshot gui

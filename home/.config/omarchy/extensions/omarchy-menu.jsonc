@@ -27,4 +27,49 @@
   // Example: replace the default About action by reusing the same id. Existing
   // fields are kept unless overridden.
   // "about": {"icon":"","label":"About","action":"omarchy-launch-or-focus-tui \"zsh -c 'fastfetch; read -k 1'\""},
+
+  // Migrated from the XFCE panel (xfce4-panel.xml whiskermenu favorites +
+  // dock launchers, 2026-09-12). Launch .desktop ids via gtk-launch so each
+  // entry is resolved like the old panel did regardless of install path.
+  "favorites": { "icon": "󰉋", "label": "Избранное (XFCE)", "description": "Панель XFCE: dock-лаунчеры и избранное меню" },
+
+  // Dock launchers (bottom panel, left to right).
+  "favorites.galculator": { "label": "Galculator", "action": "gtk-launch galculator.desktop" },
+  "favorites.steam": { "label": "Steam", "action": "gtk-launch steam.desktop" },
+  "favorites.yandex": { "label": "Yandex Browser", "action": "gtk-launch yandex-browser.desktop" },
+  "favorites.kate": { "icon": "󰘔", "label": "Kate", "action": "gtk-launch org.kde.kate.desktop" },
+  "favorites.thunar": { "icon": "󰉋", "label": "Thunar File Manager", "action": "gtk-launch thunar.desktop" },
+
+  // Whisker favorites (in XFCE order).
+  "favorites.virtualbox": { "label": "VirtualBox", "action": "gtk-launch virtualbox.desktop" },
+  "favorites.filezilla": { "label": "FileZilla", "action": "gtk-launch filezilla.desktop" },
+  "favorites.foliate": { "label": "Foliate", "action": "gtk-launch com.github.johnfactotum.Foliate.desktop" },
+  "favorites.baobab": { "label": "Disk Usage Analyzer", "action": "gtk-launch org.gnome.baobab.desktop" },
+  "favorites.disks": { "label": "Disks", "action": "gtk-launch org.gnome.DiskUtility.desktop" },
+  "favorites.qdiskinfo": { "label": "QDiskInfo", "action": "gtk-launch QDiskInfo.desktop" },
+  "favorites.kdiskmark": { "label": "Kdiskmark", "action": "gtk-launch kdiskmark.desktop" },
+  "favorites.putty": { "label": "PuTTY", "action": "gtk-launch putty.desktop" },
+  "favorites.anydesk": { "label": "AnyDesk", "action": "gtk-launch anydesk.desktop" },
+  "favorites.rudesktop": { "label": "RudeDesktop", "action": "gtk-launch rudesktop.desktop" },
+  "favorites.rustdesk": { "label": "RustDesk", "action": "gtk-launch rustdesk.desktop" },
+  "favorites.remote-assistant": { "label": "Remote Assistant", "action": "gtk-launch remote-assistant.desktop" },
+  "favorites.screenkey": { "label": "Screenkey", "action": "gtk-launch screenkey.desktop" },
+  "favorites.firefox": { "icon": "󰈹", "label": "Firefox", "action": "gtk-launch firefox.desktop" },
+  "favorites.thorium": { "label": "Thorium", "action": "gtk-launch thorium-browser.desktop" },
+  "favorites.zenmap": { "label": "Zenmap", "action": "gtk-launch zenmap.desktop" },
+  "favorites.obs": { "label": "OBS Studio", "action": "gtk-launch com.obsproject.Studio.desktop" },
+  "favorites.kdenlive": { "label": "Kdenlive", "action": "gtk-launch org.kde.kdenlive.desktop" },
+  "favorites.avidemux": { "label": "Avidemux", "action": "gtk-launch org.avidemux.Avidemux.desktop" },
+  "favorites.handbrake": { "label": "HandBrake", "action": "gtk-launch fr.handbrake.ghb.desktop" },
+  "favorites.software": { "label": "Software", "action": "gtk-launch org.gnome.Software.desktop" },
+  "favorites.qmmp": { "label": "Qmmp", "action": "gtk-launch qmmp.desktop" },
+  "favorites.assistant": { "label": "Assistant", "action": "gtk-launch assistant.desktop" },
+  "favorites.localsend": { "label": "LocalSend", "action": "gtk-launch localsend.desktop" },
+  "favorites.packet": { "label": "Packet", "action": "gtk-launch io.github.nozwock.Packet.desktop" },
+  "favorites.kdeconnect": { "label": "KDE Connect", "action": "gtk-launch org.kde.kdeconnect.app.desktop" },
+  "favorites.mysql-workbench": { "label": "MySQL Workbench", "action": "gtk-launch mysql-workbench.desktop" },
+  "favorites.sqlitebrowser": { "label": "SQLiteBrowser", "action": "gtk-launch sqlitebrowser.desktop" },
+  "favorites.fheroes2": { "label": "fheroes2", "action": "gtk-launch fheroes2.desktop" },
+  "favorites.obsidian": { "label": "Obsidian", "action": "gtk-launch obsidian.desktop" },
+  "favorites.poedit": { "label": "Poedit", "action": "gtk-launch net.poedit.Poedit.desktop" }
 }

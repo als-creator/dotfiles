@@ -1,0 +1,10 @@
+# openbox autostart — mirrors the XFCE session + a status/tray bar 2026-09-12.
+# Hotkeys live in rc.xml, the app menu in menu.xml.
+
+# Panel + systray for openbox (pick whatever bar is installed).
+command -v tint2 >/dev/null 2>&1 && tint2 &
+command -v polybar >/dev/null 2>&1 && polybar &
+command -v xfce4-panel >/dev/null 2>&1 && xfce4-panel &
+
+# XFCE autostart mirror (conky, obsidian, qbittorrent, ... + compositor).
+"$HOME/.local/bin/login-autostart.sh"

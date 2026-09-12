@@ -4,8 +4,8 @@ Encoding=IBM866
 Time=2026,8,29,7,3,24.519,UTC
 URL=file:///home/als/.cache/.fr-rlMVcw/FAQ.TXT
 
-[file:///run/media/als/Work/Distrib/Antivirus/Скрипты/servicesOff/info.txt]
-Checksum=f962cde15429ab93873f855b72f3b3eccac4f8a8
-Encoding=windows-1251
-Time=2026,8,10,11,45,38.881,UTC
-URL=file:///run/media/als/Work/Distrib/Antivirus/Скрипты/servicesOff/info.txt
+[file:///home/als/.zsh_history]
+Checksum=95728071011ffe48644fa564ef12b20874f5735b
+Encoding=ISO-8859-1
+Time=2026,9,11,17,4,34.993,UTC
+URL=file:///home/als/.zsh_history

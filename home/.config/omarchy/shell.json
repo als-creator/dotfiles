@@ -23,8 +23,8 @@
         },
         {
           "id": "omarchy.clock",
-          "format": "dddd HH:mm",
-          "formatAlt": "d MMMM 'W'ww yyyy",
+          "format": "HH:mm",
+          "formatAlt": "ccc, d MMM yyyy",
           "verticalFormat": "HH\n\u2014\nmm"
         },
         {
