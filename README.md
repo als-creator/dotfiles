@@ -54,7 +54,6 @@ home/
 - **Обновление:** `sysup` — pacman/apt + Flatpak одной командой
 - **Навигация:** `..`, `...`, `....`, `mkcd`, `d` (закладки каталогов)
 - **Буфер обмена:** `c` (копия), `p` (вставка), `copypath` — автоопределение `wl-copy`/`xclip`
-- **Удаление:** `rm -I` (подтверждение), `trash` (`gio trash`)
 - **Поиск/просмотр:** `ff` (файл через fzf+fd, превью bat), `fcd` (переход в каталог), `h` (история), цветные `grep`/`egrep`/`fgrep`, `less -R`, `bat`/`batcat` + `MANPAGER` (`col | bat`, fallback `less -R`)
 - **Полезное:** `ports` (`ss -tulpen`, fallback `netstat`), `ipinfo` (curl https), Go — единые `GOPATH/GOBIN/GOCACHE`, guard-ы для `yt-dlp`/`steamguard`/`inxi`
 
