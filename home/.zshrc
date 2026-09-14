@@ -24,7 +24,6 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 setopt INC_APPEND_HISTORY    # Записывать команды в файл сразу после выполнения
-setopt HIST_IGNORE_DUPS      # Не сохранять одинаковые команды подряд
 setopt HIST_IGNORE_ALL_DUPS  # Удалять предыдущие копии повторяющейся команды
 setopt HIST_IGNORE_SPACE     # Не сохранять команды, начинающиеся с пробела
 setopt HIST_REDUCE_BLANKS    # Убирать лишние пробелы из команд
@@ -51,21 +50,56 @@ export VISUAL=micro
 # ============================================================
 
 if command -v yt-dlp >/dev/null 2>&1; then
-    target_dir="/mnt/Work"                                             # Основной каталог загрузок
+    target_dir="/mnt/Work"
 
     if [[ -d "$target_dir" && -w "$target_dir" ]]; then
-        YT_DOWNLOAD_DIR="$target_dir"                                  # Использовать /mnt/Work
+        YT_DOWNLOAD_DIR="$target_dir"
     else
-        YT_DOWNLOAD_DIR="$HOME/Загрузки"                               # Запасной каталог
+        YT_DOWNLOAD_DIR="$HOME/Загрузки"
     fi
 
-    mkdir -p "$YT_DOWNLOAD_DIR"                                       # Создать каталог, если его нет
+    mkdir -p "$YT_DOWNLOAD_DIR"
 
-    alias dl='yt-dlp --cookies-from-browser firefox -f "bestvideo+bestaudio/best" --merge-output-format mp4 --output "$YT_DOWNLOAD_DIR/%(title)s.%(ext)s"'                 # Скачать видео
-    alias dlmp3='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --audio-quality 0 --output "$YT_DOWNLOAD_DIR/%(title)s_audio.%(ext)s"'                         # Скачать аудио в MP3
+    dl() {
+        local url
+
+        read -r "url?Введите URL видео: "
+
+        if [[ -z "$url" ]]; then
+            print "URL не указан"
+            return 1
+        fi
+
+        noglob yt-dlp \
+            --cookies-from-browser firefox \
+            -f 'bestvideo+bestaudio/best' \
+            --merge-output-format mp4 \
+            -o "$YT_DOWNLOAD_DIR/%(title)s.%(ext)s" \
+            "$url"
+    }
+
+    dlmp3() {
+        local url
+
+        read -r "url?Введите URL видео: "
+
+        if [[ -z "$url" ]]; then
+            print "URL не указан"
+            return 1
+        fi
+
+        noglob yt-dlp \
+            --cookies-from-browser firefox \
+            -x \
+            --audio-format mp3 \
+            --audio-quality 0 \
+            -o "$YT_DOWNLOAD_DIR/%(title)s_audio.%(ext)s" \
+            "$url"
+    }
 fi
 
 
+#
 # ============================================================
 # Steam
 # ============================================================
@@ -384,15 +418,6 @@ elif command -v xclip >/dev/null 2>&1; then
 fi
 
 copypath() { command pwd | c; }                     # Скопировать текущий путь
-
-# ============================================================
-# Безопасное удаление: rm -I и корзина (trash)
-# ============================================================
-
-alias rm='rm -I'
-if command -v gio >/dev/null 2>&1; then
-    alias trash='gio trash'
-fi
 
 # ============================================================
 # sysup — обновление всего одной командой

@@ -281,40 +281,12 @@ end
 
 
 # ============================================================
-# fd для FZF
+# fd для FZF — актуальный API fzf (walker): skips .git,node_modules
 # ============================================================
 
 if type -q fd
-    function __fzf_compgen_path --description "Generate file paths using fd for FZF"
-        set -l search_path "$argv[1]"                              # Путь для поиска
-
-        if test -z "$search_path"
-            set search_path .                                      # Использовать текущий каталог
-        end
-
-        command fd \
-            --hidden \
-            --follow \
-            --exclude .git \
-            --exclude node_modules \
-            . "$search_path"                                       # Найти файлы через fd
-    end
-
-    function __fzf_compgen_dir --description "Generate directories using fd for FZF"
-        set -l search_path "$argv[1]"                              # Путь для поиска
-
-        if test -z "$search_path"
-            set search_path .                                      # Использовать текущий каталог
-        end
-
-        command fd \
-            --type d \
-            --hidden \
-            --follow \
-            --exclude .git \
-            --exclude node_modules \
-            . "$search_path"                                       # Найти каталоги через fd
-    end
+    set -gx FZF_CTRL_T_OPTS '--walker=file,dir,follow,hidden'
+    set -gx FZF_ALT_C_OPTS '--walker=dir,follow,hidden'
 else
     echo "fd не установлен. FZF будет использовать стандартный поиск." >/dev/null
 end
@@ -400,16 +372,6 @@ end
 
 function copypath --description="Скопировать текущий путь в буфер"
     command pwd | c
-end
-
-
-# ============================================================
-# Безопасное удаление: rm -I и корзина (trash)
-# ============================================================
-
-alias rm 'rm -I'                                                  # Запрашивать подтверждение
-if type -q gio
-    alias trash 'gio trash'                                       # Удалить в корзину
 end
 
 
