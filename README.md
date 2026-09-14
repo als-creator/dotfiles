@@ -154,7 +154,9 @@ home/
 
 ```conf
 DEFAULT=us            # остальные окна — английская
-opencode=ru           # окно с opencode — русская
+guake=us              # англ. для Guake, code-oss, obs, Xfce4-terminal,
+..=us                 # kitty, putty, kate, Steam/steamwebhelper (см. конфиг)
+opencode=ru           # окно с opencode — русская (последнее правило)
 ```
 
 Автозапуск: XDG `autostart/kb-layout-watch.desktop` (XFCE/GNOME/KDE) + строка в
