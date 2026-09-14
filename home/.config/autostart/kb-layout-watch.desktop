@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Keyboard layout by window (X11)
+Comment=Per-window keyboard layout: opencode -> ru, other windows -> en
+Exec=@HOME@/.local/bin/kb-layout-watch.sh
+Terminal=false
+X-GNOME-Autostart-Phase=Applications

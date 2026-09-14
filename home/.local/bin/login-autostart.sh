@@ -47,3 +47,6 @@ launch picom -b
 launch dunst
 launch nm-applet
 launch xfce4-power-manager
+
+# Per-window keyboard layout (X11 only; no-ops on Wayland).
+launch "$HOME/.local/bin/kb-layout-watch.sh"

@@ -141,6 +141,27 @@ home/
 - **GNOME:** `.config/gnome/apply-xfce-settings.sh` — применяет те же кастомные биндинги через gsettings (требует фиксации `custom-keybindings`)
 - **KDE:** `.config/khotkeysrc` — 9 «Custom Shortcuts» (терминал, launcher, браузер, файловый менеджер, редактор, opencode, herdr, скрин, блокировка); Plasma импортирует файл при логине
 
+### Раскладка по окнам (X11)
+
+Демон `~/.local/bin/kb-layout-watch.sh` следит за активным окном через EWMH
+(`_NET_ACTIVE_WINDOW`) и сам устанавливает раскладку под это окно через
+`setxkbmap`. Обе группы (`ru`,`us`) остаются активными (переключение — `Ctrl+Shift`),
+при смене фокуса активная группа сбрасывается в «родную» для окна — так окно
+терминала с **opencode** всегда стартует на русской, а остальные окна — на английской.
+
+Правила — в `~/.config/kb-layout-watch.conf` (`PATTERN=LAYOUT`, матч по заголовку
+и `WM_CLASS`, без учёта регистра; последнее совпавшее правило побеждает):
+
+```conf
+DEFAULT=us            # остальные окна — английская
+opencode=ru           # окно с opencode — русская
+```
+
+Автозапуск: XDG `autostart/kb-layout-watch.desktop` (XFCE/GNOME/KDE) + строка в
+`login-autostart.sh` (i3/bspwm/openbox). На Wayland (sway/hyprland) пооконной
+раскладки нет — скрипт там завершается сам (no-op), раскладку задают
+`hypr/input.lua` / `sway` `input`.
+
 ### Панель и виджеты
 
 - **waybar** (`.config/waybar/`) — для Hyprland/WM: launcher, calc, apps, workspaces, CPU/память, tray, звук, погода, раскладка, часы; правый клик — `wlogout`
@@ -164,4 +185,4 @@ home/
 
 ### Автозапуск для WM/DE
 
-`.local/bin/login-autostart.sh` — общий безопасный автозапуск для оконных менеджеров (умные проверки установленных программ); вызывается из конфигов i3, sway, bspwm, openbox.
+`.local/bin/login-autostart.sh` — общий безопасный автозапуск для оконных менеджеров (умные проверки установленных программ); вызывается из конфигов i3, sway, bspwm, openbox. Также поднимает `kb-layout-watch.sh` (раскладка по окну, см. выше).
