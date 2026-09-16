@@ -1,3 +1,4 @@
+onboarding = false
 # Mirrors the Omarchy tmux config in config/tmux/tmux.conf
 # tmux session -> herdr workspace, tmux window -> herdr tab, tmux pane -> herdr pane
 
@@ -5,6 +6,7 @@
 # tmux ran on the terminal's own palette (bg=default, fg=default, ANSI blue accents)
 name = "terminal"
 
+auto_switch = false
 [theme.custom]
 # The active tab is drawn as panel_bg text on an accent background, so panel_bg
 # has to be dark for it to read - same colors as status-left's "#[fg=black,bg=blue]"
@@ -67,6 +69,18 @@ close_workspace = "prefix+shift+k"
 previous_workspace = ["prefix+shift+p", "alt+up"]
 next_workspace = ["prefix+shift+n", "alt+down"]
 
+# AI-агенты (как в omarchy tmux.conf: bind A split-window -h -c "#{pane_current_path}" opencode,
+# bind a split-window -v -c "#{pane_current_path}" herdr) - панель в текущей директории
+[[keys.command]]
+key = "prefix+shift+a"
+type = "pane"
+command = "opencode"
+
+[[keys.command]]
+key = "prefix+a"
+type = "pane"
+command = "herdr"
+
 [ui]
 accent = "blue"
 
@@ -93,3 +107,7 @@ tab_bar_right = [{ type = "zoom" }, { type = "hostname" }]
 # the basename of the pane cwd. This is what Hyprland shows in the group bar,
 # and it resolves on the server so remote sessions name the remote host.
 window_title = "{hostname}: {workspace}"
+status_indicators = "symbols"
+
+[ui.toast]
+delivery = "terminal"

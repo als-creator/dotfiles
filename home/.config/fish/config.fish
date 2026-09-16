@@ -127,9 +127,9 @@ end
 # Управление пакетами Arch Linux
 # ============================================================
 
-alias mirror "sudo reflector --verbose --country 'Russia' --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"  # Обновить зеркала Arch
+alias mirror "sudo reflector --verbose --country 'Russia' --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
-function unlock                                                 # Удалить блокировку pacman
+function unlock
     if pgrep -x pacman >/dev/null; or pgrep -x yay >/dev/null; or pgrep -x paru >/dev/null
         echo "Менеджер пакетов ещё запущен."
         return 1
@@ -142,25 +142,58 @@ function unlock                                                 # Удалить
     end
 end
 
-alias clean "sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name 'download-*' -print -exec rm -rf -- {} + && rm -rf ~/.cache/yandex-browser"  # Очистить кэш pacman и временные загрузки
-alias info "sudo pacman -Qi"                                      # Информация о пакете
+alias info "sudo pacman -Qi"
 
 
 # ============================================================
 # Управление пакетами Debian/Ubuntu
 # ============================================================
 
-alias up "sudo apt-get update && sudo apt-get dist-upgrade -y"     # Обновить систему
+alias upgrade 'sudo apt-get update && sudo apt-get dist-upgrade -y'
+alias install 'sudo apt-get install'
+alias remove 'sudo apt-get remove'
 
-alias cc "sudo apt-get clean && \
-sudo apt-get autoclean && \
-sudo apt-get check && \
-flatpak uninstall --unused -y && \
-sudo journalctl --vacuum-time=1w"                                 # Очистить пакеты, Flatpak и старые логи
 
-alias upgrade 'sudo apt-get update && sudo apt-get dist-upgrade -y' # Обновить систему
-alias install 'sudo apt-get install'                              # Установить пакет
-alias remove 'sudo apt-get remove'                                # Удалить пакет
+# ============================================================
+# Обновление системы (автоопределение дистрибутива)
+# ============================================================
+
+function up
+    if type -q pacman
+        sudo pacman -Syu
+    else if type -q apt-get
+        sudo apt-get update && sudo apt-get dist-upgrade -y
+    else
+        echo "Не найден подходящий пакетный менеджер (pacman/apt-get)"
+        return 1
+    end
+end
+
+
+# ============================================================
+# Очистка кэша (автоопределение дистрибутива)
+# ============================================================
+
+function cc
+    if type -q pacman
+        sudo pacman -Sc --noconfirm
+        sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name 'download-*' -print -exec rm -rf -- {} +
+        rm -rf ~/.cache/yandex-browser
+    else if type -q apt-get
+        sudo apt-get clean
+        sudo apt-get autoclean
+        sudo apt-get check
+    else
+        echo "Не найден подходящий пакетный менеджер (pacman/apt-get)"
+        return 1
+    end
+
+    if type -q flatpak
+        flatpak uninstall --unused -y
+    end
+
+    sudo journalctl --vacuum-time=1w
+end
 
 
 # ============================================================
@@ -281,12 +314,40 @@ end
 
 
 # ============================================================
-# fd для FZF — актуальный API fzf (walker): skips .git,node_modules
+# fd для FZF
 # ============================================================
 
 if type -q fd
-    set -gx FZF_CTRL_T_OPTS '--walker=file,dir,follow,hidden'
-    set -gx FZF_ALT_C_OPTS '--walker=dir,follow,hidden'
+    function __fzf_compgen_path --description "Generate file paths using fd for FZF"
+        set -l search_path "$argv[1]"                              # Путь для поиска
+
+        if test -z "$search_path"
+            set search_path .                                      # Использовать текущий каталог
+        end
+
+        command fd \
+            --hidden \
+            --follow \
+            --exclude .git \
+            --exclude node_modules \
+            . "$search_path"                                       # Найти файлы через fd
+    end
+
+    function __fzf_compgen_dir --description "Generate directories using fd for FZF"
+        set -l search_path "$argv[1]"                              # Путь для поиска
+
+        if test -z "$search_path"
+            set search_path .                                      # Использовать текущий каталог
+        end
+
+        command fd \
+            --type d \
+            --hidden \
+            --follow \
+            --exclude .git \
+            --exclude node_modules \
+            . "$search_path"                                       # Найти каталоги через fd
+    end
 else
     echo "fd не установлен. FZF будет использовать стандартный поиск." >/dev/null
 end
@@ -376,6 +437,16 @@ end
 
 
 # ============================================================
+# Безопасное удаление: rm -I и корзина (trash)
+# ============================================================
+
+alias rm 'rm -I'                                                  # Запрашивать подтверждение
+if type -q gio
+    alias trash 'gio trash'                                       # Удалить в корзину
+end
+
+
+# ============================================================
 # sysup — обновление всего одной командой
 # ============================================================
 
@@ -422,6 +493,22 @@ alias less 'less -R'                                              # Цветно
 
 function h --description="Поиск по истории"
     history search $argv
+end
+
+
+# ============================================================
+# Herdr — терминальный workspace manager для AI-агентов
+# Автоподключение клиента в каждом интерактивном терминале (как tmux в omarchy).
+# Сервером управляет systemd (herdr.service); здесь подключаемся клиентом.
+# Вне панели herdr (HERDR_ENV=1 внутри панели — там пропускаем, чтобы не
+# вложить herdr-клиент в herdr).
+# При выходе из herdr (prefix+q) терминал возвращается к обычной fish.
+# ============================================================
+
+if status is-interactive
+    and not set -q HERDR_ENV
+    and command -v herdr >/dev/null 2>&1
+    herdr
 end
 
 
