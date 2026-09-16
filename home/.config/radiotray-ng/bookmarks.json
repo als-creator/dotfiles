@@ -92,10 +92,6 @@
 				"url" : "http://nashe.streamr.ru/nashe-128.mp3"
 			},
 			{
-				"name" : "LoFi",
-				"url" : "https://pub0202.101.ru:8443/stream/pro/aac/64/358"
-			},
-			{
 				"name" : "\u041c\u043e\u0434\u0435\u043b\u044c \u0434\u043b\u044f \u0441\u0431\u043e\u0440\u043a\u0438",
 				"url" : "http://mds-station.com:8000/mds"
 			},
@@ -110,10 +106,6 @@
 			{
 				"name" : "Enigmatic Station 1",
 				"url" : "http://listen2.myradio24.com:9000/8226"
-			},
-			{
-				"name" : "Enigma",
-				"url" : "https://pub0302.101.ru:8443/stream/pro/aac/64/175"
 			},
 			{
 				"name" : "\u041d\u0430\u0437\u0430\u0434 \u0432 \u0421\u0421\u0421\u0420",

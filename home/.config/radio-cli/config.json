@@ -100,10 +100,6 @@
 			"url": "http://nashe.streamr.ru/nashe-128.mp3"
 		},
 		{
-			"station": "LoFi",
-			"url": "https://pub0202.101.ru:8443/stream/pro/aac/64/358"
-		},
-		{
 			"station": "Модель для сборки",
 			"url": "http://mds-station.com:8000/mds"
 		},
@@ -118,10 +114,6 @@
 		{
 			"station": "Enigmatic Station 1",
 			"url": "http://listen2.myradio24.com:9000/8226"
-		},
-		{
-			"station": "Enigma",
-			"url": "https://pub0302.101.ru:8443/stream/pro/aac/64/175"
 		},
 		{
 			"station": "Назад в СССР",
