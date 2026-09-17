@@ -66,9 +66,8 @@
     <keybind key="W-e"><action name="Execute"><command>thunar</command></action></keybind>
     <keybind key="W-y"><action name="Execute"><command>code</command><command>--unity-launch</command><command>%F</command></action></keybind>
 
-    <!-- AI agents (opencode / herdr) -->
+    <!-- AI agents (opencode) -->
     <keybind key="W-a"><action name="Execute"><command>foot</command><command>-e</command><command>opencode</command></action></keybind>
-    <keybind key="W-C-Return"><action name="Execute"><command>foot</command><command>-e</command><command>herdr</command></action></keybind>
 
     <!-- Screenshots (X11: flameshot) -->
     <keybind key="Print"><action name="Execute"><command>flameshot</command><command>full</command><command>-p</command><command>~/Pictures</command></action></keybind>

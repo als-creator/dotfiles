@@ -13,9 +13,8 @@ bindsym $mod+Shift+Return exec --no-startup-id firefox
 bindsym $mod+e       exec --no-startup-id thunar
 bindsym $mod+y       exec --no-startup-id code --unity-launch %F
 
-# --- AI agents (opencode / herdr) --------------------------------------------
+# --- AI agents (opencode) -----------------------------------------------------
 bindsym $mod+a             exec --no-startup-id foot -e opencode
-bindsym $mod+Ctrl+Return   exec --no-startup-id foot -e herdr
 
 # --- Screenshots (flake/area, XFCE: Print/Shift+Print/Ctrl+F12 = flameshot) ---
 bindsym Print         exec --no-startup-id flameshot full -p ~/Pictures

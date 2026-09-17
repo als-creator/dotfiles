@@ -44,7 +44,7 @@ home/
 ### Шеллы: fish / zsh / bash
 
 Три шелла настроены единообразно (эталон — fish): один и тот же набор алиасов, функций и хоткеев fzf.
-Алиасы `ai` (opencode) и `agent` (herdr) живут в `fish/conf.d/ai.fish` и в конфигах zsh/bash.
+Алиас `ai` (opencode) живёт в `fish/conf.d/ai.fish` и в конфигах zsh/bash.
 
 <details>
 <summary><b>Общие команды и функции (все шеллы)</b></summary>
@@ -69,11 +69,10 @@ home/
 
 </details>
 
-### AI-интеграция: opencode и herdr
+### AI-интеграция: opencode
 
 - **`opencode`** — терминальный ассистент (CLI ИИ-агент), запуск через хоткеи и алиас `ai`
-- **`herdr`** — менеджер ИИ-агентов (tmux-подобный интерфейс, префикс `Ctrl+Space`), алиас `agent`
-- Конфиги: `.config/opencode/opencode.json` (провайдеры/модели), `.config/herdr/config.toml`
+- Конфиг: `.config/opencode/opencode.json` (провайдеры/модели)
 
 ### Оконные окружения и менеджеры
 
@@ -90,7 +89,6 @@ home/
 | `Super+E` | файловый менеджер `thunar` |
 | `Super+Y` | редактор `code --unity-launch` |
 | `Super+A` / `Super+ф` | **opencode** (`foot -e opencode`) |
-| `Super+Ctrl+Return` | **herdr** (`foot -e herdr`) |
 | `Print` | скрин: `flameshot full` (X11) / `grim` (Wayland) |
 | `Shift+Print`, `Ctrl+F12` | скрин выделенной области |
 | `XF86AudioRaise/LowerVolume`, `XF86AudioMute` | громкость `pactl ±5%` |
@@ -102,7 +100,7 @@ home/
 
 - Настройки: `xfconf/` (клавиатура, панель, рабочий стол, thunar, приложения по умолчанию)
 - Пользовательские хоткеи включают AI-биндинги (`Super+A`, `Super+Ctrl+Return`), `F12` — выпадающий терминал
-- Автозапуск: opencode/herdr не автозапускаются; в `autostart/` — conky, obsidian, obs-tray, qbittorrent, radiotray-ng, xfce4-clipman, xfce4-notes, Kotatogram
+- Автозапуск: opencode не автозапускается; в `autostart/` — conky, obsidian, obs-tray, qbittorrent, radiotray-ng, xfce4-clipman, xfce4-notes, Kotatogram
 
 #### Hyprland + omarchy
 
@@ -117,7 +115,7 @@ home/
 <details>
 <summary><b>i3 (X11) и sway (Wayland) — ключевые привязки</b></summary>
 
-- `$mod+Return` терминал, `$mod+Space` launcher, `$mod+Shift+Return` firefox, `$mod+E` thunar, `$mod+Y` code, `$mod+A` opencode, `$mod+Ctrl+Return` herdr
+- `$mod+Return` терминал, `$mod+Space` launcher, `$mod+Shift+Return` firefox, `$mod+E` thunar, `$mod+Y` code, `$mod+A` opencode
 - `$mod+q` закрыть, `$mod+f` полный экран, `$mod+v`/`$mod+s`/`$mod+t` layouts
 - Навигация: `$mod+←→↑↓` фокус, `$mod+Shift+←→↑↓` перемещение
 - Рабочие столы: `$mod+1..9`, `Print`/`Shift+Print`/`Ctrl+F12` скрины
@@ -128,7 +126,7 @@ home/
 <details>
 <summary><b>openbox (X11) — ключевые привязки</b></summary>
 
-- `W-Return` терминал, `W-space` root-menu, `W-r` rofi, `W-S-Return` firefox, `W-E` thunar, `W-Y` code, `W-A` opencode, `W-C-Return` herdr
+- `W-Return` терминал, `W-space` root-menu, `W-r` rofi, `W-S-Return` firefox, `W-E` thunar, `W-Y` code, `W-A` opencode
 - `W-q` закрыть, `W-f` fullscreen, `W-z` maximize, `W+←→↑↓`/`W-S-←→↑↓` движение к краям
 - `W-1..9` рабочие столы; скрины через `Print`/`S-Print`/`C-F12`
 
@@ -139,7 +137,7 @@ home/
 Конфиги для двух других DE с теми же хоткеями:
 
 - **GNOME:** `.config/gnome/apply-xfce-settings.sh` — применяет те же кастомные биндинги через gsettings (требует фиксации `custom-keybindings`)
-- **KDE:** `.config/khotkeysrc` — 9 «Custom Shortcuts» (терминал, launcher, браузер, файловый менеджер, редактор, opencode, herdr, скрин, блокировка); Plasma импортирует файл при логине
+- **KDE:** `.config/khotkeysrc` — 8 «Custom Shortcuts» (терминал, launcher, браузер, файловый менеджер, редактор, opencode, скрин, блокировка); Plasma импортирует файл при логине
 
 ### Раскладка по окнам (X11)
 
@@ -173,11 +171,11 @@ opencode=ru           # окно с opencode — русская (последн�
 ### Терминалы
 
 - `alacritty.toml`, `kitty.conf`, `ghostty/config`, `foot/foot.ini`, `tilda`, `guake`, `konsolerc`, `yakuakerc`, `xfce4-terminal` (через панель)
-- **tmux** (`.config/tmux/tmux.conf`) — префикс `Ctrl+Space`, режим `copy-mode-vi`, split по `h`/`v`, навигация `Ctrl+Alt+←→↑↓`, AI-панки: `prefix A` — opencode, `prefix a` — herdr, многие бинды описаны и доступны через `?`
+- **tmux** (`.config/tmux/tmux.conf`) — префикс `Ctrl+Space`, режим `copy-mode-vi`, split по `h`/`v`, навигация `Ctrl+Alt+←→↑↓`, AI-панка: `prefix A` — opencode, многие бинды описаны и доступны через `?`
 
 ### Приложения
 
-Конфиги приложений: `opencode`, `herdr`, `nvim` (lazyvim), `starship.toml`, `bat`-превью, `btop`, `fastfetch`, `neofetch`, `geeqie`, `imv`, `qimgv`, `viewnior`, `mpv`/`smplayer`/`qmmp`, `pyradio`, `radio-cli`/`radiotray-ng` (закладки радио), `obs-studio` (сцены, rtmp-сервисы), `gpu-screen-recorder`, `flameshot`, `obsidian`, `joplin-desktop` (настройки/плагины), `kate`/`kdevelop`, `mc`, `mousepad`, `vcmi`, `xournalpp`, `fcitx5`, `wireplumber`, `chromium-flags.conf` (пароли в `gnome-libsecret`), `byedpi.conf`, `zed`, VS Code (`Code`, `Code - OSS`, `VSCodium`, `.vscode`) и др.
+Конфиги приложений: `opencode`, `nvim` (lazyvim), `starship.toml`, `bat`-превью, `btop`, `fastfetch`, `neofetch`, `geeqie`, `imv`, `qimgv`, `viewnior`, `mpv`/`smplayer`/`qmmp`, `pyradio`, `radio-cli`/`radiotray-ng` (закладки радио), `obs-studio` (сцены, rtmp-сервисы), `gpu-screen-recorder`, `flameshot`, `obsidian`, `joplin-desktop` (настройки/плагины), `kate`/`kdevelop`, `mc`, `mousepad`, `vcmi`, `xournalpp`, `fcitx5`, `wireplumber`, `chromium-flags.conf` (пароли в `gnome-libsecret`), `byedpi.conf`, `zed`, VS Code (`Code`, `Code - OSS`, `VSCodium`, `.vscode`) и др.
 
 ### Шрифты и иконки
 

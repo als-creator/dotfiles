@@ -38,10 +38,7 @@
       <item label="OpenCode (AI-агент)">
         <action name="Execute"><command>foot</command><command>-e</command><command>opencode</command></action>
       </item>
-      <item label="Herdr (агент-менеджер)">
-        <action name="Execute"><command>foot</command><command>-e</command><command>herdr</command></action>
-      </item>
-    </menu>
+      </menu>
     <separator/>
     <menu id="system" label="System">
       <item label="Lock">

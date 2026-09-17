@@ -26,7 +26,6 @@ COMMANDS=(
     "thunar"
     "code --unity-launch"
     "foot -e opencode"
-    "foot -e herdr"
     "flameshot full -p ~/Pictures"
     "flameshot gui"
     "loginctl lock-session"

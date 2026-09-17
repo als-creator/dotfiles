@@ -4,7 +4,7 @@
 # after the session was already running).
 
 [Data]
-DataCount=9
+DataCount=8
 
 Data_1Comment=Terminal
 Data_1Enabled=true
@@ -90,44 +90,30 @@ Data_6Triggers0Type=SHORTCUT
 Data_6Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f109}
 Data_6Triggers0Key=Meta+A
 
-Data_7Comment=Agent manager
+Data_7Comment=Screenshot
 Data_7Enabled=true
-Data_7Name=Agent manager
+Data_7Name=Screenshot
 Data_7Type=SIMPLE_ACTION_DATA
-Data_7Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a07}
+Data_7Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a08}
 Data_7ActionsCount=1
-Data_7Actions0CommandExec=foot -e herdr
+Data_7Actions0CommandExec=flameshot gui
 Data_7Actions0CommandExecTerminal=false
 Data_7Actions0Type=COMMAND
 Data_7TriggersCount=1
 Data_7Triggers0Type=SHORTCUT
-Data_7Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10a}
-Data_7Triggers0Key=Meta+Ctrl+Return
+Data_7Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10b}
+Data_7Triggers0Key=Print
 
-Data_8Comment=Screenshot
+Data_8Comment=Lock
 Data_8Enabled=true
-Data_8Name=Screenshot
+Data_8Name=Lock
 Data_8Type=SIMPLE_ACTION_DATA
-Data_8Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a08}
+Data_8Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a09}
 Data_8ActionsCount=1
-Data_8Actions0CommandExec=flameshot gui
+Data_8Actions0CommandExec=loginctl lock-session
 Data_8Actions0CommandExecTerminal=false
 Data_8Actions0Type=COMMAND
 Data_8TriggersCount=1
 Data_8Triggers0Type=SHORTCUT
-Data_8Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10b}
-Data_8Triggers0Key=Print
-
-Data_9Comment=Lock
-Data_9Enabled=true
-Data_9Name=Lock
-Data_9Type=SIMPLE_ACTION_DATA
-Data_9Uuid={6f1c6452-7d84-4a2a-bde9-22e0f3241a09}
-Data_9ActionsCount=1
-Data_9Actions0CommandExec=loginctl lock-session
-Data_9Actions0CommandExecTerminal=false
-Data_9Actions0Type=COMMAND
-Data_9TriggersCount=1
-Data_9Triggers0Type=SHORTCUT
-Data_9Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10c}
-Data_9Triggers0Key=Meta+Ctrl+L
+Data_8Triggers0Uuid={8a2d2b46-0f5c-4b38-9fb1-91e5f1f5f10c}
+Data_8Triggers0Key=Meta+Ctrl+L

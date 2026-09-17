@@ -382,15 +382,11 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}          # Цвета вариантов автодополнения
 
 # ============================================================
-# AI-агенты (как в omarchy: opencode + herdr)
+# AI-агенты (как в omarchy: opencode)
 # ============================================================
 
 if command -v opencode >/dev/null 2>&1; then
     alias ai='opencode'          # Запустить AI-агента в текущем терминале
-fi
-
-if command -v herdr >/dev/null 2>&1; then
-    alias agent='herdr'          # Менеджер агентов (как Super+Ctrl+Return)
 fi
 
 # ============================================================

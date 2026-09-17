@@ -13,11 +13,9 @@ super + e
 super + y
     code --unity-launch %F
 
-# --- AI agents (opencode / herdr) --------------------------------------------
+# --- AI agents (opencode) -----------------------------------------------------
 super + a
     foot -e opencode
-super + ctrl + Return
-    foot -e herdr
 
 # --- Screenshots (X11: flameshot) --------------------------------------------
 Print

@@ -424,15 +424,11 @@ bind 'set show-all-if-ambiguous on'
 bind 'set menu-complete-display-prefix on'
 
 # ============================================================
-# AI-агенты (как в omarchy: opencode + herdr)
+# AI-агенты (как в omarchy: opencode)
 # ============================================================
 
 if command -v opencode >/dev/null 2>&1; then
     alias ai='opencode'          # Запустить AI-агента в текущем терминале
-fi
-
-if command -v herdr >/dev/null 2>&1; then
-    alias agent='herdr'          # Менеджер агентов (как Super+Ctrl+Return)
 fi
 
 # ============================================================
