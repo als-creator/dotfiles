@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Kotatogram Desktop
+Comment=Experimental Telegram Desktop fork (dev AppImage)
+TryExec=/home/als/.apps/Kotatogram-x86_64.AppImage
+Exec=/home/als/.apps/Kotatogram-x86_64.AppImage -workdir /home/als/.local/share/KotatogramDesktop/ -autostart
+Icon=kotatogram
+Terminal=false
+StartupWMClass=KotatogramDesktop
+Categories=Chat;Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;
+Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;kotatogram;
+Actions=Quit;
+X-GNOME-UsesNotifications=true
+X-GNOME-Autostart-enabled=true
+
+[Desktop Action Quit]
+Exec=/home/als/.apps/Kotatogram-x86_64.AppImage -workdir /home/als/.local/share/KotatogramDesktop/ -quit
+Name=Quit Kotatogram
+Icon=application-exit
