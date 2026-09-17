@@ -496,19 +496,3 @@ function h --description="Поиск по истории"
 end
 
 
-# ============================================================
-# Herdr — терминальный workspace manager для AI-агентов
-# Автоподключение клиента в каждом интерактивном терминале (как tmux в omarchy).
-# Сервером управляет systemd (herdr.service); здесь подключаемся клиентом.
-# Вне панели herdr (HERDR_ENV=1 внутри панели — там пропускаем, чтобы не
-# вложить herdr-клиент в herdr).
-# При выходе из herdr (prefix+q) терминал возвращается к обычной fish.
-# ============================================================
-
-if status is-interactive
-    and not set -q HERDR_ENV
-    and command -v herdr >/dev/null 2>&1
-    herdr
-end
-
-
