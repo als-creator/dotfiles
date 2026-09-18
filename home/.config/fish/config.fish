@@ -177,7 +177,13 @@ end
 function cc
     if type -q pacman
         sudo pacman -Sc --noconfirm
-        sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name 'download-*' -print -exec rm -rf -- {} +
+        set -l orphans (pacman -Qdtq 2>/dev/null)
+        if test -n "$orphans"
+            sudo pacman -Rsn --noconfirm $orphans
+        end
+        if test -d /var/cache/pacman/pkg/
+            sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name 'download-*' -print -exec rm -rf -- {} +
+        end
         rm -rf ~/.cache/yandex-browser
     else if type -q apt-get
         sudo apt-get clean
@@ -192,7 +198,9 @@ function cc
         flatpak uninstall --unused -y
     end
 
-    sudo journalctl --vacuum-time=1w
+    if type -q journalctl
+        sudo journalctl --vacuum-time=1w
+    end
 end
 
 

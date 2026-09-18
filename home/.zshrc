@@ -219,19 +219,64 @@ unlock() {
     fi
 }
 
-alias clean='sudo pacman -Sc --noconfirm && sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} + && rm -rf ~/.cache/yandex-browser'
-
 alias info="sudo pacman -Qi"
 
 # ============================================================
 # Управление пакетами Debian/Ubuntu
 # ============================================================
 
-alias up="sudo apt-get update && sudo apt-get dist-upgrade -y"
-alias cc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get check && flatpak uninstall --unused -y && sudo journalctl --vacuum-time=1w"
 alias upgrade="sudo apt-get update && sudo apt-get dist-upgrade -y"
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
+
+# ============================================================
+# Обновление системы (автоопределение дистрибутива)
+# ============================================================
+
+up() {
+    if command -v pacman >/dev/null 2>&1; then
+        sudo pacman -Syu
+    elif command -v apt-get >/dev/null 2>&1; then
+        sudo apt-get update && sudo apt-get dist-upgrade -y
+    else
+        echo "Не найден подходящий пакетный менеджер (pacman/apt-get)"
+        return 1
+    fi
+}
+
+# ============================================================
+# Очистка кэша (автоопределение дистрибутива)
+# ============================================================
+
+cc() {
+    if command -v pacman >/dev/null 2>&1; then
+        sudo pacman -Sc --noconfirm
+        orphans="$(pacman -Qdtq 2>/dev/null)"
+        if [[ -n "$orphans" ]]; then
+            # shellcheck disable=SC2086
+            sudo pacman -Rsn --noconfirm $orphans
+        fi
+        if [[ -d /var/cache/pacman/pkg/ ]]; then
+            sudo find /var/cache/pacman/pkg/ -mindepth 1 -maxdepth 1 -type d -name "download-*" -print -exec rm -rf -- {} +
+        fi
+        rm -rf ~/.cache/yandex-browser
+    elif command -v apt-get >/dev/null 2>&1; then
+        sudo apt-get clean
+        sudo apt-get autoclean
+        sudo apt-get check
+    else
+        echo "Не найден подходящий пакетный менеджер (pacman/apt-get)"
+        return 1
+    fi
+
+    if command -v flatpak >/dev/null 2>&1; then
+        flatpak uninstall --unused -y
+    fi
+
+    if command -v journalctl >/dev/null 2>&1; then
+        sudo journalctl --vacuum-time=1w
+    fi
+}
 
 # ============================================================
 # Работа с конфигурационными файлами
@@ -460,4 +505,6 @@ alias fgrep='fgrep --color=auto'
 alias less='less -R'
 
 alias h='fc -l 1 | grep -i'                          # Поиск по истории
+
+
 
