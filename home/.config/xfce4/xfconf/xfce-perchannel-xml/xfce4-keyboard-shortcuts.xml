@@ -59,19 +59,18 @@
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
-      <property name="&lt;Super&gt;e" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
       <property name="HomePage" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Cyrillic_ie" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;Cyrillic_tse" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
-      <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/code --unity-launch %F"/>
       <property name="&lt;Super&gt;a" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="&lt;Super&gt;Cyrillic_ef" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="F1" type="string" value="xfce4-terminal --drop-down"/>
+      <property name="&lt;Super&gt;e" type="string" value="thunar /mnt/Data/Фильмы/"/>
+      <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar /mnt/Data/Фильмы/"/>
       <property name="&lt;Super&gt;F3" type="string" value="/home/als/.local/bin/clippaste"/>
     </property>
   </property>
