@@ -458,6 +458,12 @@ elif command -v xclip >/dev/null 2>&1; then
     p() { xclip -o -selection clipboard; }
 fi
 
+if [ -x /home/als/.local/bin/clippaste ]; then
+    alias clip='/home/als/.local/bin/clippaste'   # Отправить буфер/текст в облако (bpa.st), выведет ссылку
+else
+    alias clip='wgetpaste -x -X'
+fi
+
 copypath() { command pwd | c; }                     # Скопировать текущий путь
 
 # ============================================================

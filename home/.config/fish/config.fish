@@ -439,6 +439,12 @@ else if type -q xclip
     function p; xclip -o -selection clipboard; end               # Вставка через X11
 end
 
+if test -x /home/als/.local/bin/clippaste
+    alias clip '/home/als/.local/bin/clippaste'  # Отправить буфер/текст в облако (bpa.st), выведет ссылку
+else
+    alias clip 'wgetpaste -x -X'
+end
+
 function copypath --description="Скопировать текущий путь в буфер"
     command pwd | c
 end

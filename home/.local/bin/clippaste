@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+# clippaste — отправить выделенный/скопированный текст в облачный paste-сервис (bpa.st).
+# Ссылка кладётся в буфер обмена (Ctrl+V) и в primary-выделение (средняя кнопка),
+# плюс показывается всплывающее уведомление.
+#
+# Почему не голый `wgetpaste -x -X`: флаг -x читает ТОЛЬКО primary-выделение,
+# и если там уже лежит ссылка от прошлой пасты — сервис отвечает 500
+# ("Text exceeds spam score"). Скрипт это обходит.
+
+set -u
+
+# Подхватываем окружение графической сессии, если запущено без него
+# (например, из хоткея, стартованного с минимальным env)
+if [[ -z "${DISPLAY:-}" ]]; then
+    export DISPLAY=":0"
+fi
+if [[ -z "${XAUTHORITY:-}" ]]; then
+    _xfs="$(pgrep -x xfsettingsd 2>/dev/null | head -1)"
+    if [[ -n "$_xfs" ]]; then
+        export XAUTHORITY="$(tr '\0' '\n' < "/proc/$_xfs/environ" 2>/dev/null | sed -n 's/^XAUTHORITY=//p' | head -1)"
+    fi
+fi
+
+# Читает primary-выделение; если оно пустое или похоже на ссылку (такое bpa.st
+# отклоняет спам-фильтром) — берёт буфер обмена (Ctrl+C).
+read_text() {
+    local s
+    s="$(xclip -o -selection primary 2>/dev/null)" || s=""
+
+    if [[ -z "${s//[[:space:]]/}" || "$s" =~ ^https?://[^[:space:]]+[[:space:]]*$ ]]; then
+        s="$(xclip -o -selection clipboard 2>/dev/null)" || s=""
+    fi
+    printf '%s' "$s"
+}
+
+# Кладёт ссылку в оба буфера и показывает уведомление
+put_url() {
+    xclip -selection clipboard <<<"$1" 2>/dev/null
+    xclip -selection primary <<<"$1" 2>/dev/null
+    notify-send -a clippaste -i dialog-information "clippaste" "$1"
+}
+
+main() {
+    local text url bytes
+    text="$(read_text)"
+
+    if [[ -z "${text//[[:space:]]/}" ]]; then
+        notify-send -a clippaste -u critical "clippaste" \
+            "Нет текста: выделите текст мышью или скопируйте (Ctrl+C) и повторите."
+        exit 1
+    fi
+
+    bytes="$(printf '%s' "$text" | wc -c)"
+    if (( bytes > 250000 )); then
+        notify-send -a clippaste -u critical "clippaste" \
+            "Слишком большой текст: ${bytes} байт. Лимит bpa.st ~256 КБ."
+        exit 1
+    fi
+
+    if (( bytes > 25000 )); then
+        notify-send -a clippaste "clippaste" "Отправляю ${bytes} байт, подождите…"
+    fi
+
+    # отправляем; при ошибке (в т.ч. rate-limit сервиса) пробуем ещё раз
+    url=""
+    for attempt in 1 2; do
+        url="$(printf '%s\n' "$text" | timeout 30 wgetpaste --quiet 2>/dev/null)"
+        if [[ "$url" =~ ^https?:// ]]; then
+            break
+        fi
+        [[ $attempt -eq 1 ]] && sleep 2
+    done
+
+    if [[ "$url" =~ ^https?:// ]]; then
+        put_url "$url"
+        # при запуске из терминала печатаем ссылку тоже
+        if [[ -t 1 ]]; then
+            echo "$url"
+        fi
+        exit 0
+    else
+        notify-send -a clippaste -u critical "clippaste" \
+            "Не удалось отправить пасту. Ошибка сервера или нет сети. Сервис: $(grep -h '^DEFAULT_SERVICE' "$HOME/.wgetpaste.conf" 2>/dev/null | cut -d= -f2 || echo bpaste)"
+        exit 1
+    fi
+}
+
+main "$@"

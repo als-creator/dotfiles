@@ -72,6 +72,7 @@
       <property name="&lt;Super&gt;a" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="&lt;Super&gt;Cyrillic_ef" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="F1" type="string" value="xfce4-terminal --drop-down"/>
+      <property name="&lt;Super&gt;F3" type="string" value="/home/als/.local/bin/clippaste"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
