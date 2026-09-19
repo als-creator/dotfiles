@@ -1,13 +1,10 @@
 {
 	"bookmarks" : "/home/$USER/.config/radiotray-ng/bookmarks.json",
-	"last-station" : "SCRAdio",
+	"last-station" : "Cassiopeia Station",
 	"last-station-group" : "root",
 	"last-station-notifications" : true,
 	"notification-verbose" : true,
 	"notifications" : true,
 	"split-title" : true,
-	"buffer-size" : 320000,
-	"buffer-duration" : 30,
-	"debug-logging" : true,
 	"volume-level" : 98
 }
