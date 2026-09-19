@@ -72,6 +72,8 @@
       <property name="&lt;Super&gt;e" type="string" value="thunar /mnt/Data/Фильмы/"/>
       <property name="&lt;Super&gt;Cyrillic_u" type="string" value="thunar /mnt/Data/Фильмы/"/>
       <property name="&lt;Super&gt;F3" type="string" value="/home/als/.local/bin/clippaste"/>
+      <property name="&lt;Super&gt;c" type="string" value="/usr/bin/code --unity-launch %F"/>
+      <property name="&lt;Super&gt;Cyrillic_es" type="string" value="/usr/bin/code --unity-launch %F"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
