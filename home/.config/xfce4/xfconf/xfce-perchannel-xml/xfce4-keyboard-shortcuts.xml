@@ -65,7 +65,7 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Cyrillic_ie" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;Cyrillic_tse" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
+      <property name="&lt;Primary&gt;F12" type="string" value="ksnip -r"/>
       <property name="&lt;Super&gt;a" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="&lt;Super&gt;Cyrillic_ef" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="F1" type="string" value="xfce4-terminal --drop-down"/>

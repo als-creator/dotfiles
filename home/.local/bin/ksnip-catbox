@@ -1,0 +1,26 @@
+#!/bin/bash
+# ksnip-catbox — загрузка скриншота (переданного ksnip как $1) на catbox.moe,
+# ссылка → в буфер обмена и буфер выделения + уведомление.
+# Использование: ksnip-catbox /path/to/image.png
+
+IMG="${1:?usage: ksnip-catbox <image>}"
+
+if [ ! -f "$IMG" ]; then
+    notify-send "ksnip-catbox" "Файл не найден: $IMG"
+    exit 1
+fi
+
+URL=$(timeout 30 curl -s -F "reqtype=fileupload" -F "fileToUpload=@$IMG" https://catbox.moe/user/api.php 2>/dev/null)
+
+case "$URL" in
+    http://*|https://*) ;;
+    *)
+        notify-send "ksnip-catbox" "Ошибка загрузки: ${URL:-нет ответа от catbox}"
+        exit 1
+        ;;
+esac
+
+printf '%s' "$URL" | xclip -selection clipboard >/dev/null 2>&1
+printf '%s' "$URL" | xclip -selection primary >/dev/null 2>&1
+notify-send "ksnip-catbox" "Загружено ✓ $URL"
+echo "$URL"
