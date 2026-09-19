@@ -6,5 +6,8 @@
 	"notification-verbose" : true,
 	"notifications" : true,
 	"split-title" : true,
+	"buffer-size" : 320000,
+	"buffer-duration" : 30,
+	"debug-logging" : true,
 	"volume-level" : 98
 }
