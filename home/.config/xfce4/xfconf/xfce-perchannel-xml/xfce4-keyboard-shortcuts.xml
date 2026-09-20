@@ -48,9 +48,9 @@
       <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="Print" type="string" value="xfce4-screenshooter"/>
+      <property name="Print" type="string" value="flameshot full -p ~/Pictures"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
-      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
+      <property name="&lt;Shift&gt;Print" type="string" value="flameshot gui"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;s" type="string" value="orca"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
@@ -65,7 +65,7 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Cyrillic_ie" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;Cyrillic_tse" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Primary&gt;F12" type="string" value="ksnip -r"/>
+      <property name="&lt;Primary&gt;F12" type="string" value="flameshot gui"/>
       <property name="&lt;Super&gt;a" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="&lt;Super&gt;Cyrillic_ef" type="string" value="xfce4-terminal --command=opencode"/>
       <property name="F1" type="string" value="xfce4-terminal --drop-down"/>
