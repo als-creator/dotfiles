@@ -89,8 +89,8 @@ home/
 | `Super+E` | файловый менеджер `thunar` |
 | `Super+Y` | редактор `code --unity-launch` |
 | `Super+A` / `Super+ф` | **opencode** (`foot -e opencode`) |
-| `Print` | скрин: `flameshot full` (X11) / `grim` (Wayland) |
-| `Shift+Print`, `Ctrl+F12` | скрин выделенной области |
+| `Print` | скрин всего экрана: XFCE — `spectacle -f -b -n`, X11 (i3/openbox) — `flameshot full`, Wayland — `grim` |
+| `Shift+Print`, `Ctrl+F12` | скрин области → сразу редактор: XFCE — `spectacle -r`, X11 — `flameshot gui` |
 | `XF86AudioRaise/LowerVolume`, `XF86AudioMute` | громкость `pactl ±5%` |
 | `XF86MonBrightnessUp/Down` | яркость `brightnessctl ±5%` |
 

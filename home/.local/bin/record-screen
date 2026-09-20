@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+# Запись экрана на X11 (XFCE) через ffmpeg: видео + звук.
+#
+#   record-screen             весь экран + микрофон
+#   record-screen --system    весь экран + системный звук
+#   record-screen --both      микрофон + системный звук
+#   record-screen --stop      штатно остановить запись (SIGINT, mp4 финализируется)
+#
+# Результат: ~/Рабочий стол/Out/Screencast_<дата>.mp4
+# После записи можно сразу залить на catbox:  catbox-up <файл>
+set -uo pipefail
+
+outdir="${HOME}/Рабочий стол/Out"
+mkdir -p "$outdir"
+
+if [ "${1:-}" = "--stop" ]; then
+  pkill -INT -x ffmpeg && echo "Запись остановлена." || echo "ffmpeg не запущен."
+  exit 0
+fi
+
+case "${1:-}" in
+  --system) mode="system" ;;
+  --both)   mode="both" ;;
+  --mic|"") mode="mic" ;;
+  *) echo "Неизвестный аргумент: ${1:-}" >&2; exit 1 ;;
+esac
+
+res="$(xrandr --current 2>/dev/null | awk -F'[ ,]' '/ primary /{print $4; exit}')"
+[ -n "$res" ] || res="$(xdpyinfo 2>/dev/null | awk '/dimensions/{print $2; exit}')"
+[ -n "$res" ] || { echo "Не удалось определить разрешение экрана" >&2; exit 1; }
+
+mic="$(pactl get-default-source 2>/dev/null || echo "")"
+monitor="$(pactl list short sources 2>/dev/null | awk '/\.monitor\t/{print $2; exit}')"
+
+ts="$(date +%Y-%m-%d_%H-%M-%S)"
+out="${outdir}/Screencast_${ts}.mp4"
+
+ffargs=(-y -hide_banner -loglevel error
+        -f x11grab -framerate 30 -video_size "$res" -i :0.0)
+
+case "$mode" in
+  mic)
+    [ -n "$mic" ] || { echo "Не найден микрофон (pulse)" >&2; exit 1; }
+    ffargs+=(-f pulse -ac 2 -i "$mic")
+    echo "Запись: весь экран ($res) + микрофон → $out"
+    echo "Остановить: record-screen --stop"
+    ffmpeg "${ffargs[@]}" -c:v libx264 -preset veryfast -crf 20 -pix_fmt yuv420p \
+      -c:a aac -b:a 160k -shortest "$out"
+    ;;
+  system)
+    [ -n "$monitor" ] || { echo "Не найден монитор-источник (системный звук)" >&2; exit 1; }
+    ffargs+=(-f pulse -ac 2 -i "$monitor")
+    echo "Запись: весь экран ($res) + системный звук → $out"
+    echo "Остановить: record-screen --stop"
+    ffmpeg "${ffargs[@]}" -c:v libx264 -preset veryfast -crf 20 -pix_fmt yuv420p \
+      -c:a aac -b:a 160k -shortest "$out"
+    ;;
+  both)
+    [ -n "$mic" ] && [ -n "$monitor" ] || { echo "Не найден микрофон/монитор (pulse)" >&2; exit 1; }
+    ffargs+=(-f pulse -ac 2 -i "$mic" -f pulse -ac 2 -i "$monitor")
+    echo "Запись: весь экран ($res) + микрофон + системный звук → $out"
+    echo "Остановить: record-screen --stop"
+    ffmpeg "${ffargs[@]}" -filter_complex \
+      "[0:a][1:a]amix=inputs=2:duration=shortest:dropout_transition=3[aout]" \
+      -map 0:v -map "[aout]" \
+      -c:v libx264 -preset veryfast -crf 20 -pix_fmt yuv420p \
+      -c:a aac -b:a 160k -shortest "$out"
+    ;;
+esac
