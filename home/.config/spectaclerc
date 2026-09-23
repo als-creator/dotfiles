@@ -1,13 +1,21 @@
+[Annotations]
+annotationToolType=12
+
 [General]
-useReleaseToCapture=true
-autoSaveImage=false
-includePointer=false
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
 
 [ImageSave]
-imageSaveLocation=file://@HOME@/Рабочий стол/Out/
-preferredImageFormat=png
-imageFilenameTemplate=Screenshot_<yyyy>-<MM>-<dd>_<HH>-<mm>-<ss>
+imageCompressionQuality=100
+imageSaveLocation=file://@HOME@/Рабочий стол/Out
+lastImageSaveLocation=file://@HOME@/Рабочий стол/Out/Снимок экрана_20260613_151956.png
+translatedScreenshotsFolder=Снимки экрана
 
 [VideoSave]
-videoSaveLocation=file://@HOME@/Рабочий стол/Out/
-videoFilenameTemplate=Screencast_<yyyy>-<MM>-<dd>_<HH>-<mm>-<ss>
+preferredVideoFormat=0
+translatedScreencastsFolder=Записи экрана
+videoSaveLocation=file://@HOME@/Рабочий стол/Out
+
+[ViewerWindow]
+1920x1080 screen: Height=494
+1920x1080 screen: Width=905
