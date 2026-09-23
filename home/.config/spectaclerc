@@ -1,11 +1,11 @@
 [General]
-useReleaseToCapture=false
+useReleaseToCapture=true
 autoSaveImage=false
 includePointer=false
 
 [ImageSave]
 imageSaveLocation=file://@HOME@/Рабочий стол/Out/
-preferredImageFormat=PNG
+preferredImageFormat=png
 imageFilenameTemplate=Screenshot_<yyyy>-<MM>-<dd>_<HH>-<mm>-<ss>
 
 [VideoSave]
