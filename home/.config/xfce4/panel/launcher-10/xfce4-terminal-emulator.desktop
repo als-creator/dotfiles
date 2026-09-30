@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=exo-open --launch TerminalEmulator
+Exec=env LANG=en_US.UTF-8 exo-open --launch TerminalEmulator
 Icon=utilities-terminal
 StartupNotify=true
 Terminal=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenCode
+Exec=opencode-desktop %U
+Terminal=false
+Type=Application
+Icon=ai.opencode.desktop
+StartupWMClass=ai.opencode.desktop
+MimeType=x-scheme-handler/opencode;
+Categories=Development;
+X-XFCE-Source=file:///usr/share/applications/ai.opencode.desktop.desktop

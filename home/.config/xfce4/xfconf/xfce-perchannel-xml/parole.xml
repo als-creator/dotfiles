@@ -22,7 +22,7 @@
     </property>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/mnt/Data/Фильмы/Posle.Fishera.Inkvizitor.S03.2026.WEB-DL.720p.ExKinoRay"/>
+    <property name="last-used-media" type="string" value="/mnt/Work/Аудио/Аудиокниги"/>
   </property>
   <property name="video" type="empty">
     <property name="aspect-ratio" type="string" value="PAROLE_ASPECT_RATIO_AUTO"/>

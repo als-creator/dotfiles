@@ -5,11 +5,16 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="rofi.desktop"/>
+        <value type="string" value="rofi-theme-selector.desktop"/>
+        <value type="string" value="ai.opencode.desktop.desktop"/>
+        <value type="string" value="appimagekit_611a663b433598eece997f8517e9f5f1-Kotatogram__dev_.desktop"/>
+        <value type="string" value="org.kde.juk.desktop"/>
+        <value type="string" value="radiotray-ng.desktop"/>
         <value type="string" value="obsidian.desktop"/>
         <value type="string" value="appimagekit_00fabb23d4e4b9ef54db798875f9d878-LibreOffice.desktop"/>
         <value type="string" value="appimagelaunchersettings.desktop"/>
-        <value type="string" value="firefox.desktop"/>
-        <value type="string" value="com.ayugram.desktop.desktop"/>
         <value type="string" value="emacs.desktop"/>
         <value type="string" value="nvim.desktop"/>
         <value type="string" value="ranger.desktop"/>
@@ -96,6 +101,7 @@
         <value type="string" value="fheroes2.desktop"/>
         <value type="string" value="obsidian.desktop"/>
         <value type="string" value="net.poedit.Poedit.desktop"/>
+        <value type="string" value="ai.opencode.desktop.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -261,6 +267,15 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="AyuGramDesktop"/>
+        <value type="string" value="kaffeine"/>
+        <value type="string" value="JuK"/>
+        <value type="string" value="elisa"/>
+        <value type="string" value="qmmp"/>
+        <value type="string" value="radiotray-ng"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="kiberportal"/>
+        <value type="string" value="guake-indicator"/>
         <value type="string" value="flameshot"/>
         <value type="string" value="obsidian_status_icon_1"/>
         <value type="string" value="obs"/>
@@ -270,6 +285,11 @@
         <value type="string" value="KotatogramDesktop"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="parole"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="tg ws proxy"/>
+        <value type="string" value="сетевое соединение wi-fi «home» активно: home (59%)"/>
+        <value type="string" value="выпадающий терминал"/>
         <value type="string" value="терминал xfce"/>
         <value type="string" value="аплет networkmanager"/>
         <value type="string" value="менеджер буфера обмена clipman"/>
@@ -288,7 +308,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="org.kde.kdeconnect.app;smplayer;Яндекс Браузер"/>
+      <property name="known-players" type="string" value="com.ayugram.desktop;firefox;io.github.kotatogram._50801ed2c7ce0a661b54a5794f153b46;io.github.kotatogram._f6a23186319c1ae425ef52773bb93e3a;kdeconnect.mpris_275377dc5f6d41e6a285b1dfdc7e102f;kdeconnect.mpris_6f5555798af846b99f5a68bd9053a936;kdeconnect.mpris_9255c4419a014e0b906ef8faf101c110;OpenCode;org.kde.audiotube;org.kde.elisa;org.kde.juk;org.kde.kdeconnect.app;org.kde.vvave;parole;qmmp;smplayer;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
@@ -314,14 +334,19 @@
         <value type="string" value="17783252982.desktop"/>
       </property>
     </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17898232761.desktop"/>
+      </property>
+    </property>
     <property name="plugin-13" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17783256483.desktop"/>
+        <value type="string" value="17900129881.desktop"/>
       </property>
     </property>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17804967501.desktop"/>
+        <value type="string" value="17905689611.desktop"/>
       </property>
     </property>
   </property>
@@ -339,9 +364,10 @@
         <value type="int" value="26"/>
         <value type="int" value="1"/>
         <value type="int" value="11"/>
-        <value type="int" value="15"/>
-        <value type="int" value="7"/>
         <value type="int" value="13"/>
+        <value type="int" value="7"/>
+        <value type="int" value="15"/>
+        <value type="int" value="9"/>
         <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>

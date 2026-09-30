@@ -57,7 +57,7 @@
   <property name="color-bold-is-bright" type="bool" value="true"/>
   <property name="tab-activity-color" type="string" value="#aa0000"/>
   <property name="run-custom-command" type="bool" value="true"/>
-  <property name="custom-command" type="string" value="/usr/bin/zsh"/>
+  <property name="custom-command" type="string" value="/usr/bin/fish"/>
   <property name="dropdown-keep-open-default" type="bool" value="false"/>
   <property name="dropdown-toggle-focus" type="bool" value="false"/>
   <property name="dropdown-show-borders" type="bool" value="false"/>

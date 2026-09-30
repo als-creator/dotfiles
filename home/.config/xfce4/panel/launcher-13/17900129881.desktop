@@ -1,23 +1,20 @@
 [Desktop Entry]
-Name=Code - OSS
+Name=Visual Studio Code
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
 Exec=code %F
-Icon=com.visualstudio.code.oss
+Icon=vscode
 Type=Application
 StartupNotify=false
-StartupWMClass=code-oss
+StartupWMClass=Code
 Categories=TextEditor;Development;IDE;
-MimeType=application/x-code-oss-workspace;
+MimeType=application/x-code-workspace;
 Actions=new-empty-window;
 Keywords=vscode;
-X-Desktop-File-Install-Version=0.28
-X-XFCE-Source=file:///usr/share/applications/code-oss.desktop
-Path=
-Terminal=false
+X-XFCE-Source=file:///usr/share/applications/code.desktop
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
 Name[ru]=Новое пустое окно
-Exec=code-oss --new-window %F
-Icon=com.visualstudio.code.oss
+Exec=code --new-window %F
+Icon=vscode
