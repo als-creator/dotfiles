@@ -15,10 +15,6 @@
         "url": "https://stream.cassiopeia-station.ru:1205/stream"
       },
       {
-        "name": "Ambient Psychill",
-        "url": "http://strm112.1.fm/ambientpsy_mobile_mp3"
-      },
-      {
         "name": "n5MD Radio (Ambient and Experimental)",
         "url": "https://somafm.com/n5md.pls"
       },
@@ -61,6 +57,10 @@
       {
         "name": "Adore Jazz Radio",
         "url": "http://strm112.1.fm/ajazz_mobile_mp3"
+      },
+      {
+        "name": "Ambient Psychill",
+        "url": "http://strm112.1.fm/ambientpsy_mobile_mp3"
       },
       {
         "name": "Bay Smooth Jazz Radio",
@@ -116,68 +116,68 @@
     "group": "more",
     "stations": [
       {
+        "name": "Instrumental Jazz",
+        "url": "https://jfm1.hostingradio.ru:14536/ijstream.mp3"
+      },
+      {
         "name": "Classic Vinyl HD",
         "url": "https://icecast2.walmradio.com:8443/classic_opus"
-      },
-      {
-        "name": "Black Rock FM",
-        "url": "http://somafm.com/brfm.pls"
-      },
-      {
-        "name": "Cliqhop IDM",
-        "url": "http://somafm.com/cliqhop.pls"
-      },
-      {
-        "name": "Drone Zone",
-        "url": "http://somafm.com/dronezone.pls"
-      },
-      {
-        "name": "Sonic Universe",
-        "url": "http://somafm.com/sonicuniverse.pls"
-      },
-      {
-        "name": "Спокойное радио",
-        "url": "https://listen1.myradio24.com/6262"
-      },
-      {
-        "name": "Illinois Street Lounge",
-        "url": "http://somafm.com/illstreet.pls"
-      },
-      {
-        "name": "Groove Salad Classic (Early 2000s Ambient)",
-        "url": "https://somafm.com/gsclassic.pls"
-      },
-      {
-        "name": "Groove Salad",
-        "url": "http://somafm.com/groovesalad.pls"
-      },
-      {
-        "name": "Lounge Radio",
-        "url": "http://www.lounge-radio.com/listen128.m3u"
-      },
-      {
-        "name": "Splash Lounge",
-        "url": "https://ais-sa2.cdnstream1.com/2209_128.mp3"
-      },
-      {
-        "name": "Splash Jazz",
-        "url": "https://ais-sa2.cdnstream1.com/2346_128.mp3"
-      },
-      {
-        "name": "Jazz Radio Blues",
-        "url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
-      },
-      {
-        "name": "SomaFM Groove Salad",
-        "url": "http://ice3.somafm.com/groovesalad-128-mp3"
       },
       {
         "name": "Adroit Jazz Underground",
         "url": "https://icecast1.walmradio.com:8443/jazz_opus"
       },
       {
-        "name": "Instrumental Jazz",
-        "url": "https://jfm1.hostingradio.ru:14536/ijstream.mp3"
+        "name": "SomaFM Groove Salad",
+        "url": "http://ice3.somafm.com/groovesalad-128-mp3"
+      },
+      {
+        "name": "Jazz Radio Blues",
+        "url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
+      },
+      {
+        "name": "Splash Jazz",
+        "url": "https://ais-sa2.cdnstream1.com/2346_128.mp3"
+      },
+      {
+        "name": "Splash Lounge",
+        "url": "https://ais-sa2.cdnstream1.com/2209_128.mp3"
+      },
+      {
+        "name": "Lounge Radio",
+        "url": "http://www.lounge-radio.com/listen128.m3u"
+      },
+      {
+        "name": "Groove Salad",
+        "url": "http://somafm.com/groovesalad.pls"
+      },
+      {
+        "name": "Groove Salad Classic (Early 2000s Ambient)",
+        "url": "https://somafm.com/gsclassic.pls"
+      },
+      {
+        "name": "Illinois Street Lounge",
+        "url": "http://somafm.com/illstreet.pls"
+      },
+      {
+        "name": "Спокойное радио",
+        "url": "https://listen1.myradio24.com/6262"
+      },
+      {
+        "name": "Sonic Universe",
+        "url": "http://somafm.com/sonicuniverse.pls"
+      },
+      {
+        "name": "Drone Zone",
+        "url": "http://somafm.com/dronezone.pls"
+      },
+      {
+        "name": "Cliqhop IDM",
+        "url": "http://somafm.com/cliqhop.pls"
+      },
+      {
+        "name": "Black Rock FM",
+        "url": "http://somafm.com/brfm.pls"
       },
       {
         "name": "Ambient Sleeping Pill",
