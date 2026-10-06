@@ -497,8 +497,8 @@ elif command -v xclip >/dev/null 2>&1; then
     p() { xclip -o -selection clipboard; }
 fi
 
-if [ -x /home/als/.local/bin/clippaste ]; then
-    alias clip='/home/als/.local/bin/clippaste'   # Отправить буфер/текст в облако (bpa.st), выведет ссылку
+if [ -x @HOME@/.local/bin/clippaste ]; then
+    alias clip='@HOME@/.local/bin/clippaste'   # Отправить буфер/текст в облако (bpa.st), выведет ссылку
 else
     alias clip='wgetpaste -x -X'
 fi
@@ -554,10 +554,5 @@ alias fgrep='fgrep --color=auto'
 alias less='less -R'
 
 alias h='history | grep -i'                          # Поиск по истории
-
-
-# Terminals: English UI and program output. opencode replies stay Russian
-# because it mirrors your language, not the locale.
-export LANG=en_US.UTF-8
 
 

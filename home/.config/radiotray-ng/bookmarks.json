@@ -1,190 +1,312 @@
 [
-	{
-		"group" : "root",
-		"stations" : 
-		[
-			{
-				"name" : "SCRAdio",
-				"url" : "https://radio.ssh.tatar/icecast/scradio"
-			},
-			{
-				"name" : "Cassiopeia Station",
-				"url" : "https://stream.cassiopeia-station.ru:1075/stream"
-			},
-			{
-				"name" : "\u0413\u043e\u043b\u043e\u0441\u0430 \u0412\u0441\u0435\u043b\u0435\u043d\u043d\u043e\u0439",
-				"url" : "https://stream.cassiopeia-station.ru:1205/stream"
-			},
-			{
-				"name" : "Ambient Psychill",
-				"url" : "http://strm112.1.fm/ambientpsy_mobile_mp3"
-			},
-			{
-				"name" : "n5MD Radio (Ambient and Experimental)",
-				"url" : "https://somafm.com/n5md.pls"
-			},
-			{
-				"name" : "Vaporwaves (SomaFM)",
-				"url" : "https://somafm.com/vaporwaves.pls"
-			},
-			{
-				"name" : "Synphaera Radio (Space Music)",
-				"url" : "https://somafm.com/synphaera.pls"
-			},
-			{
-				"name" : "Space Station Soma",
-				"url" : "http://somafm.com/spacestation.pls"
-			},
-			{
-				"name" : "\u041a\u043e\u043c\u043c\u0435\u0440\u0441\u0430\u043d\u0442\u044a FM 93.6",
-				"url" : "https://kommersant77.hostingradio.ru:8085/kommersant128.mp3"
-			},
-			{
-				"name" : "VestiFM",
-				"url" : "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps"
-			},
-			{
-				"name" : "SMOOTH JAZZ",
-				"url" : "http://jking.cdnstream1.com/b22139_128mp3"
-			},
-			{
-				"name" : "Radio Paradise (320k)",
-				"url" : "http://stream-uk1.radioparadise.com/aac-320"
-			},
-			{
-				"name" : "\u0410\u0440\u0438\u0444\u0443\u043b\u0438\u043d FM",
-				"url" : "https://stream.cassiopeia-station.ru:1295/stream"
-			},
-			{
-				"name" : "Relax-FM",
-				"url" : "http://ic4.101.ru:8000/stream/air/aac/64/200"
-			},
-			{
-				"name" : "Adore Jazz Radio",
-				"url" : "http://strm112.1.fm/ajazz_mobile_mp3"
-			},
-			{
-				"name" : "Bay Smooth Jazz Radio",
-				"url" : "http://strm112.1.fm/smoothjazz_mobile_mp3"
-			},
-			{
-				"name" : "Chillout Lounge Radio",
-				"url" : "http://strm112.1.fm/chilloutlounge_mobile_mp3"
-			},
-			{
-				"name" : "Chill radio",
-				"url" : "https://radio1.streamserver.link/radio/8110/100chill-aac"
-			},
-			{
-				"name" : "Smooth Jazz",
-				"url" : "http://jking.cdnstream1.com/b22139_128mp3"
-			},
-			{
-				"name" : "SMOOTH JAZZ MELLOW MIX",
-				"url" : "http://ais-edge89-dal02.cdnstream.com/b48071_128mp3"
-			},
-			{
-				"name" : "\u0421\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u0439 \u0434\u043e\u0436\u0434\u044c",
-				"url" : "http://silverrain.hostingradio.ru/silver128.mp3"
-			},
-			{
-				"name" : "\u041d\u0430\u0448\u0435 \u0440\u0430\u0434\u0438\u043e",
-				"url" : "http://nashe.streamr.ru/nashe-128.mp3"
-			},
-			{
-				"name" : "\u041c\u043e\u0434\u0435\u043b\u044c \u0434\u043b\u044f \u0441\u0431\u043e\u0440\u043a\u0438",
-				"url" : "http://mds-station.com:8000/mds"
-			},
-			{
-				"name" : "Rock Space Station",
-				"url" : "https://stream.cassiopeia-station.ru:1255/stream"
-			},
-			{
-				"name" : "Enigmatic 3 - Magnetic Chillout",
-				"url" : "http://radio.enigmatic.su:8050/radio"
-			},
-			{
-				"name" : "Enigmatic Station 1",
-				"url" : "http://listen2.myradio24.com:9000/8226"
-			},
-			{
-				"name" : "\u041d\u0430\u0437\u0430\u0434 \u0432 \u0421\u0421\u0421\u0420",
-				"url" : "https://stream.cassiopeia-station.ru:1115/stream"
-			}
-		]
-	},
-	{
-		"group" : "more",
-		"stations" : 
-		[
-			{
-				"name" : "DubStep Beyond",
-				"url" : "http://somafm.com/play/dubstep32"
-			},
-			{
-				"name" : "Classic Vinyl HD",
-				"url" : "https://icecast.walmradio.com:8443/classic"
-			},
-			{
-				"name" : "Black Rock FM",
-				"url" : "http://somafm.com/brfm.pls"
-			},
-			{
-				"name" : "cliqhop idm",
-				"url" : "http://somafm.com/cliqhop.pls"
-			},
-			{
-				"name" : "Drone Zone",
-				"url" : "http://somafm.com/dronezone.pls"
-			},
-			{
-				"name" : "Sonic Universe",
-				"url" : "http://somafm.com/sonicuniverse.pls"
-			},
-			{
-				"name" : "\u0421\u043f\u043e\u043a\u043e\u0439\u043d\u043e\u0435 \u0440\u0430\u0434\u0438\u043e",
-				"url" : "https://listen1.myradio24.com/6262"
-			},
-			{
-				"name" : "Illinois Street Lounge",
-				"url" : "http://somafm.com/illstreet.pls"
-			},
-			{
-				"name" : "Groove Salad Classic (Early 2000s Ambient)",
-				"url" : "https://somafm.com/gsclassic.pls"
-			},
-			{
-				"name" : "Groove Salad",
-				"url" : "http://somafm.com/groovesalad.pls"
-			},
-			{
-				"name" : "Lounge Radio",
-				"url" : "http://www.lounge-radio.com/listen128.m3u"
-			},
-			{
-				"name" : "Splash Lounge",
-				"url" : "https://ais-sa2.cdnstream1.com/2209_128.mp3"
-			},
-			{
-				"name" : "Splash Jazz",
-				"url" : "https://ais-sa2.cdnstream1.com/2346_128.mp3"
-			},
-			{
-				"name" : "Jazz Radio Blues",
-				"url" : "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
-			},
-			{
-				"name" : "SomaFM Groove Salad",
-				"url" : "http://ice3.somafm.com/groovesalad-128-mp3"
-			},
-			{
-				"name" : "Adroit Jazz Underground",
-				"url" : "https://icecast.walmradio.com:8443/jazz"
-			},
-			{
-				"name" : "Instrumental Jazz",
-				"url" : "https://jfm1.hostingradio.ru:14536/ijstream.mp3"
-			}
-		]
-	}
+  {
+    "group": "root",
+    "stations": [
+      {
+        "name": "SCRAdio",
+        "url": "https://radio.ssh.tatar/icecast/scradio"
+      },
+      {
+        "name": "Cassiopeia Station",
+        "url": "https://stream.cassiopeia-station.ru:1075/stream"
+      },
+      {
+        "name": "Голоса Вселенной",
+        "url": "https://stream.cassiopeia-station.ru:1205/stream"
+      },
+      {
+        "name": "Ambient Psychill",
+        "url": "http://strm112.1.fm/ambientpsy_mobile_mp3"
+      },
+      {
+        "name": "n5MD Radio (Ambient and Experimental)",
+        "url": "https://somafm.com/n5md.pls"
+      },
+      {
+        "name": "Vaporwaves (SomaFM)",
+        "url": "https://somafm.com/vaporwaves.pls"
+      },
+      {
+        "name": "Synphaera Radio (Space Music)",
+        "url": "https://somafm.com/synphaera.pls"
+      },
+      {
+        "name": "Space Station Soma",
+        "url": "http://somafm.com/spacestation.pls"
+      },
+      {
+        "name": "Коммерсантъ FM 93.6",
+        "url": "https://kommersant77.hostingradio.ru:8085/kommersant128.mp3"
+      },
+      {
+        "name": "VestiFM",
+        "url": "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps"
+      },
+      {
+        "name": "Smooth Jazz",
+        "url": "http://jking.cdnstream1.com/b22139_128mp3"
+      },
+      {
+        "name": "Radio Paradise (320k)",
+        "url": "http://stream-uk1.radioparadise.com/aac-320"
+      },
+      {
+        "name": "Арифулин FM",
+        "url": "https://stream.cassiopeia-station.ru:1295/stream"
+      },
+      {
+        "name": "Relax-FM",
+        "url": "http://ic4.101.ru:8000/stream/air/aac/64/200"
+      },
+      {
+        "name": "Adore Jazz Radio",
+        "url": "http://strm112.1.fm/ajazz_mobile_mp3"
+      },
+      {
+        "name": "Bay Smooth Jazz Radio",
+        "url": "http://strm112.1.fm/smoothjazz_mobile_mp3"
+      },
+      {
+        "name": "Chillout Lounge Radio",
+        "url": "http://strm112.1.fm/chilloutlounge_mobile_mp3"
+      },
+      {
+        "name": "Chill Radio",
+        "url": "https://radio1.streamserver.link/radio/8110/100chill-aac"
+      },
+      {
+        "name": "Smooth Jazz Mellow Mix",
+        "url": "http://ais-edge89-dal02.cdnstream.com/b48071_128mp3"
+      },
+      {
+        "name": "Серебряный дождь",
+        "url": "http://silverrain.hostingradio.ru/silver128.mp3"
+      },
+      {
+        "name": "Наше радио",
+        "url": "http://nashe.streamr.ru/nashe-128.mp3"
+      },
+      {
+        "name": "Модель для сборки",
+        "url": "http://mds-station.com:8000/mds"
+      },
+      {
+        "name": "Rock Space Station",
+        "url": "https://stream.cassiopeia-station.ru:1255/stream"
+      },
+      {
+        "name": "Enigmatic 3 - Magnetic Chillout",
+        "url": "http://radio.enigmatic.su:8050/radio"
+      },
+      {
+        "name": "Enigmatic Station 1",
+        "url": "http://listen2.myradio24.com:9000/8226"
+      },
+      {
+        "name": "Назад в СССР",
+        "url": "https://stream.cassiopeia-station.ru:1115/stream"
+      },
+      {
+        "name": "DubStep Beyond",
+        "url": "http://somafm.com/play/dubstep32"
+      }
+    ]
+  },
+  {
+    "group": "more",
+    "stations": [
+      {
+        "name": "Classic Vinyl HD",
+        "url": "https://icecast2.walmradio.com:8443/classic_opus"
+      },
+      {
+        "name": "Black Rock FM",
+        "url": "http://somafm.com/brfm.pls"
+      },
+      {
+        "name": "Cliqhop IDM",
+        "url": "http://somafm.com/cliqhop.pls"
+      },
+      {
+        "name": "Drone Zone",
+        "url": "http://somafm.com/dronezone.pls"
+      },
+      {
+        "name": "Sonic Universe",
+        "url": "http://somafm.com/sonicuniverse.pls"
+      },
+      {
+        "name": "Спокойное радио",
+        "url": "https://listen1.myradio24.com/6262"
+      },
+      {
+        "name": "Illinois Street Lounge",
+        "url": "http://somafm.com/illstreet.pls"
+      },
+      {
+        "name": "Groove Salad Classic (Early 2000s Ambient)",
+        "url": "https://somafm.com/gsclassic.pls"
+      },
+      {
+        "name": "Groove Salad",
+        "url": "http://somafm.com/groovesalad.pls"
+      },
+      {
+        "name": "Lounge Radio",
+        "url": "http://www.lounge-radio.com/listen128.m3u"
+      },
+      {
+        "name": "Splash Lounge",
+        "url": "https://ais-sa2.cdnstream1.com/2209_128.mp3"
+      },
+      {
+        "name": "Splash Jazz",
+        "url": "https://ais-sa2.cdnstream1.com/2346_128.mp3"
+      },
+      {
+        "name": "Jazz Radio Blues",
+        "url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
+      },
+      {
+        "name": "SomaFM Groove Salad",
+        "url": "http://ice3.somafm.com/groovesalad-128-mp3"
+      },
+      {
+        "name": "Adroit Jazz Underground",
+        "url": "https://icecast1.walmradio.com:8443/jazz_opus"
+      },
+      {
+        "name": "Instrumental Jazz",
+        "url": "https://jfm1.hostingradio.ru:14536/ijstream.mp3"
+      },
+      {
+        "name": "Ambient Sleeping Pill",
+        "url": "http://radio.stereoscenic.com/asp-h"
+      },
+      {
+        "name": "Cryosleep (Echoes of BlueMars)",
+        "url": "http://streams.echoesofbluemars.org:8000/cryosleep"
+      },
+      {
+        "name": "SomaFM Deep Space One",
+        "url": "https://ice2.somafm.com/deepspaceone-128-mp3"
+      },
+      {
+        "name": "SomaFM Mission Control",
+        "url": "https://ice6.somafm.com/missioncontrol-128-mp3"
+      },
+      {
+        "name": "Dinamo FM Sleep",
+        "url": "http://channels.dinamo.fm/sleep-mp3"
+      },
+      {
+        "name": "Luxury Lounge - Deep Sleep & Meditation",
+        "url": "http://188.40.109.122:8000/ices3"
+      },
+      {
+        "name": "Radio Caprice - New Age Music",
+        "url": "http://79.120.77.11:8002/newage"
+      },
+      {
+        "name": "Radio Caprice - Meditation Music",
+        "url": "http://79.120.77.11:8002/meditation"
+      },
+      {
+        "name": "Radio Art - Piano for Sleep",
+        "url": "http://air.radioart.com/fPiano_for_sleep.mp3"
+      },
+      {
+        "name": "Yoga Chill",
+        "url": "http://178.32.111.41:8027/stream-128kmp3-YogaChill"
+      },
+      {
+        "name": "Costa del Mar - Zen",
+        "url": "http://stream.cdm-zen.com:8004/stream-mp3-Zen"
+      },
+      {
+        "name": "Epic Lounge - Sleep & Meditation",
+        "url": "https://stream.epic-lounge.com/sleep-meditation"
+      },
+      {
+        "name": "Dark Rain",
+        "url": "http://rainyday.radio.mynoise.net/"
+      },
+      {
+        "name": "MyNoise Ocean Waves",
+        "url": "http://oceanwaves.radio.mynoise.net/"
+      },
+      {
+        "name": "MyNoise Pure Nature",
+        "url": "https://purenature-mynoise.radioca.st/stream"
+      },
+      {
+        "name": "Nature Radio Rain",
+        "url": "https://maggie.torontocast.com:2020/stream/natureradiorain"
+      },
+      {
+        "name": "Ambi Nature Radio",
+        "url": "https://nature-rex.radioca.st/stream"
+      },
+      {
+        "name": "Lofi 24/7",
+        "url": "http://usa9.fastcast4u.com/proxy/jamz?mp=/1"
+      },
+      {
+        "name": "NIA Radio Lo-Fi",
+        "url": "https://radio.nia.nc/radio/8020/lofi-hq-stream.aac"
+      },
+      {
+        "name": "REYFM - Lofi",
+        "url": "https://listen.reyfm.de/lofi_320kbps.mp3"
+      },
+      {
+        "name": "Dark Jazz",
+        "url": "http://79.120.39.202:8002/darkjazz"
+      },
+      {
+        "name": "Focus Mode",
+        "url": "https://stream.bigfm.de/lofifocus/mp3-128/radiobrowser"
+      },
+      {
+        "name": "Deep Focus",
+        "url": "https://study-high.rautemusik.fm/?ref=radiobrowser"
+      },
+      {
+        "name": "Raw Blues",
+        "url": "http://213.141.131.10:8004/louisianablues"
+      },
+      {
+        "name": "Sci-Fi Chillstep",
+        "url": "http://chillstep.info:1984/listen.mp3"
+      },
+      {
+        "name": "Cozy Bedroom",
+        "url": "http://radio.plaza.one/mp3"
+      },
+      {
+        "name": "Focus Work",
+        "url": "https://coderadio-admin-v2.freecodecamp.org/listen/coderadio/radio.mp3"
+      },
+      {
+        "name": "Old Radio Jazz",
+        "url": "http://jazz-wr01.ice.infomaniak.ch/jazz-wr01-128.mp3"
+      },
+      {
+        "name": "Vintage Jazz",
+        "url": "http://east-mp3-128.streamthejazzgroove.com/stream"
+      },
+      {
+        "name": "Cinematic Trip Hop",
+        "url": "https://smartstream.link/senses"
+      },
+      {
+        "name": "Dark Country",
+        "url": "http://strm112.1.fm/ccountry_mobile_mp3"
+      },
+      {
+        "name": "Outlaw Country",
+        "url": "http://ice24.securenetsystems.net/OUTLAW"
+      }
+    ]
+  }
 ]

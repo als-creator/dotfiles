@@ -10,16 +10,15 @@
   "editor.multiCursorModifier": "ctrlCmd", // Управление поведением нескольких курсоров
   "editor.bracketPairColorization.enabled": true, // Подсветка парных скобок по всему документу
   "editor.gotoLocation.multipleDefinitions": "goto", // Быстрый переход внутрь модуля
-  "editor.matchBrackets": "always", //Подсветка парных скобок у курсора
+  "editor.matchBrackets": "always", // Подсветка парных скобок у курсора
   "editor.autoClosingBrackets": "always", // Завершать скобки автоматически и ставить курсор между ними.
   "editor.autoClosingQuotes": "always", // Завершать кавычки автоматически
   "editor.autoSurround": "languageDefined", // Создавать обрамление конструкции кавычками при наборе согласно синтаксису языку
   "editor.renderControlCharacters": true, // Показывать управляющие символы (например, перевод строки)
   "editor.lightbulb.enabled": "on", // Включение лампочки для рефакторинга
-  "editor.selectionClipboard": true, //Отдельный буфер обмена linux для вставки средней кнопкой
+  "editor.selectionClipboard": true, // Отдельный буфер обмена linux для вставки средней кнопкой
   "editor.folding": false, // Отключить сворачивание кода
   "editor.minimap.autohide": "mouseover", // Миникарта открывается при наведении
-  "editor.lineHeight": 23, // Высота строки — 23 px
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]};',./", // Разделительные символы слов для навигации по тексту
   "editor.wordWrap": "on", // Гибкий перенос строк по ширине редактора
   "editor.renderLineHighlight": "none", // Отключить подсветку строк по умолчанию
@@ -34,25 +33,27 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Форматтер кода по умолчанию
   "json.format.enable": true, // Встроенный автоформаттер для JSON файлов
   "workbench.startupEditor": "none", // Новый файл открывается без стартового окна
-  "workbench.activityBar.location": "top", //Активити бар сверху
+  "workbench.activityBar.location": "top", // Активити бар сверху
   "workbench.editor.showTabs": "single", // Одновременное использование только одной вкладки (без множества вкладок)
   "workbench.editor.showIcons": false, // Скрыть иконки на вкладках файлов
   "workbench.editor.labelFormat": "short",
+  "workbench.secondarySideBar.defaultVisibility": "hidden", // Скрывает боковую панель окно чата справа
   "security.workspace.trust.enabled": false, // Отключить функцию доверия рабочей области
   "security.workspace.trust.untrustedFiles": "open", // Отключить запрос о доверии к рабочему пространству при запуске
-  "terminal.integrated.defaultProfile.linux": "bash", //Оболочка терминала по умолчанию
+  "terminal.integrated.defaultProfile.linux": "bash", // Оболочка терминала по умолчанию
   "terminal.integrated.cursorStyle": "line", // Стиль строки курсора терминала
   "terminal.integrated.copyOnSelection": true, // Копировать выделенный текст в терминал автоматически
-  "terminal.integrated.fontSize": 18, // Размер шрифта в терминале
-  "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+  "terminal.integrated.fontSize": 14, // Размер шрифта в терминале
+  "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font Mono", // Шрифт терминала
   "git.autofetch": true, // Автозагрузка свежих коммитов из реп
   "npm.packageManager": "npm", // Пакетник для js
-  "javascript.updateImportsOnFileMove.enabled": "always", // Обновляет импортированные пути при перемещении файлов
-  "typescript.updateImportsOnFileMove.enabled": "always", // Обновляет импортированные пути при перемещении файлов
+  "js/ts.updateImportsOnFileMove.enabled": "always", // Автоматическое обновление импортов при перемещении файлов
   "extensions.autoCheckUpdates": false, // Автопроверка обновления расширений
   "extensions.autoUpdate": "off", // Автообновление расширений
   "update.mode": "none", // Отключение обновлений
-  "telemetry.telemetryLevel": "off", // Оформление
+  "telemetry.telemetryLevel": "off", // Телеметрия отключена
+  "telemetry.editStats.enabled": false, // Отключить сбор статистики редактирования
+  "telemetry.feedback.enabled": false, // Отключить сбор статистики обратной связи
   "explorer.confirmDelete": false, // Не требовать подтверждения при удалении файлов
   "editor.quickSuggestionsDelay": 200, // Время появления подсказок при наборе в мс
   "editor.hover.delay": 200, // Время появления подсказок при наведении в мс
@@ -61,9 +62,6 @@
   "ruff.enable": true, // Включаем Ruff (через официальное расширение)
   "ruff.lineLength": 88, // Максимальная длина строки
   "ruff.lint.select": ["E", "F", "W", "I", "D"], // Включённые категории проверок
-  "python.linting.pylintEnabled": false, // Отключаем другие линтеры, чтобы не мешали (по желанию)
-  "python.linting.enabled": true, // Включаем общий линтинг Python
-  "python.linting.flake8Enabled": false,
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -87,4 +85,5 @@
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
+  "workbench.colorTheme": "Catppuccin Mocha",
 }

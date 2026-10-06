@@ -167,7 +167,7 @@ buffering = 5
 # ТЕМА ОФОРМЛЕНИЯ
 # ============================================================
 
-theme = catppuccin-mocha-dark
+theme = mint-gray
 # Тема оформления. Собственные темы кладутся в каталог
 # ~/.config/pyradio/themes/ (файлы *.pyradio-theme).
 # Встроенные: dark, light, dark_16_colors, light_16_colors,

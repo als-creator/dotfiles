@@ -1,6 +1,6 @@
 # PyRadio Playlist File Format:
 # name,url,encoding,icon,profile,buffering,force-http,volume,referer,player
-SCRadio,https://radio.ssh.tatar/icecast/scradio
+SCRAdio,https://radio.ssh.tatar/icecast/scradio
 Cassiopeia Station,https://stream.cassiopeia-station.ru:1075/stream
 Голоса Вселенной,https://stream.cassiopeia-station.ru:1205/stream
 n5MD Radio (Ambient and Experimental),https://somafm.com/n5md.pls
@@ -10,7 +10,7 @@ Synphaera Radio (Space Music),https://somafm.com/synphaera.pls
 Space Station Soma,http://somafm.com/spacestation.pls
 Коммерсантъ FM 93.6,https://kommersant77.hostingradio.ru:8085/kommersant128.mp3
 VestiFM,http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps
-SMOOTH JAZZ,http://jking.cdnstream1.com/b22139_128mp3
+Smooth Jazz,http://jking.cdnstream1.com/b22139_128mp3
 Radio Paradise (320k),http://stream-uk1.radioparadise.com/aac-320
 Арифулин FM,https://stream.cassiopeia-station.ru:1295/stream
 Relax-FM,http://ic4.101.ru:8000/stream/air/aac/64/200
@@ -20,8 +20,8 @@ Bay Smooth Jazz Radio,http://strm112.1.fm/smoothjazz_mobile_mp3
 BOM Psytrance Radio,http://strm112.1.fm/psytrance_mobile_mp3
 Chillout Lounge Radio,http://strm112.1.fm/chilloutlounge_mobile_mp3
 FM Reggae,http://strm112.1.fm/reggae_mobile_mp3
-Chill radio,https://radio1.streamserver.link/radio/8110/100chill-aac
-SMOOTH JAZZ MELLOW MIX,http://ais-edge89-dal02.cdnstream.com/b48071_128mp3
+Chill Radio,https://radio1.streamserver.link/radio/8110/100chill-aac
+Smooth Jazz Mellow Mix,http://ais-edge89-dal02.cdnstream.com/b48071_128mp3
 Серебряный дождь,http://silverrain.hostingradio.ru/silver128.mp3
 Наше радио,http://nashe.streamr.ru/nashe-128.mp3
 Модель для сборки,http://mds-station.com:8000/mds
@@ -30,8 +30,8 @@ Enigmatic 3 - Magnetic Chillout,http://radio.enigmatic.su:8050/radio
 Enigmatic Station 1,http://listen2.myradio24.com:9000/8226
 Назад в СССР,https://stream.cassiopeia-station.ru:1115/stream
 Instrumental Jazz,https://jfm1.hostingradio.ru:14536/ijstream.mp3
-Classic Vinyl HD,https://icecast.walmradio.com:8443/classic
-Adroit Jazz Underground,https://icecast.walmradio.com:8443/jazz
+Classic Vinyl HD,https://icecast2.walmradio.com:8443/classic_opus
+Adroit Jazz Underground,https://icecast1.walmradio.com:8443/jazz_opus
 SomaFM Groove Salad,http://ice3.somafm.com/groovesalad-128-mp3
 Jazz Radio Blues,http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3
 Splash Jazz,https://ais-sa2.cdnstream1.com/2346_128.mp3
@@ -43,6 +43,40 @@ Illinois Street Lounge,http://somafm.com/illstreet.pls
 Спокойное радио,https://listen1.myradio24.com/6262
 Sonic Universe,http://somafm.com/sonicuniverse.pls
 Drone Zone,http://somafm.com/dronezone.pls
-cliqhop idm,http://somafm.com/cliqhop.pls
+Cliqhop IDM,http://somafm.com/cliqhop.pls
 Black Rock FM,http://somafm.com/brfm.pls
 DubStep Beyond,http://somafm.com/play/dubstep32
+
+Ambient Sleeping Pill,http://radio.stereoscenic.com/asp-h
+Cryosleep (Echoes of BlueMars),http://streams.echoesofbluemars.org:8000/cryosleep
+SomaFM Deep Space One,https://ice2.somafm.com/deepspaceone-128-mp3
+SomaFM Mission Control,https://ice6.somafm.com/missioncontrol-128-mp3
+Dinamo FM Sleep,http://channels.dinamo.fm/sleep-mp3
+Luxury Lounge - Deep Sleep & Meditation,http://188.40.109.122:8000/ices3
+Radio Caprice - New Age Music,http://79.120.77.11:8002/newage
+Radio Caprice - Meditation Music,http://79.120.77.11:8002/meditation
+Radio Art - Piano for Sleep,http://air.radioart.com/fPiano_for_sleep.mp3
+Yoga Chill,http://178.32.111.41:8027/stream-128kmp3-YogaChill
+Costa del Mar - Zen,http://stream.cdm-zen.com:8004/stream-mp3-Zen
+Epic Lounge - Sleep & Meditation,https://stream.epic-lounge.com/sleep-meditation
+Dark Rain,http://rainyday.radio.mynoise.net/
+MyNoise Ocean Waves,http://oceanwaves.radio.mynoise.net/
+MyNoise Pure Nature,https://purenature-mynoise.radioca.st/stream
+Nature Radio Rain,https://maggie.torontocast.com:2020/stream/natureradiorain
+Ambi Nature Radio,https://nature-rex.radioca.st/stream
+Lofi 24/7,http://usa9.fastcast4u.com/proxy/jamz?mp=/1
+NIA Radio Lo-Fi,https://radio.nia.nc/radio/8020/lofi-hq-stream.aac
+REYFM - Lofi,https://listen.reyfm.de/lofi_320kbps.mp3
+
+Dark Jazz,http://79.120.39.202:8002/darkjazz
+Focus Mode,https://stream.bigfm.de/lofifocus/mp3-128/radiobrowser
+Deep Focus,https://study-high.rautemusik.fm/?ref=radiobrowser
+Raw Blues,http://213.141.131.10:8004/louisianablues
+Sci-Fi Chillstep,http://chillstep.info:1984/listen.mp3
+Cozy Bedroom,http://radio.plaza.one/mp3
+Focus Work,https://coderadio-admin-v2.freecodecamp.org/listen/coderadio/radio.mp3
+Old Radio Jazz,http://jazz-wr01.ice.infomaniak.ch/jazz-wr01-128.mp3
+Vintage Jazz,http://east-mp3-128.streamthejazzgroove.com/stream
+Cinematic Trip Hop,https://smartstream.link/senses
+Dark Country,http://strm112.1.fm/ccountry_mobile_mp3
+Outlaw Country,http://ice24.securenetsystems.net/OUTLAW
