@@ -1,6 +1,5 @@
 # PyRadio Playlist File Format:
 # name,url,encoding,icon,profile,buffering,force-http,volume,referer,player
-SCRAdio,https://radio.ssh.tatar/icecast/scradio
 Cassiopeia Station,https://stream.cassiopeia-station.ru:1075/stream
 Голоса Вселенной,https://stream.cassiopeia-station.ru:1205/stream
 n5MD Radio (Ambient and Experimental),https://somafm.com/n5md.pls

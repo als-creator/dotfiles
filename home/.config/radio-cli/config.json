@@ -4,16 +4,12 @@
   "country": "RU",
   "data": [
     {
-      "station": "SCRadio",
-      "url": "https://radio.ssh.tatar/icecast/scradio"
-    },
-    {
       "station": "Cassiopeia Station",
       "url": "https://stream.cassiopeia-station.ru:1075/stream"
     },
     {
       "station": "Голоса Вселенной",
-      "url": "http://[300:7edb:435a:c68f::5c12]:8000/scradio"
+      "url": "https://stream.cassiopeia-station.ru:1205/stream"
     },
     {
       "station": "n5MD Radio (Ambient and Experimental)",

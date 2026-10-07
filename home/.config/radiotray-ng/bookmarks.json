@@ -3,10 +3,6 @@
     "group": "root",
     "stations": [
       {
-        "name": "SCRAdio",
-        "url": "https://radio.ssh.tatar/icecast/scradio"
-      },
-      {
         "name": "Cassiopeia Station",
         "url": "https://stream.cassiopeia-station.ru:1075/stream"
       },
