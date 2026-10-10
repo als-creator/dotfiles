@@ -20,6 +20,7 @@
       <value type="string" value="org.freedesktop.network-manager-applet"/>
       <value type="string" value="org.gnome.baobab"/>
       <value type="string" value="org.gnome.Software"/>
+      <value type="string" value="org.kde.juk"/>
       <value type="string" value="org.kde.kdeconnect.daemon"/>
       <value type="string" value="org.qbittorrent.qBittorrent"/>
       <value type="string" value="org.xfce.Thunar"/>

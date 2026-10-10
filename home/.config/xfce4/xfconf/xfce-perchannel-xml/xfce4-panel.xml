@@ -5,12 +5,16 @@
   <property name="plugins" type="empty">
     <property name="plugin-26" type="string" value="whiskermenu">
       <property name="recent" type="array">
+        <value type="string" value="org.fooyin.fooyin.desktop"/>
+        <value type="string" value="appimagekit_ad61d36631317cfd2caca7271a13ec4a-FilmCraft.desktop"/>
         <value type="string" value="firefox.desktop"/>
+        <value type="string" value="pwa-5mind-manager.desktop"/>
+        <value type="string" value="org.kde.plasmatube.desktop"/>
+        <value type="string" value="org.kde.audiotube.desktop"/>
         <value type="string" value="rofi.desktop"/>
         <value type="string" value="rofi-theme-selector.desktop"/>
         <value type="string" value="ai.opencode.desktop.desktop"/>
         <value type="string" value="appimagekit_611a663b433598eece997f8517e9f5f1-Kotatogram__dev_.desktop"/>
-        <value type="string" value="org.kde.juk.desktop"/>
         <value type="string" value="radiotray-ng.desktop"/>
         <value type="string" value="obsidian.desktop"/>
         <value type="string" value="appimagekit_00fabb23d4e4b9ef54db798875f9d878-LibreOffice.desktop"/>
@@ -34,7 +38,6 @@
         <value type="string" value="thorium-browser.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="localsend.desktop"/>
-        <value type="string" value="io.github.nozwock.Packet.desktop"/>
         <value type="string" value="virtualbox.desktop"/>
         <value type="string" value="com.github.johnfactotum.Foliate.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
@@ -94,7 +97,6 @@
         <value type="string" value="qmmp.desktop"/>
         <value type="string" value="assistant.desktop"/>
         <value type="string" value="localsend.desktop"/>
-        <value type="string" value="io.github.nozwock.Packet.desktop"/>
         <value type="string" value="org.kde.kdeconnect.app.desktop"/>
         <value type="string" value="mysql-workbench.desktop"/>
         <value type="string" value="sqlitebrowser.desktop"/>
@@ -102,6 +104,7 @@
         <value type="string" value="obsidian.desktop"/>
         <value type="string" value="net.poedit.Poedit.desktop"/>
         <value type="string" value="ai.opencode.desktop.desktop"/>
+        <value type="string" value="org.fooyin.fooyin.desktop"/>
       </property>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-icon-size" type="int" value="1"/>
@@ -267,6 +270,8 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-items" type="array">
+        <value type="string" value="fooyin"/>
+        <value type="string" value="Akregator"/>
         <value type="string" value="AyuGramDesktop"/>
         <value type="string" value="kaffeine"/>
         <value type="string" value="JuK"/>
@@ -308,7 +313,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="com.ayugram.desktop;firefox;io.github.kotatogram._50801ed2c7ce0a661b54a5794f153b46;io.github.kotatogram._f6a23186319c1ae425ef52773bb93e3a;kdeconnect.mpris_275377dc5f6d41e6a285b1dfdc7e102f;kdeconnect.mpris_6f5555798af846b99f5a68bd9053a936;kdeconnect.mpris_9255c4419a014e0b906ef8faf101c110;OpenCode;org.kde.audiotube;org.kde.elisa;org.kde.juk;org.kde.kdeconnect.app;org.kde.vvave;parole;qmmp;smplayer;Яндекс Браузер"/>
+      <property name="known-players" type="string" value="com.ayugram.desktop._e3daec5e611aac450a96a13325646eb3;io.github.kotatogram._d70027b8b73537944b17f27ba8f1b4ac;org.fooyin.fooyin;org.kde.audiotube;org.kde.juk;org.kde.kdeconnect.app;org.kde.plasmatube;org.kde.vvave;parole;qmmp;smplayer;Яндекс Браузер"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="show-notifications" type="bool" value="true"/>
