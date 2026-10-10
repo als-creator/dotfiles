@@ -6,14 +6,14 @@
     <property name="screen0" type="empty">
       <property name="monitorHDMI-A-0" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/mnt/Data/Рисунки/Обои/dark/Abstract (1920x1080).jpg"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="last-image" type="string" value="@HOME@/.config/Code is Poetry (1920x1080).jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
       </property>
       <property name="monitorHDMI-1" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/mnt/Data/Рисунки/Обои/dark/linux tux trolls 1680x1050 wallpaper_www.wallpaperhi.com_94.jpg"/>
+          <property name="last-image" type="string" value="/mnt/Data/Рисунки/Обои/dark/Linux The Choice Of A Gnu Generation (1920x1080).jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
           <property name="image-style" type="int" value="5"/>
