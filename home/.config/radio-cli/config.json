@@ -4,6 +4,10 @@
   "country": "RU",
   "data": [
     {
+      "station": "SCRAdio",
+      "url": "https://radio.ssh.tatar/icecast/scradio"
+    },
+    {
       "station": "Cassiopeia Station",
       "url": "https://stream.cassiopeia-station.ru:1075/stream"
     },
@@ -190,10 +194,6 @@
     {
       "station": "cliqhop idm",
       "url": "http://somafm.com/cliqhop.pls"
-    },
-    {
-      "station": "Black Rock FM",
-      "url": "http://somafm.com/brfm.pls"
     }
   ]
 }

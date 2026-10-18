@@ -1,5 +1,6 @@
 # PyRadio Playlist File Format:
 # name,url,encoding,icon,profile,buffering,force-http,volume,referer,player
+SCRAdio,https://radio.ssh.tatar/icecast/scradio
 Cassiopeia Station,https://stream.cassiopeia-station.ru:1075/stream
 Голоса Вселенной,https://stream.cassiopeia-station.ru:1205/stream
 n5MD Radio (Ambient and Experimental),https://somafm.com/n5md.pls
@@ -47,8 +48,6 @@ Illinois Street Lounge,http://somafm.com/illstreet.pls
 Sonic Universe,http://somafm.com/sonicuniverse.pls
 Drone Zone,http://somafm.com/dronezone.pls
 Cliqhop IDM,http://somafm.com/cliqhop.pls
-Black Rock FM,http://somafm.com/brfm.pls
-
 Ambient Sleeping Pill,http://radio.stereoscenic.com/asp-h
 Cryosleep (Echoes of BlueMars),http://streams.echoesofbluemars.org:8000/cryosleep
 SomaFM Deep Space One,https://ice2.somafm.com/deepspaceone-128-mp3
@@ -69,7 +68,6 @@ Ambi Nature Radio,https://nature-rex.radioca.st/stream
 Lofi 24/7,http://usa9.fastcast4u.com/proxy/jamz?mp=/1
 NIA Radio Lo-Fi,https://radio.nia.nc/radio/8020/lofi-hq-stream.aac
 REYFM - Lofi,https://listen.reyfm.de/lofi_320kbps.mp3
-
 Dark Jazz,http://79.120.39.202:8002/darkjazz
 Focus Mode,https://stream.bigfm.de/lofifocus/mp3-128/radiobrowser
 Deep Focus,https://study-high.rautemusik.fm/?ref=radiobrowser
