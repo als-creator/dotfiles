@@ -35,7 +35,6 @@
                                             {
                                                 "RadioGuide": {
                                                     "CollapsedSections": [
-                                                        "Жанры",
                                                         "Прочие жанры",
                                                         "Разговорное",
                                                         "Страны",
@@ -132,7 +131,7 @@
                                                     "ShowSavedIcons": true,
                                                     "ShowScrollbar": true,
                                                     "ShowToolTips": true,
-                                                    "State": "AAAAlXjaY2Bg4GBgYLzHwMBwhAEB6oC4AInPAaUZgZgJiJmBmAWIWYGYDYjZQWrsH+zlvrCX+6L96Yk7pSfulLHftyPwdavcDvsjseKuF0ti7Q+ChKUn2u9v/CEPRPbrlWaYR37SsN8wOax/+YzbjFAL2ACPriJo",
+                                                    "State": "AAAAlXjaY2Bg4GBgYLzHwMBwhAEB6oC4AInPAaUZgZgJiJmBmAWIWYGYDYjZQWrsH+zlvrCX+6L96Yk7pSfulLHftyPwdavcDvsjseKuF0ti7Q+ChKUn2u9v/CEPRPbrlWaYR37SsN8wOax/+YzbjFAL2AGPryJp",
                                                     "UniformIcons": true,
                                                     "UseIconGapsForSideCaptions": true
                                                 }

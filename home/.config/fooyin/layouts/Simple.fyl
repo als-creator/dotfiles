@@ -60,7 +60,7 @@
                                 true,
                                 false
                             ],
-                            "State": "AAAA/wAAAAEAAAACAAAA9QAABAoA/////wEAAAABAA==",
+                            "State": "AAAA/wAAAAEAAAACAAAAlwAAApkA/////wEAAAABAA==",
                             "Widgets": [
                                 {
                                     "SplitterVertical": {
@@ -80,7 +80,7 @@
                                                     "DoubleClickAction": 0,
                                                     "ExpandOnSingleClick": false,
                                                     "Grouping": 0,
-                                                    "ID": "47975473ba3d4733b19fcdaf736e371d",
+                                                    "ID": "524813b739fa4a97820effa25769ff89",
                                                     "IconHeight": 36,
                                                     "IconWidth": 36,
                                                     "KeepAlive": true,
@@ -124,8 +124,8 @@
                                             {
                                                 "Playlist": {
                                                     "Columns": "8:132|3|0:2|1|7:2",
-                                                    "HeaderState": "AAAAZXjaY2BgYGVgYFAE4nQgVmJgYPQA0uYMEHEQYARiJiBmBmIWkLj9uh2Br1vlttkfPx7GxCZkZr9+S9Ha2Nx59o++aDPtla+y3zkTBGaANDL8////PwCZ4hg8",
-                                                    "ID": "755c2c0d5cbe4fb4b9b2a055576d382f",
+                                                    "HeaderState": "AAAAZXjaY2BgYGVgYFAD4m9AbAylHRgg4iDACMRMQMwMxCwgcft1OwJft8rtsL8BpoLst1Q9dF8nUg3n75wJArNAGhn+////HwBEmRs5",
+                                                    "ID": "86f2cd9f7e6b4eb3b483384b3a85c02b",
                                                     "Preset": 0,
                                                     "SingleMode": false
                                                 }
