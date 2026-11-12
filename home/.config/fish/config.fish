@@ -177,6 +177,12 @@ end
 function cc
     if type -q pacman
         sudo pacman -Sc --noconfirm
+
+        # Кэш yay (AUR-хелпер), если установлен
+        if type -q yay
+            yay -Sc --noconfirm
+        end
+
         set -l orphans (pacman -Qdtq 2>/dev/null)
         if test -n "$orphans"
             sudo pacman -Rsn --noconfirm $orphans

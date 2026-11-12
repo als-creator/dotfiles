@@ -221,6 +221,12 @@ up() {
 cc() {
     if command -v pacman >/dev/null 2>&1; then
         sudo pacman -Sc --noconfirm
+
+        # Кэш yay (AUR-хелпер), если установлен
+        if command -v yay >/dev/null 2>&1; then
+            yay -Sc --noconfirm
+        fi
+
         orphans="$(pacman -Qdtq 2>/dev/null)"
         if [[ -n "$orphans" ]]; then
             # shellcheck disable=SC2086
